@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: C:\Users\EMAWARY\Desktop\projects\JavaLeader.pl\Spring Cloud\Spring Cloud Config Server\spring-cloud-config-server\git-repository
+server:
+  port: 8888

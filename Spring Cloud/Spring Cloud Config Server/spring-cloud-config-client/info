@@ -1,0 +1,2 @@
+POST request : http://localhost:8082/refresh => refresh new configuration
+GET request  : http://localhost:8082/message => show new configuration
