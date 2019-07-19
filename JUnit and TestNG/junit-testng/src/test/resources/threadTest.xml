@@ -1,0 +1,7 @@
+<suite name="ThreadTest" >
+    <test name="ThreadTest">
+        <classes>
+            <class name="pl.testng.ThreadTest" />
+        </classes>
+    </test>
+</suite>
