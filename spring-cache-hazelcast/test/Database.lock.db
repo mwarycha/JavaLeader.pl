@@ -1,0 +1,6 @@
+#FileLock
+#Fri Mar 29 11:12:08 CET 2019
+hostName=PL-00001722.ericsson.se
+id=169c8ef66194259c7eec9ddc173a4540c72f30b3000
+method=file
+server=192.168.222.109\:60631
