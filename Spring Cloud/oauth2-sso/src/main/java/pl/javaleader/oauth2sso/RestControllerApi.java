@@ -15,4 +15,9 @@ public class RestControllerApi {
     String getPrivateContent(){
         return "getPrivateContent";
     }
+
+    @GetMapping("/")
+    String home(){
+        return "OAuth HomePageApp";
+    }
 }
