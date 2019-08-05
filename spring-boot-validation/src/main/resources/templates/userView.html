@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form th:action="@{/user}" th:object="${user}" method="post">
+
+    <!-- print all errors from form -->
+    <div class="alert alert-danger" th:if="${#fields.hasErrors('*')}">
+        <p th:each="err : ${#fields.errors('*')}" th:text="${err}">        </p>
+    </div>
+
+    <p><input  type = "text"   th:field="*{name}"  placeholder = "name" /> </p>
+    <p><input  type = "text"   th:field="*{age}"   placeholder = 0 />      </p>
+    <input     type = "submit" value="Validate" />
+
+</form>
+</body>
+</html>
