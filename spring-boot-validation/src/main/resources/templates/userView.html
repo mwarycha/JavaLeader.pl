@@ -13,8 +13,11 @@
         <p th:each="err : ${#fields.errors('*')}" th:text="${err}">        </p>
     </div>
 
+    <p th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></p>
     <p><input  type = "text"   th:field="*{name}"  placeholder = "name" /> </p>
+    <p th:if="${#fields.hasErrors('age')}" th:errors="*{age}"></p>
     <p><input  type = "text"   th:field="*{age}"   placeholder = 0 />      </p>
+
     <input     type = "submit" value="Validate" />
 
 </form>
