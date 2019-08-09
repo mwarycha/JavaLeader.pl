@@ -1,13 +1,10 @@
 package service;
 
 import helpers.RandomHelper;
-import javafx.util.Pair;
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
-import static helpers.RandomHelper.generateRandoNumberFromRange;
+import static helpers.RandomHelper.generateRandomNumberFromRange;
 
 public class BingoCardServiceImpl implements BingoService {
 
@@ -27,7 +24,7 @@ public class BingoCardServiceImpl implements BingoService {
 
                 // bingo has only unique numbers from range(1,75)
                 while(alreadyGeneratedIntegers.contains(randomNumberCandidate)) {
-                    randomNumberCandidate = generateRandoNumberFromRange(1,75);
+                    randomNumberCandidate = generateRandomNumberFromRange(1,75);
                 }
 
                 alreadyGeneratedIntegers.add(randomNumberCandidate);
@@ -67,34 +64,7 @@ public class BingoCardServiceImpl implements BingoService {
     }
 
     public int generateRandomNumberFromSpecificRange(int min, int max) {
-        return RandomHelper.generateRandoNumberFromRange(min,max);
-    }
-
-    @Override
-    public List<Pair<Integer, Integer>> getVerticalIndexesPattern() {
-
-        List<Pair<Integer, Integer>> pairs = new ArrayList();
-
-        pairs.add(new Pair(0,2));
-        pairs.add(new Pair(1,2));
-        pairs.add(new Pair(2,2));
-        pairs.add(new Pair(3,2));
-        pairs.add(new Pair(4,2));
-
-        return pairs;
-    }
-
-    @Override
-    public List<Pair<Integer, Integer>> getHorizontalIndexesPattern() {
-        List<Pair<Integer, Integer>> pairs = new ArrayList();
-
-        pairs.add(new Pair(2,0));
-        pairs.add(new Pair(2,1));
-        pairs.add(new Pair(2,2));
-        pairs.add(new Pair(2,3));
-        pairs.add(new Pair(2,4));
-
-        return pairs;
+        return RandomHelper.generateRandomNumberFromRange(min,max);
     }
 
 }

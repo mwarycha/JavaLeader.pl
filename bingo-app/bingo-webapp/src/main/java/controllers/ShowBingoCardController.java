@@ -17,7 +17,8 @@ import org.apache.logging.log4j.Logger;
 import javax.servlet.annotation.WebServlet;
 import javax.inject.Inject;
 
-import static helpers.RandomHelper.generateRandoNumberFromRange;
+import static helpers.RandomHelper.generateRandomNumberFromRange;
+import static helpers.WinnerPatternHelper.getHorizontalIndexesPattern;
 
 @WebServlet(name = "bingo", urlPatterns = {"/showBingoCard"})
 public class ShowBingoCardController extends HttpServlet {
@@ -78,11 +79,11 @@ public class ShowBingoCardController extends HttpServlet {
 
         while (bingo) {
 
-            int randomNumberCandidate =  generateRandoNumberFromRange(1, 75);
+            int randomNumberCandidate =  generateRandomNumberFromRange(1, 75);
 
             // bingo has only unique numbers from range(1,75)
             while(alreadyGeneratedIntegers.contains(randomNumberCandidate)) {
-                randomNumberCandidate = generateRandoNumberFromRange(1,75);
+                randomNumberCandidate = generateRandomNumberFromRange(1,75);
             }
             alreadyGeneratedIntegers.add(randomNumberCandidate);
 
@@ -111,7 +112,7 @@ public class ShowBingoCardController extends HttpServlet {
 
     private boolean checkWinner(int[][] bingoCard) {
 
-       List<Pair<Integer,Integer>> pairList = bingoService.getHorizontalIndexesPattern();
+       List<Pair<Integer,Integer>> pairList = getHorizontalIndexesPattern();
        int winner = 0;
        for(Pair<Integer,Integer> pair : pairList) {
            if (bingoCard[pair.getKey()][pair.getValue()] == 0) {

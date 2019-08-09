@@ -1,13 +1,10 @@
 package cardTests;
 
+import cardTests.testConfiguration.ParameterRule;
 import cardTests.testConfiguration.WeldJUnit4Runner;
 import helpers.PrinterHelper;
 
-
 import javafx.util.Pair;
-import org.junit.rules.MethodRule;
-import org.junit.runners.model.FrameworkMethod;
-import org.junit.runners.model.Statement;
 import service.BingoService;
 import java.util.*;
 
@@ -16,44 +13,18 @@ import org.junit.Test;
 import javax.inject.Inject;
 import org.junit.Rule;
 
-import static helpers.RandomHelper.generateRandoNumberFromRange;
+import static helpers.RandomHelper.generateRandomNumberFromRange;
+import static helpers.WinnerPatternHelper.getHorizontalIndexesPattern;
+import static helpers.WinnerPatternHelper.getVerticalIndexesPattern;
 import static org.junit.Assert.assertEquals;
-
-class ParameterRule implements MethodRule {
-
-    private int parameterIndex = 0;
-
-    public  List<List<Pair<Integer, Integer>>> parameters;
-
-    public ParameterRule( List<List<Pair<Integer, Integer>>> someParameters){
-        parameters = someParameters;
-    }
-
-    public List<Pair<Integer, Integer>> getParameter(){
-        return parameters.get(parameterIndex);
-    }
-
-    @Override
-    public Statement apply(Statement statement, FrameworkMethod frameworkMethod, Object o) {
-        return new Statement (){
-            public void evaluate(){
-                for (int i = 0; i < parameters.size(); i++){
-                    PrinterHelper.printLog("\nwinners pattern indexes" + parameters.get(i).toString() + "\n");
-                    parameterIndex = i;
-                    try {
-                        statement.evaluate();
-                    } catch (Throwable throwable) {
-                        throwable.printStackTrace();
-                    }
-                }
-            }
-        };
-    }
-}
 
 @RunWith(WeldJUnit4Runner.class)
 public class WinnerBingoTest {
 
+    @Inject
+    BingoService bingoService;
+
+    // generate data in order to test program with all winner patterns
     List<List<Pair<Integer, Integer>>> patternLists = new ArrayList();
 
     {
@@ -61,12 +32,7 @@ public class WinnerBingoTest {
         patternLists.add(getHorizontalIndexesPattern());
     }
 
-    public @Rule ParameterRule rule = new ParameterRule(
-           patternLists
-    );
-
-    @Inject
-    BingoService bingoService;
+    public @Rule ParameterRule rule = new ParameterRule(patternLists);
 
     Map<Integer, int [][] > mapBasicBingoCardCardIndexAndCardArray = new HashMap();
 
@@ -90,7 +56,7 @@ public class WinnerBingoTest {
     @Test
     public void testWinnerBingoCard() {
 
-        final int BINGO_CARD_AMOUNT_TEST_SIZE = 1000;
+        final int BINGO_CARD_AMOUNT_TEST_SIZE = 100;
 
         int [][] winnerBingoCard = getWinner(BINGO_CARD_AMOUNT_TEST_SIZE);
 
@@ -137,11 +103,11 @@ public class WinnerBingoTest {
         // each number will be removed from card if it is hitted
         while (!bingo) {
 
-            int randomNumberCandidate = generateRandoNumberFromRange(1, 75);
+            int randomNumberCandidate = generateRandomNumberFromRange(1, 75);
 
             // bingo has only unique numbers from range(1,75), cache already generated numbers
             while(alreadyGeneratedIntegersCacheSet.contains(randomNumberCandidate)) {
-                randomNumberCandidate = generateRandoNumberFromRange(1,75);
+                randomNumberCandidate = generateRandomNumberFromRange(1,75);
             }
 
             alreadyGeneratedIntegersCacheSet.add(randomNumberCandidate);
@@ -184,25 +150,4 @@ public class WinnerBingoTest {
         PrinterHelper.printLog("numbers generated until bingo " + allGeneratedNumbers.toString());
         return winnerBingoCard;
     }
-
-    public List<Pair<Integer, Integer>> getVerticalIndexesPattern() {
-        List<Pair<Integer, Integer>> pairs = new ArrayList();
-        pairs.add(new Pair(0,2));
-        pairs.add(new Pair(1,2));
-        pairs.add(new Pair(2,2));
-        pairs.add(new Pair(3,2));
-        pairs.add(new Pair(4,2));
-        return pairs;
-    }
-
-    public List<Pair<Integer, Integer>> getHorizontalIndexesPattern() {
-        List<Pair<Integer, Integer>> pairs = new ArrayList();
-        pairs.add(new Pair(2,0));
-        pairs.add(new Pair(2,1));
-        pairs.add(new Pair(2,2));
-        pairs.add(new Pair(2,3));
-        pairs.add(new Pair(2,4));
-        return pairs;
-    }
-
 }

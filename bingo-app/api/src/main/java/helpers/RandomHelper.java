@@ -6,7 +6,7 @@ public class RandomHelper {
 
     private static Random random = new Random();
 
-    public static int generateRandoNumberFromRange(int min, int max) {
+    public static int generateRandomNumberFromRange(int min, int max) {
         if (min >= max) {
             throw new IllegalArgumentException("max must be greater than min");
         }

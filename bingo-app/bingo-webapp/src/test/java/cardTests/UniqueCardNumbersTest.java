@@ -34,5 +34,4 @@ public class UniqueCardNumbersTest {
         assertEquals(BINGO_CARD_SIZE_NUMBERS_AMOUNT, uniqueIntegers.size());
 
     }
-
 }
