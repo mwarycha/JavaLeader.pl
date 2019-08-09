@@ -33,7 +33,7 @@ public class BingoCardServiceImpl implements BingoService {
             }
         }
 
-        // clear middle element
+        // clear middle element, because of rules of bingo
         bingoCard[2][2] = 0;
 
         return bingoCard;
