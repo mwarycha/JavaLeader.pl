@@ -1,6 +1,7 @@
 package cardTests;
 
 import cardTests.testConfiguration.WeldJUnit4Runner;
+import helpers.PrinterHelper;
 import javafx.util.Pair;
 import service.BingoService;
 import java.util.*;
@@ -54,10 +55,8 @@ public class WinnerBingoTest {
 
     private int[][] copyOf(int[][] originalArray) {
         int[][] newArray = new int[originalArray.length][originalArray[0].length];
-        for (int x = 0; x < originalArray.length; x++)
-        {
-            for (int y = 0; y < originalArray[0].length; y++)
-            {
+        for (int x = 0; x < originalArray.length; x++) {
+            for (int y = 0; y < originalArray[0].length; y++) {
                 newArray[x][y]=originalArray[x][y];
             }
         }
@@ -110,15 +109,15 @@ public class WinnerBingoTest {
         }
 
         for (int [][] basicSet : basicBingoCardSet) {
-            System.out.println("random card");
+            PrinterHelper.printLog("random card");
             bingoService.printBingo5x5Card(basicSet);
-            System.out.println();
+            System.out.print(System.lineSeparator());
         }
 
-        System.out.println("winner bingo card");
+        PrinterHelper.printLog("winner bingo card");
         bingoService.printBingo5x5Card(winnerBingoCard);
 
-        System.out.println(allNumbers);
+        PrinterHelper.printLog(allNumbers.toString());
         return winnerBingoCard;
     }
 

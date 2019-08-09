@@ -97,6 +97,4 @@ public class BingoCardServiceImpl implements BingoService {
         return pairs;
     }
 
-
-
 }

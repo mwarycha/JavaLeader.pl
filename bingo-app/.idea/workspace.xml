@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="37a2bcaf-7871-41fc-a37c-567cd370df44" name="Default Changelist" comment="" />
+    <list default="true" id="37a2bcaf-7871-41fc-a37c-567cd370df44" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/src/test/java/cardTests/WinnerBingoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-webapp/src/test/java/cardTests/WinnerBingoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/test-classes/cardTests/WinnerBingoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-webapp/target/test-classes/cardTests/WinnerBingoTest.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/api/target/" />
@@ -17,7 +22,7 @@
     <session id="810579331">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="10" />
+          <entry key="project.closed" value="11" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.16" value="1" />
@@ -28,34 +33,35 @@
           <entry key="project.open.time.36" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="13" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="2" />
-          <entry key="java" value="83" />
+          <entry key="java" value="93" />
           <entry key="xml" value="37" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="2" />
-          <entry key="JAVA" value="83" />
+          <entry key="JAVA" value="93" />
           <entry key="XML" value="37" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="13" />
-          <entry key="java" value="5831" />
+          <entry key="java" value="5999" />
           <entry key="xml" value="175" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5831" />
+          <entry key="JAVA" value="5999" />
           <entry key="PLAIN_TEXT" value="13" />
           <entry key="XML" value="175" />
         </counts>
@@ -63,12 +69,26 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bingo-webapp/src/test/java/cardTests/UniqueCardNumbersTest.java">
+        <entry file="file://$PROJECT_DIR$/bingo-webapp/src/test/java/cardTests/testConfiguration/WeldContext.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="36" column="1" lean-forward="true" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+            <state relative-caret-position="357">
+              <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#626#627#0" expanded="true" />
+                <element signature="e#688#689#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bingo-webapp/src/test/java/cardTests/testConfiguration/WeldJUnit4Runner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -77,10 +97,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bingo-webapp/src/main/java/controllers/ShowBingoCardController.java">
+        <entry file="file://$PROJECT_DIR$/bingo-webapp/src/test/java/cardTests/UniqueCardNumbersTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="96" column="43" selection-start-line="96" selection-start-column="28" selection-end-line="96" selection-end-column="43" />
+            <state relative-caret-position="136">
+              <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bingo-webapp/src/test/java/cardTests/WinnerBingoTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1506">
+              <caret line="119" column="52" selection-start-line="119" selection-start-column="52" selection-end-line="119" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -89,10 +118,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/bingo-webapp/src/test/java/cardTests/WinnerBingoTest.java">
+        <entry file="file://$PROJECT_DIR$/api/src/main/java/helpers/PrinterHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="42" column="35" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
+            <state relative-caret-position="326">
+              <caret line="13" column="47" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -114,6 +143,7 @@
       <find>runGame</find>
       <find>error</find>
       <find>logg</find>
+      <find>winnerIteration</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -149,7 +179,10 @@
         <option value="$PROJECT_DIR$/bingo-webapp/pom.xml" />
         <option value="$PROJECT_DIR$/bingo-webapp/src/test/java/cardTests/WeldJUnit4Runner.java" />
         <option value="$PROJECT_DIR$/bingo-webapp/src/main/java/controllers/ShowBingoCardController.java" />
+        <option value="$PROJECT_DIR$/bingo-webapp/src/test/java/cardTests/testConfiguration/WeldJUnit4Runner.java" />
+        <option value="$PROJECT_DIR$/bingo-webapp/src/test/java/cardTests/testConfiguration/WeldContext.java" />
         <option value="$PROJECT_DIR$/bingo-webapp/src/test/java/cardTests/WinnerBingoTest.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/helpers/PrinterHelper.java" />
       </list>
     </option>
   </component>
@@ -211,6 +244,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -344,6 +378,16 @@
               <item name="bingo-webapp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cardTests" type="462c0819:PsiDirectoryNode" />
+              <item name="testConfiguration" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bingo-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bingo-app" type="462c0819:PsiDirectoryNode" />
+              <item name="bingo-webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -378,11 +422,10 @@
       </pane>
       <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565345153743" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565350207019" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../PrimeFaces and Spring Boot/primeFaces-spring-boot-part-2" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -412,7 +455,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.WinnerBingoTest.testWinnerBingoCard">
+  <component name="RunManager" selected="JUnit.UniqueCardNumbersTest">
+    <configuration name="UniqueCardNumbersTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bingo-webapp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cardTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cardTests" />
+      <option name="MAIN_CLASS_NAME" value="cardTests.UniqueCardNumbersTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UniqueCardNumbersTest.testBingoCardUniqueNumbers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bingo-webapp" />
       <extension name="coverage">
@@ -424,22 +481,6 @@
       <option name="PACKAGE_NAME" value="cardTests" />
       <option name="MAIN_CLASS_NAME" value="cardTests.UniqueCardNumbersTest" />
       <option name="METHOD_NAME" value="testBingoCardUniqueNumbers" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WinnerBingoTest.checkWinner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bingo-webapp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cardTests.testConfiguration.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cardTests" />
-      <option name="MAIN_CLASS_NAME" value="cardTests.WinnerBingoTest" />
-      <option name="METHOD_NAME" value="checkWinner" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -495,18 +536,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.UniqueCardNumbersTest.testBingoCardUniqueNumbers" />
-      <item itemvalue="JUnit.WinnerBingoTest.checkWinner" />
       <item itemvalue="JUnit.WinnerBingoTest.testWinner" />
       <item itemvalue="JUnit.WinnerBingoTest.testWinnerBingoCard" />
       <item itemvalue="JUnit.WinnerBingoTest.getWinner" />
+      <item itemvalue="JUnit.UniqueCardNumbersTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UniqueCardNumbersTest" />
         <item itemvalue="JUnit.WinnerBingoTest.testWinnerBingoCard" />
-        <item itemvalue="JUnit.UniqueCardNumbersTest.testBingoCardUniqueNumbers" />
         <item itemvalue="JUnit.WinnerBingoTest.getWinner" />
+        <item itemvalue="JUnit.UniqueCardNumbersTest.testBingoCardUniqueNumbers" />
         <item itemvalue="JUnit.WinnerBingoTest.testWinner" />
-        <item itemvalue="JUnit.WinnerBingoTest.checkWinner" />
       </list>
     </recent_temporary>
   </component>
@@ -524,35 +565,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="WinnerBingoTest_getWinner - 2019.08.09 at 11h 46m 42s.xml">
-      <configuration name="WinnerBingoTest.getWinner" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="WinnerBingoTest_testWinnerBingoCard - 2019.08.09 at 11h 46m 56s.xml">
+    <history-entry file="WinnerBingoTest_testWinnerBingoCard - 2019.08.09 at 13h 19m 38s.xml">
       <configuration name="WinnerBingoTest.testWinnerBingoCard" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WinnerBingoTest_testWinnerBingoCard - 2019.08.09 at 11h 48m 04s.xml">
+    <history-entry file="WinnerBingoTest_testWinnerBingoCard - 2019.08.09 at 13h 20m 21s.xml">
       <configuration name="WinnerBingoTest.testWinnerBingoCard" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WinnerBingoTest_testWinnerBingoCard - 2019.08.09 at 11h 52m 21s.xml">
+    <history-entry file="WinnerBingoTest_testWinnerBingoCard - 2019.08.09 at 13h 21m 49s.xml">
       <configuration name="WinnerBingoTest.testWinnerBingoCard" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WinnerBingoTest_testWinnerBingoCard - 2019.08.09 at 11h 53m 57s.xml">
+    <history-entry file="WinnerBingoTest_testWinnerBingoCard - 2019.08.09 at 13h 22m 31s.xml">
       <configuration name="WinnerBingoTest.testWinnerBingoCard" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WinnerBingoTest_testWinnerBingoCard - 2019.08.09 at 11h 54m 32s.xml">
+    <history-entry file="WinnerBingoTest_testWinnerBingoCard - 2019.08.09 at 13h 22m 54s.xml">
       <configuration name="WinnerBingoTest.testWinnerBingoCard" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WinnerBingoTest_testWinnerBingoCard - 2019.08.09 at 11h 56m 31s.xml">
+    <history-entry file="WinnerBingoTest_testWinnerBingoCard - 2019.08.09 at 13h 24m 40s.xml">
       <configuration name="WinnerBingoTest.testWinnerBingoCard" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WinnerBingoTest_testWinnerBingoCard - 2019.08.09 at 11h 58m 02s.xml">
+    <history-entry file="WinnerBingoTest_testWinnerBingoCard - 2019.08.09 at 13h 25m 13s.xml">
       <configuration name="WinnerBingoTest.testWinnerBingoCard" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UniqueCardNumbersTest_testBingoCardUniqueNumbers - 2019.08.09 at 12h 02m 04s.xml">
-      <configuration name="UniqueCardNumbersTest.testBingoCardUniqueNumbers" configurationId="JUnit" />
+    <history-entry file="WinnerBingoTest_testWinnerBingoCard - 2019.08.09 at 13h 25m 33s.xml">
+      <configuration name="WinnerBingoTest.testWinnerBingoCard" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UniqueCardNumbersTest_testBingoCardUniqueNumbers - 2019.08.09 at 12h 04m 26s.xml">
-      <configuration name="UniqueCardNumbersTest.testBingoCardUniqueNumbers" configurationId="JUnit" />
+    <history-entry file="WinnerBingoTest_testWinnerBingoCard - 2019.08.09 at 13h 26m 00s.xml">
+      <configuration name="WinnerBingoTest.testWinnerBingoCard" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WinnerBingoTest_testWinnerBingoCard - 2019.08.09 at 13h 26m 26s.xml">
+      <configuration name="WinnerBingoTest.testWinnerBingoCard" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -568,7 +609,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16897655" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1705757" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -577,7 +618,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.40347072" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.38937092" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -629,13 +670,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bingo-webapp/src/test/resources/META-INF/beans.xml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bingo-webapp/src/test/java/cardTests/WeldContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/src/main/java/helpers/RandomHelper.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -689,37 +723,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bingo-webapp/src/test/java/cardTests/WeldJUnit4Runner.java">
+    <entry file="file://$PROJECT_DIR$/bingo-webapp/src/main/java/controllers/ShowBingoCardController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        <state relative-caret-position="688">
+          <caret line="119" column="8" lean-forward="true" selection-start-line="119" selection-start-column="8" selection-end-line="119" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bingo-webapp/src/test/java/cardTests/testConfiguration/WeldContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#626#627#0" expanded="true" />
+            <element signature="e#688#689#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bingo-webapp/src/test/java/cardTests/testConfiguration/WeldJUnit4Runner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bingo-webapp/src/test/java/cardTests/UniqueCardNumbersTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="1" lean-forward="true" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bingo-webapp/src/main/java/controllers/ShowBingoCardController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="96" column="43" selection-start-line="96" selection-start-column="28" selection-end-line="96" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="136">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bingo-webapp/src/test/java/cardTests/WinnerBingoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="42" column="35" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
+        <state relative-caret-position="1506">
+          <caret line="119" column="52" selection-start-line="119" selection-start-column="52" selection-end-line="119" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/helpers/PrinterHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="13" column="47" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
