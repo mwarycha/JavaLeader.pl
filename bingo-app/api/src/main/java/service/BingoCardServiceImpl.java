@@ -61,7 +61,7 @@ public class BingoCardServiceImpl implements BingoService {
             }
             stringBuilderBingiCard.append(System.lineSeparator());
         }
-        stringBuilderBingiCard.append("\n**********************************\n");
+        stringBuilderBingiCard.append("**********************************");
 
         return stringBuilderBingiCard;
     }

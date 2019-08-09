@@ -1,3 +1,4 @@
 service\BingoCardServiceImpl.class
 service\BingoService.class
 helpers\RandomHelper.class
+helpers\PrinterHelper.class
