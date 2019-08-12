@@ -33,7 +33,14 @@
 
        <div class="container">
          <div class="item">
-           BINGO GAME
+             <p>BINGO GAME</p>
+             <c:forEach begin="0" end="4" varStatus="row">
+               <c:forEach begin="0" end="4" varStatus="column">
+                   ${winnerBingoCard[row.index][column.index]}
+               </c:forEach>
+               <br/>
+            </c:forEach>
+
          </div>
        </div>
 
@@ -45,7 +52,10 @@
             </tr>
 
             <c:set var = "step"  value = "1"/>
-            <c:forEach items="${allBingoCards}" var="card"  varStatus="currentIndex">
+            <c:forEach items="${allBingoCards.keySet()}" var="card"  varStatus="currentIndex">
+
+                 <!-- get card according to key -->
+                 <c:set var = "bingoCard" value = "${allBingoCards.get(card)}"/>
 
                  <c:choose>
                       <c:when test = "${currentIndex.index  % 5 == 0}">
@@ -54,11 +64,18 @@
                  </c:choose>
 
                  <td>
-                     <p>CARD ${currentIndex.index + 1}</p>
+
+                      <c:if test = "${card == winnerBingoCardIndex}">
+                        <p> <b>CARD ${currentIndex.index + 1} => winner card!</b> <p>
+                      </c:if>
+
+                       <c:if test = "${card != winnerBingoCardIndex}">
+                        <p>CARD ${currentIndex.index + 1}</p>
+                       </c:if>
 
                      <c:forEach begin="0" end="4" varStatus="row">
                         <c:forEach begin="0" end="4" varStatus="column">
-                            ${card[row.index][column.index]}
+                            ${bingoCard[row.index][column.index]}
                         </c:forEach>
                         <br/>
                      </c:forEach>

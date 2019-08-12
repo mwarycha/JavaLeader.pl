@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="cardTests.WinnerBingoTest" time="0.166" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="cardTests.WinnerBingoTest" time="0.136" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -19,7 +19,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_181\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\EMAWARY\AppData\Local\Temp\surefire5703762448799636547\surefirebooter5934854231205242177.jar C:\Users\EMAWARY\AppData\Local\Temp\surefire5703762448799636547 2019-08-12T16-04-34_329-jvmRun1 surefire7291926885570580411tmp surefire_0639749272980792857tmp"/>
+    <property name="sun.java.command" value="C:\Users\EMAWARY\AppData\Local\Temp\surefire273155574382718079\surefirebooter2892152316574342300.jar C:\Users\EMAWARY\AppData\Local\Temp\surefire273155574382718079 2019-08-12T17-04-15_079-jvmRun1 surefire2531440516445043307tmp surefire_07102030223726984121tmp"/>
     <property name="surefire.test.class.path" value="C:\Users\EMAWARY\Desktop\projects\JavaLeader.pl\bingo-app\bingo-webapp\target\test-classes;C:\Users\EMAWARY\Desktop\projects\JavaLeader.pl\bingo-app\bingo-webapp\target\classes;C:\Users\EMAWARY\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\EMAWARY\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\EMAWARY\.m2\repository\javax\servlet\javax.servlet-api\3.0.1\javax.servlet-api-3.0.1.jar;C:\Users\EMAWARY\Desktop\projects\JavaLeader.pl\bingo-app\api\target\api-1.0-SNAPSHOT.jar;C:\Users\EMAWARY\.m2\repository\org\apache\logging\log4j\log4j-web\2.8.2\log4j-web-2.8.2.jar;C:\Users\EMAWARY\.m2\repository\org\apache\logging\log4j\log4j-api\2.8.2\log4j-api-2.8.2.jar;C:\Users\EMAWARY\.m2\repository\org\apache\logging\log4j\log4j-core\2.8.2\log4j-core-2.8.2.jar;C:\Users\EMAWARY\.m2\repository\org\jboss\weld\se\weld-se\2.2.10.Final\weld-se-2.2.10.Final.jar;C:\Users\EMAWARY\.m2\repository\jstl\jstl\1.2\jstl-1.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\EMAWARY"/>
@@ -32,7 +32,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\EMAWARY\AppData\Local\Temp\surefire5703762448799636547\surefirebooter5934854231205242177.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\EMAWARY\AppData\Local\Temp\surefire273155574382718079\surefirebooter2892152316574342300.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_181\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_181\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -63,5 +63,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="testWinnerBingoCard" classname="cardTests.WinnerBingoTest" time="0.166"/>
+  <testcase name="testWinnerBingoCard" classname="cardTests.WinnerBingoTest" time="0.136"/>
 </testsuite>

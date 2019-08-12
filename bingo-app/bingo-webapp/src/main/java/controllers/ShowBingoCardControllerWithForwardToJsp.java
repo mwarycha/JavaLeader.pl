@@ -35,11 +35,13 @@ public class ShowBingoCardControllerWithForwardToJsp extends HttpServlet {
         // clear bingo game between request
         mapBasicBingoCardCardIndexAndCardArray = new HashMap();
 
-        int numberOfGames  = Integer.parseInt(request.getParameter("game"));
-        int [][] bingoCard = getWinner(numberOfGames);
+        int numberOfGames            = Integer.parseInt(request.getParameter("game"));
+        Pair<Integer, int[][]> bingo = getWinner(numberOfGames);
+        int [][] bingoWinnerCard     = bingo.getValue();
 
-        request.setAttribute("winnerBingoCard", bingoCard);
-        request.setAttribute("allBingoCards" , mapBasicBingoCardCardIndexAndCardArray.values());
+        request.setAttribute("winnerBingoCardIndex" , bingo.getKey());
+        request.setAttribute("winnerBingoCard"      , bingoWinnerCard);
+        request.setAttribute("allBingoCards"        , mapBasicBingoCardCardIndexAndCardArray);
 
         request.getRequestDispatcher("/WEB-INF/bingo.jsp").forward(request, response);
 
@@ -67,7 +69,7 @@ public class ShowBingoCardControllerWithForwardToJsp extends HttpServlet {
         return newArray;
     }
 
-    public int [][] getWinner(int cardAmountToTest) {
+    public Pair<Integer, int [][]> getWinner(int cardAmountToTest) {
 
         Set<Integer> alreadyGeneratedIntegersCacheSet = new HashSet();
 
@@ -77,7 +79,7 @@ public class ShowBingoCardControllerWithForwardToJsp extends HttpServlet {
             mapBingoCardIndexAndCardArray.put(i, bingoService.generateBingo5x5Card());
         }
 
-        // copy all generated cards before calulate game
+        // copy all generated cards before calculate game
         mapBingoCardIndexAndCardArray.keySet().forEach(
                 cardIndex -> mapBasicBingoCardCardIndexAndCardArray.put(cardIndex,(copyOf(mapBingoCardIndexAndCardArray.get(cardIndex))))
         );
@@ -136,7 +138,7 @@ public class ShowBingoCardControllerWithForwardToJsp extends HttpServlet {
         bingoService.printBingo5x5Card(mapBasicBingoCardCardIndexAndCardArray.get(winnerBingoCardIndex));
 
         PrinterHelper.printLog("numbers generated until bingo " + allGeneratedNumbers.toString());
-        return winnerBingoCard;
+        return new Pair<Integer, int [][]>(winnerBingoCardIndex, winnerBingoCard);
     }
 
 }

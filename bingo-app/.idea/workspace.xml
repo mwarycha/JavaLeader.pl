@@ -3,28 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="37a2bcaf-7871-41fc-a37c-567cd370df44" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bingo-webapp/src/main/java/controllers/ShowBingoCardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-webapp/src/main/java/controllers/ShowBingoCardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bingo-webapp/src/test/java/cardTests/UniqueCardNumbersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-webapp/src/test/java/cardTests/UniqueCardNumbersTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bingo-webapp/src/test/java/cardTests/WinnerBingoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-webapp/src/test/java/cardTests/WinnerBingoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bingo-webapp/src/test/java/cardTests/testConfiguration/ParameterRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-webapp/src/test/java/cardTests/testConfiguration/ParameterRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bingo-webapp/src/test/java/cardTests/testConfiguration/WeldContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-webapp/src/test/java/cardTests/testConfiguration/WeldContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/bingo-webapp.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/bingo-webapp/WEB-INF/classes/controllers/ShowBingoCardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-webapp/target/bingo-webapp/WEB-INF/classes/controllers/ShowBingoCardController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/bingo-webapp/WEB-INF/lib/api-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-webapp/target/bingo-webapp/WEB-INF/lib/api-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/classes/controllers/ShowBingoCardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-webapp/target/classes/controllers/ShowBingoCardController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-webapp/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-webapp/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-webapp/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-webapp/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/TEST-cardTests.UniqueCardNumbersTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/TEST-cardTests.UniqueCardNumbersTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/TEST-cardTests.WinnerBingoTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/TEST-cardTests.WinnerBingoTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/cardTests.UniqueCardNumbersTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/cardTests.UniqueCardNumbersTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/cardTests.WinnerBingoTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/cardTests.WinnerBingoTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/test-classes/cardTests/UniqueCardNumbersTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-webapp/target/test-classes/cardTests/UniqueCardNumbersTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/test-classes/cardTests/WinnerBingoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-webapp/target/test-classes/cardTests/WinnerBingoTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/test-classes/cardTests/testConfiguration/ParameterRule$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-webapp/target/test-classes/cardTests/testConfiguration/ParameterRule$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/test-classes/cardTests/testConfiguration/ParameterRule.class" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-webapp/target/test-classes/cardTests/testConfiguration/ParameterRule.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/src/main/java/controllers/ShowBingoCardControllerWithForwardToJsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-webapp/src/main/java/controllers/ShowBingoCardControllerWithForwardToJsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/src/main/webapp/WEB-INF/bingo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-webapp/src/main/webapp/WEB-INF/bingo.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -41,9 +21,10 @@
     <session id="810579331">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="18" />
+          <entry key="project.closed" value="19" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="2" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.18" value="1" />
@@ -54,39 +35,39 @@
           <entry key="project.open.time.36" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.open.time.8" value="2" />
+          <entry key="project.open.time.8" value="3" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="20" />
+          <entry key="project.opened" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="5" />
-          <entry key="java" value="167" />
-          <entry key="jsp" value="2" />
+          <entry key="java" value="169" />
+          <entry key="jsp" value="3" />
           <entry key="xml" value="42" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="5" />
-          <entry key="JAVA" value="167" />
-          <entry key="JSP" value="2" />
+          <entry key="JAVA" value="169" />
+          <entry key="JSP" value="3" />
           <entry key="XML" value="42" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="13" />
-          <entry key="java" value="7935" />
-          <entry key="jsp" value="1014" />
+          <entry key="java" value="8111" />
+          <entry key="jsp" value="1170" />
           <entry key="xml" value="185" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="7935" />
-          <entry key="JSP" value="1014" />
+          <entry key="JAVA" value="8111" />
+          <entry key="JSP" value="1170" />
           <entry key="PLAIN_TEXT" value="13" />
           <entry key="XML" value="185" />
         </counts>
@@ -97,7 +78,41 @@
     <favorites_list name="bingo-app" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bingo-webapp/src/main/java/controllers/ShowBingoCardController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="411">
+              <caret line="100" column="47" selection-start-line="100" selection-start-column="32" selection-end-line="100" selection-end-column="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bingo-webapp/src/main/java/controllers/ShowBingoCardControllerWithForwardToJsp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="22" column="74" lean-forward="true" selection-start-line="22" selection-start-column="74" selection-end-line="22" selection-end-column="74" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/bingo-webapp/src/main/webapp/WEB-INF/bingo.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="332">
+              <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -220,8 +235,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -414,11 +429,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565618915089" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565622275433" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/hot-pay/hot-pay" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -600,8 +615,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22707888" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23187633" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -610,7 +626,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.22559653" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.22559653" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.5748373" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -626,7 +642,7 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" visible="true" weight="0.09701493" />
+      <window_info active="true" anchor="right" id="Maven Projects" order="7" visible="true" weight="0.08315565" />
     </layout>
   </component>
   <component name="UnknownFeatures">
@@ -767,16 +783,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bingo-webapp/src/main/java/controllers/ShowBingoCardController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1768">
-          <caret line="122" column="5" selection-start-line="112" selection-start-column="2" selection-end-line="122" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/src/main/java/service/BingoService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -818,20 +824,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bingo-webapp/src/main/webapp/WEB-INF/bingo.jsp">
+    <entry file="file://$PROJECT_DIR$/bingo-webapp/src/main/java/controllers/ShowBingoCardController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+        <state relative-caret-position="411">
+          <caret line="100" column="47" selection-start-line="100" selection-start-column="32" selection-end-line="100" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bingo-webapp/src/main/java/controllers/ShowBingoCardControllerWithForwardToJsp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="29" column="50" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
+        <state relative-caret-position="54">
+          <caret line="22" column="74" lean-forward="true" selection-start-line="22" selection-start-column="74" selection-end-line="22" selection-end-column="74" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bingo-webapp/src/main/webapp/WEB-INF/bingo.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
         </state>
       </provider>
     </entry>
