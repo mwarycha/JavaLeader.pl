@@ -56,7 +56,7 @@ public class WinnerBingoTest {
     @Test
     public void testWinnerBingoCard() {
 
-        final int BINGO_CARD_AMOUNT_TEST_SIZE = 100;
+        final int BINGO_CARD_AMOUNT_TEST_SIZE = 3;
 
         int [][] winnerBingoCard = getWinner(BINGO_CARD_AMOUNT_TEST_SIZE);
 

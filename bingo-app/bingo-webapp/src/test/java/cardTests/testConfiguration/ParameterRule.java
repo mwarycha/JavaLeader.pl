@@ -5,7 +5,6 @@ import javafx.util.Pair;
 import org.junit.rules.MethodRule;
 import org.junit.runners.model.FrameworkMethod;
 import org.junit.runners.model.Statement;
-
 import java.util.List;
 
 public class ParameterRule implements MethodRule {
@@ -14,7 +13,7 @@ public class ParameterRule implements MethodRule {
 
     public  List<List<Pair<Integer, Integer>>> parameters;
 
-    public ParameterRule( List<List<Pair<Integer, Integer>>> someParameters){
+    public ParameterRule(List<List<Pair<Integer, Integer>>> someParameters){
         parameters = someParameters;
     }
 

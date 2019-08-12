@@ -20,7 +20,7 @@ import javax.inject.Inject;
 import static helpers.RandomHelper.generateRandomNumberFromRange;
 import static helpers.WinnerPatternHelper.getHorizontalIndexesPattern;
 
-@WebServlet(name = "bingo", urlPatterns = {"/showBingoCard"})
+@WebServlet(name = "bingo", urlPatterns = {"/showBingoCardsWithServlet"})
 public class ShowBingoCardController extends HttpServlet {
 
     @Inject

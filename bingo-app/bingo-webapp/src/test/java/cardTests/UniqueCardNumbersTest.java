@@ -21,17 +21,17 @@ public class UniqueCardNumbersTest {
     public void testBingoCardUniqueNumbers() {
 
         int BINGO_CARD_SIZE_NUMBERS_AMOUNT = 25;
+        final String          EMPTY_STRING = "";
 
         int [][] bingoCard = bingoService.generateBingo5x5Card();
 
         String createStringFromArray = Arrays.deepToString(bingoCard)
-                .replaceAll("\\[", "")
-                .replaceAll("\\]", "");
+                .replaceAll("\\[", EMPTY_STRING)
+                .replaceAll("\\]", EMPTY_STRING);
 
         String [] createStringFromArraySplit = createStringFromArray.split(",");
         Set<Integer> uniqueIntegers          = new HashSet(Arrays.asList(createStringFromArraySplit));
 
         assertEquals(BINGO_CARD_SIZE_NUMBERS_AMOUNT, uniqueIntegers.size());
-
     }
 }

@@ -1,1 +1,2 @@
 controllers\ShowBingoCardController.class
+controllers\ShowBingoCardControllerWithForwardToJsp.class
