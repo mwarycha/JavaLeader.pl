@@ -26,6 +26,7 @@ public class ShowBingoCardControllerWithForwardToJsp extends HttpServlet {
     private BingoService bingoService;
 
     Map<Integer, int [][] > mapBasicBingoCardCardIndexAndCardArray = new HashMap();
+    Set<Integer> allGeneratedNumbersSet                            = new HashSet<>();
 
     final static Logger logger = LogManager.getLogger(ShowBingoCardControllerWithForwardToJsp.class);
 
@@ -34,14 +35,16 @@ public class ShowBingoCardControllerWithForwardToJsp extends HttpServlet {
 
         // clear bingo game between request
         mapBasicBingoCardCardIndexAndCardArray = new HashMap();
+        allGeneratedNumbersSet                 = new HashSet();
 
         int numberOfGames            = Integer.parseInt(request.getParameter("game"));
         Pair<Integer, int[][]> bingo = getWinner(numberOfGames);
         int [][] bingoWinnerCard     = bingo.getValue();
 
-        request.setAttribute("winnerBingoCardIndex" , bingo.getKey());
-        request.setAttribute("winnerBingoCard"      , bingoWinnerCard);
-        request.setAttribute("allBingoCards"        , mapBasicBingoCardCardIndexAndCardArray);
+        request.setAttribute("winnerBingoCardIndex"   , bingo.getKey());
+        request.setAttribute("winnerBingoCard"        , bingoWinnerCard);
+        request.setAttribute("allBingoCards"          , mapBasicBingoCardCardIndexAndCardArray);
+        request.setAttribute("allGeneratedNumbersSet" , allGeneratedNumbersSet);
 
         request.getRequestDispatcher("/WEB-INF/bingo.jsp").forward(request, response);
 
@@ -138,6 +141,9 @@ public class ShowBingoCardControllerWithForwardToJsp extends HttpServlet {
         bingoService.printBingo5x5Card(mapBasicBingoCardCardIndexAndCardArray.get(winnerBingoCardIndex));
 
         PrinterHelper.printLog("numbers generated until bingo " + allGeneratedNumbers.toString());
+
+        allGeneratedNumbersSet.addAll(allGeneratedNumbers);
+
         return new Pair<Integer, int [][]>(winnerBingoCardIndex, winnerBingoCard);
     }
 
