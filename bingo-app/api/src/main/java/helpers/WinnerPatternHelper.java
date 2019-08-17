@@ -26,4 +26,16 @@ public class WinnerPatternHelper {
         return pairs;
     }
 
+    public static boolean checkWinner(int[][] bingoCard) {
+
+        List<Pair<Integer,Integer>> pairList = getHorizontalIndexesPattern();
+        int winner = 0;
+        for(Pair<Integer,Integer> pair : pairList) {
+            if (bingoCard[pair.getKey()][pair.getValue()] == 0) {
+                winner +=1;
+            }
+        }
+        return winner == 5 ? true : false;
+    }
+
 }

@@ -2,8 +2,6 @@ package controllers;
 
 import helpers.PrinterHelper;
 import javafx.util.Pair;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import service.BingoService;
 
 import javax.servlet.ServletException;
@@ -12,12 +10,14 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.*;
+import java.util.logging.Logger;
 
 import javax.servlet.annotation.WebServlet;
 import javax.inject.Inject;
 
 import static helpers.RandomHelper.generateRandomNumberFromRange;
-import static helpers.WinnerPatternHelper.getHorizontalIndexesPattern;
+import static helpers.UtilsHelper.copyOf;
+import static helpers.WinnerPatternHelper.checkWinner;
 
 @WebServlet(name = "bingo-jsp", urlPatterns = {"/showBingoCardsWithJsp"})
 public class ShowBingoCardControllerWithForwardToJsp extends HttpServlet {
@@ -28,7 +28,7 @@ public class ShowBingoCardControllerWithForwardToJsp extends HttpServlet {
     Map<Integer, int [][] > mapBasicBingoCardCardIndexAndCardArray = new HashMap();
     Set<Integer> allGeneratedNumbersSet                            = new HashSet<>();
 
-    final static Logger logger = LogManager.getLogger(ShowBingoCardControllerWithForwardToJsp.class);
+    final static Logger logger = Logger.getLogger(ShowBingoCardControllerWithForwardToJsp.class.getName());
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -48,28 +48,6 @@ public class ShowBingoCardControllerWithForwardToJsp extends HttpServlet {
 
         request.getRequestDispatcher("/WEB-INF/bingo.jsp").forward(request, response);
 
-    }
-
-    private boolean checkWinner(int[][] bingoCard) {
-
-        List<Pair<Integer,Integer>> pairList = getHorizontalIndexesPattern();
-        int winner = 0;
-        for(Pair<Integer,Integer> pair : pairList) {
-            if (bingoCard[pair.getKey()][pair.getValue()] == 0) {
-                winner +=1;
-            }
-        }
-        return winner == 5 ? true : false;
-    }
-
-    private int[][] copyOf(int[][] originalArray) {
-        int[][] newArray = new int[originalArray.length][originalArray[0].length];
-        for (int x = 0; x < originalArray.length; x++) {
-            for (int y = 0; y < originalArray[0].length; y++) {
-                newArray[x][y]=originalArray[x][y];
-            }
-        }
-        return newArray;
     }
 
     public Pair<Integer, int [][]> getWinner(int cardAmountToTest) {
@@ -132,7 +110,8 @@ public class ShowBingoCardControllerWithForwardToJsp extends HttpServlet {
         }
 
         for (int [][] basicSet : mapBasicBingoCardCardIndexAndCardArray.values()) {
-            PrinterHelper.printLog("random card");
+            //PrinterHelper.printLog("random card");
+            logger.info("random card");
             bingoService.printBingo5x5Card(basicSet);
             System.out.print(System.lineSeparator());
         }
@@ -140,11 +119,11 @@ public class ShowBingoCardControllerWithForwardToJsp extends HttpServlet {
         PrinterHelper.printLog("winner bingo card");
         bingoService.printBingo5x5Card(mapBasicBingoCardCardIndexAndCardArray.get(winnerBingoCardIndex));
 
-        PrinterHelper.printLog("numbers generated until bingo " + allGeneratedNumbers.toString());
-
+        //PrinterHelper.printLog("numbers generated until bingo " + allGeneratedNumbers.toString());
+        logger.info("numbers generated until bingo " + allGeneratedNumbers.toString());
         allGeneratedNumbersSet.addAll(allGeneratedNumbers);
 
-        return new Pair<Integer, int [][]>(winnerBingoCardIndex, winnerBingoCard);
+        return new Pair<>(winnerBingoCardIndex, winnerBingoCard);
     }
 
 }

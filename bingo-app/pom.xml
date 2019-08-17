@@ -13,6 +13,15 @@
         <module>bingo-webapp</module>
     </modules>
 
+    <properties>
+        <sonar.host.url>http://localhost:9000</sonar.host.url>
+        <sonar.login>admin</sonar.login>
+        <sonar.password>nimda</sonar.password>
+        <sonar.sources>./src/main/java</sonar.sources>
+        <sonar.language>java</sonar.language>
+        <sonar.scm.provider>git</sonar.scm.provider>
+    </properties>
+
     <build>
         <plugins>
             <plugin>
@@ -26,11 +35,18 @@
                     <path>/bingo</path>
                 </configuration>
             </plugin>
+
+            <plugin>
+                <groupId>org.sonarsource.scanner.maven</groupId>
+                <artifactId>sonar-maven-plugin</artifactId>
+                <version>3.2</version>
+            </plugin>
+
         </plugins>
     </build>
 
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/jstl/jstl -->
+
         <dependency>
             <groupId>jstl</groupId>
             <artifactId>jstl</artifactId>
