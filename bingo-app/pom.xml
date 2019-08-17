@@ -14,12 +14,19 @@
     </modules>
 
     <properties>
-        <sonar.host.url>http://145.239.82.171:9000</sonar.host.url>
+        <sonar.host.url>http://localhost:9000</sonar.host.url>
         <sonar.login>admin</sonar.login>
         <sonar.password>nimda</sonar.password>
         <sonar.sources>./src/main/java</sonar.sources>
         <sonar.language>java</sonar.language>
         <sonar.scm.provider>git</sonar.scm.provider>
+
+        <sonar.jdbc.url>
+            jdbc:mysql://localhost:3306/sonar?useUnicode=true&amp;characterEncoding=utf8
+        </sonar.jdbc.url>
+        <sonar.jdbc.username>mwarycha</sonar.jdbc.username>
+        <sonar.jdbc.password>operon1</sonar.jdbc.password>
+
     </properties>
 
     <build>
