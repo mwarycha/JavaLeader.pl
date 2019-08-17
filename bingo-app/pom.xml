@@ -14,7 +14,7 @@
     </modules>
 
     <properties>
-        <sonar.host.url>http://localhost:9000</sonar.host.url>
+        <sonar.host.url>http://145.239.82.171:9000</sonar.host.url>
         <sonar.login>admin</sonar.login>
         <sonar.password>nimda</sonar.password>
         <sonar.sources>./src/main/java</sonar.sources>
