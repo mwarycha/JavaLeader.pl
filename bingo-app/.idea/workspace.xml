@@ -1,29 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="37a2bcaf-7871-41fc-a37c-567cd370df44" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/bingo-webapp/src/main/resources/log4j2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/helpers/WinnerPatternHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/helpers/WinnerPatternHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/target/api-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/api/target/api-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/target/classes/helpers/WinnerPatternHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/api/target/classes/helpers/WinnerPatternHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bingo-webapp/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-webapp/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bingo-webapp/src/main/java/controllers/ShowBingoCardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-webapp/src/main/java/controllers/ShowBingoCardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bingo-webapp/src/main/java/controllers/ShowBingoCardControllerWithForwardToJsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-webapp/src/main/java/controllers/ShowBingoCardControllerWithForwardToJsp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/bingo-webapp/WEB-INF/classes/controllers/ShowBingoCardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-webapp/target/bingo-webapp/WEB-INF/classes/controllers/ShowBingoCardController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/bingo-webapp/WEB-INF/classes/controllers/ShowBingoCardControllerWithForwardToJsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-webapp/target/bingo-webapp/WEB-INF/classes/controllers/ShowBingoCardControllerWithForwardToJsp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/bingo-webapp/WEB-INF/lib/api-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-webapp/target/bingo-webapp/WEB-INF/lib/api-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/classes/controllers/ShowBingoCardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-webapp/target/classes/controllers/ShowBingoCardController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/classes/controllers/ShowBingoCardControllerWithForwardToJsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-webapp/target/classes/controllers/ShowBingoCardControllerWithForwardToJsp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/TEST-cardTests.UniqueCardNumbersTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/TEST-cardTests.UniqueCardNumbersTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/TEST-cardTests.WinnerBingoTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/TEST-cardTests.WinnerBingoTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/cardTests.UniqueCardNumbersTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/cardTests.UniqueCardNumbersTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/cardTests.WinnerBingoTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/cardTests.WinnerBingoTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="37a2bcaf-7871-41fc-a37c-567cd370df44" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/api/target/" />
@@ -61,6 +39,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="5" />
+          <entry key="gitignore" value="1" />
           <entry key="java" value="211" />
           <entry key="jsp" value="5" />
           <entry key="png" value="1" />
@@ -73,6 +52,7 @@
           <entry key="Image" value="1" />
           <entry key="JAVA" value="211" />
           <entry key="JSP" value="5" />
+          <entry key="PLAIN_TEXT" value="1" />
           <entry key="XML" value="55" />
         </counts>
       </usages-collector>
@@ -99,13 +79,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
               <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="10" selection-end-column="13" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -204,11 +189,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="565" />
-    <option name="y" value="50" />
-    <option name="width" value="1918" />
-    <option name="height" value="1038" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-165" />
+    <option name="y" value="118" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -358,26 +343,26 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566071047843" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566071247630" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../tmpl/gsm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\EMAWARY\Desktop\projects\JavaLeader.pl\bingo-app\bingo-webapp\src\main\webapp\images" />
-      <recent name="C:\Users\EMAWARY\Desktop\projects\JavaLeader.pl\bingo-app\bingo-webapp\src\main\resources\images" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="controllers" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\EMAWARY\Desktop\projects\JavaLeader.pl\bingo-app" />
       <recent name="C:\Users\EMAWARY\Desktop\projects\JavaLeader.pl\bingo-app\bingo-webapp\src\test" />
       <recent name="C:\Users\EMAWARY\Desktop\projects\JavaLeader.pl\bingo-app\bingo-webapp\src\test\resources\META-INF" />
       <recent name="C:\Users\EMAWARY\Desktop\projects\JavaLeader.pl\bingo-app\api\src\main\resources\META-INF" />
       <recent name="C:\Users\EMAWARY\Desktop\projects\JavaLeader.pl\bingo-app\bingo-webapp\src\main\webapp\WEB-INF" />
-      <recent name="C:\Users\EMAWARY\Desktop\projects\JavaLeader.pl\bingo-app\bingo-webapp\src\main" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="controllers" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\EMAWARY\Desktop\projects\JavaLeader.pl\bingo-app\bingo-webapp\src\main\webapp\images" />
+      <recent name="C:\Users\EMAWARY\Desktop\projects\JavaLeader.pl\bingo-app\bingo-webapp\src\main\resources\images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -543,10 +528,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="565" y="50" width="1918" height="1038" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24466951" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24703982" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -571,7 +556,7 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" visible="true" weight="0.09008529" />
+      <window_info anchor="right" id="Maven Projects" order="7" visible="true" weight="0.09095802" />
     </layout>
   </component>
   <component name="UnknownFeatures">
@@ -778,6 +763,9 @@
           <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
