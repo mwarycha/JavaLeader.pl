@@ -13,6 +13,8 @@
         <module>bingo-webapp</module>
     </modules>
 
+    <!--before 5.2-->
+    <!--https://docs.sonarqube.org/display/SONARQUBE45/Analysis+Parameters#AnalysisParameters-Database-->
     <properties>
         <sonar.host.url>http://localhost:9000</sonar.host.url>
         <sonar.login>admin</sonar.login>
