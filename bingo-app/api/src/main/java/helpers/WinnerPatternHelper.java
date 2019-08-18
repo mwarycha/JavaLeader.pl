@@ -6,6 +6,10 @@ import java.util.List;
 
 public class WinnerPatternHelper {
 
+    private WinnerPatternHelper() {
+
+    }
+
     public static List<Pair<Integer, Integer>> getVerticalIndexesPattern() {
         List<Pair<Integer, Integer>> pairs = new ArrayList();
         pairs.add(new Pair(0,2));

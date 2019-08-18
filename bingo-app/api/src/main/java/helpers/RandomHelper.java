@@ -4,6 +4,9 @@ import java.util.Random;
 
 public class RandomHelper {
 
+    private RandomHelper() {
+    }
+
     private static Random random = new Random();
 
     public static int generateRandomNumberFromRange(int min, int max) {

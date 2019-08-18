@@ -1,6 +1,11 @@
 package helpers;
 
 public class UtilsHelper {
+
+    private UtilsHelper() {
+
+    }
+
     public static int[][] copyOf(int[][] originalArray) {
         int[][] newArray = new int[originalArray.length][originalArray[0].length];
         for (int x = 0; x < originalArray.length; x++) {

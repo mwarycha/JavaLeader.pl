@@ -6,6 +6,9 @@ import java.time.format.DateTimeFormatter;
 
 public class PrinterHelper {
 
+    private PrinterHelper() {
+    }
+
     public static void printLog(String msgLog) {
         System.out.println("[LOG " + getWarsawTime()  + "] " + msgLog);
     }
