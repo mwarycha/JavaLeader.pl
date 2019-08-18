@@ -67,7 +67,6 @@ public class ShowBingoCardController extends HttpServlet {
 
         Set<Integer> alreadyGeneratedIntegers = new HashSet();
         boolean bingo                         = true;
-        int winnerIteration                   = 0;
 
         int [][] winnerBingoCard = null;
 
@@ -89,7 +88,6 @@ public class ShowBingoCardController extends HttpServlet {
 
                         if (bingoCard[row][column] == randomNumberCandidate) {
                             bingoCard[row][column] = 0;
-                            winnerIteration++;
                             if(checkWinner(bingoCard)) {
                                 // bingo!
                                 winnerBingoCard = bingoCard.clone();
