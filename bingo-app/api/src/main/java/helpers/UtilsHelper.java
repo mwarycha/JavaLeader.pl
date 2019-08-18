@@ -3,7 +3,6 @@ package helpers;
 public class UtilsHelper {
 
     private UtilsHelper() {
-
     }
 
     public static int[][] copyOf(int[][] originalArray) {

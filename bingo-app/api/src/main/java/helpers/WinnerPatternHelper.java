@@ -7,7 +7,6 @@ import java.util.List;
 public class WinnerPatternHelper {
 
     private WinnerPatternHelper() {
-
     }
 
     public static List<Pair<Integer, Integer>> getVerticalIndexesPattern() {
