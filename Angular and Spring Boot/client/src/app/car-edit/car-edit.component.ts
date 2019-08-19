@@ -1,6 +1,6 @@
 import { Component, OnDestroy, OnInit         } from '@angular/core';
 import { Subscription                         } from 'rxjs/Subscription';
-import { ActivatedRoute, Router               } from '@angular/router';
+import { ActivatedRoute, Router, ParamMap     } from '@angular/router';
 import { CarService                           } from '../shared/car/car.service';
 import { GiphyService                         } from '../shared/giphy/giphy.service';
 import { NgForm                               } from '@angular/forms';
