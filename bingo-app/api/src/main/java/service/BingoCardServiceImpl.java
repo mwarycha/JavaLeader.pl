@@ -15,7 +15,7 @@ public class BingoCardServiceImpl implements BingoService {
     static final int ROW     = 5;
     static final int COLUMNN = 5;
 
-    static final Logger logger = Logger.getLogger(BingoCardServiceImpl.class.getName());
+    private static final Logger LOGGER = Logger.getLogger(BingoCardServiceImpl.class.getName());
 
     public int [][] generateBingo5x5Card() {
 
@@ -130,15 +130,15 @@ public class BingoCardServiceImpl implements BingoService {
         }
 
         for (int [][] basicSet : mapBasicBingoCardCardIndexAndCardArray.values()) {
-            logger.info("random card");
+            LOGGER.info("random card");
             printBingo5x5Card(basicSet);
             System.out.print(System.lineSeparator());
         }
 
-        logger.info("winner bingo card");
+        LOGGER.info("winner bingo card");
         printBingo5x5Card(mapBasicBingoCardCardIndexAndCardArray.get(winnerBingoCardIndex));
 
-        logger.info("numbers generated until bingo " + allGeneratedNumbers.toString());
+        LOGGER.info("numbers generated until bingo " + allGeneratedNumbers.toString());
         allGeneratedNumbersSet.addAll(allGeneratedNumbers);
 
         return new Pair<>(winnerBingoCardIndex, winnerBingoCard);
