@@ -17,7 +17,8 @@ class IterateThrowBingoCardWrapper {
     private IterateThrowBingoCardWrapper() {
     }
 
-    private static boolean processRandomNumberShootedInBingo(Map.Entry<Integer, int[][]> keyValueIndexCardAndCardArray,
+    private static boolean processRandomNumberInBingoCardAndCheckIfNumberIsShooted(
+                                                          Map.Entry<Integer, int[][]> keyValueIndexCardAndCardArray,
                                                           int randomNumberCandidate,
                                                           int row,
                                                           int column,
@@ -42,7 +43,7 @@ class IterateThrowBingoCardWrapper {
 
         for (int row = 0; row < 5; row++) {
             for (int column = 0; column < 5; column++) {
-                if (processRandomNumberShootedInBingo(keyValueIndexCardAndCardArray, randomNumberCandidate, row, column, listOfWinnerIndexes)) {
+                if (processRandomNumberInBingoCardAndCheckIfNumberIsShooted(keyValueIndexCardAndCardArray, randomNumberCandidate, row, column, listOfWinnerIndexes)) {
                     return true;
                 }
             }
