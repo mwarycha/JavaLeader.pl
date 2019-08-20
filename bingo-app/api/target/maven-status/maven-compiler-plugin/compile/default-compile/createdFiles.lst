@@ -1,6 +1,5 @@
-helpers\WinnerPatternHelper.class
-helpers\UtilsHelper.class
-helpers\PrinterHelper.class
 service\BingoCardServiceImpl.class
+helpers\WinnerPatternHelper.class
 service\BingoService.class
+helpers\UtilsHelper.class
 helpers\RandomHelper.class

@@ -30,7 +30,12 @@ public class ShowBingoCardControllerWithForwardToJsp extends HttpServlet {
         mapBasicBingoCardCardIndexAndCardArray = new HashMap();
         allGeneratedNumbersSet                 = new HashSet();
 
-        Pair<Integer, int[][]> bingo = bingoService.getWinner(getRequestNumberOfBingoGames(request), mapBasicBingoCardCardIndexAndCardArray, allGeneratedNumbersSet, getHorizontalIndexesPattern());
+        Pair<Integer, int[][]> bingo = bingoService.getWinner(
+                getRequestNumberOfBingoGames(request),
+                mapBasicBingoCardCardIndexAndCardArray,
+                allGeneratedNumbersSet,
+                getHorizontalIndexesPattern());
+
         int [][] bingoWinnerCard     = bingo.getValue();
 
         request.setAttribute("winnerBingoCardIndex"   , bingo.getKey());

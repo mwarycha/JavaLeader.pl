@@ -36,7 +36,11 @@ public class ShowBingoCardController extends HttpServlet {
 
         PrintWriter out = response.getWriter();
 
-        Pair<Integer, int[][]> bingo = bingoService.getWinner(getRequestNumberOfBingoGames(request), mapBasicBingoCardCardIndexAndCardArray, allGeneratedNumbersSet, getHorizontalIndexesPattern());
+        Pair<Integer, int[][]> bingo = bingoService.getWinner(
+                getRequestNumberOfBingoGames(request),
+                mapBasicBingoCardCardIndexAndCardArray,
+                allGeneratedNumbersSet,
+                getHorizontalIndexesPattern());
 
         out.println(generateStringBuilderBingoAllCards());
 

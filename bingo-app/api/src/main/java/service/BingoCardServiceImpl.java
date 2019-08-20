@@ -1,6 +1,5 @@
 package service;
 
-import helpers.PrinterHelper;
 import helpers.RandomHelper;
 import javafx.util.Pair;
 
@@ -13,10 +12,10 @@ import static helpers.WinnerPatternHelper.checkWinner;
 
 public class BingoCardServiceImpl implements BingoService {
 
-    final int ROW     = 5;
-    final int COLUMNN = 5;
+    static final int ROW     = 5;
+    static final int COLUMNN = 5;
 
-    final static Logger logger = Logger.getLogger(BingoCardServiceImpl.class.getName());
+    static final Logger logger = Logger.getLogger(BingoCardServiceImpl.class.getName());
 
     public int [][] generateBingo5x5Card() {
 
@@ -131,16 +130,14 @@ public class BingoCardServiceImpl implements BingoService {
         }
 
         for (int [][] basicSet : mapBasicBingoCardCardIndexAndCardArray.values()) {
-            // PrinterHelper.printLog("random card");
             logger.info("random card");
             printBingo5x5Card(basicSet);
             System.out.print(System.lineSeparator());
         }
 
-        PrinterHelper.printLog("winner bingo card");
+        logger.info("winner bingo card");
         printBingo5x5Card(mapBasicBingoCardCardIndexAndCardArray.get(winnerBingoCardIndex));
 
-        // PrinterHelper.printLog("numbers generated until bingo " + allGeneratedNumbers.toString());
         logger.info("numbers generated until bingo " + allGeneratedNumbers.toString());
         allGeneratedNumbersSet.addAll(allGeneratedNumbers);
 
