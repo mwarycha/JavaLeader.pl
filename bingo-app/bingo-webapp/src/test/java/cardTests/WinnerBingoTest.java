@@ -2,11 +2,11 @@ package cardTests;
 
 import cardTests.testConfiguration.ParameterRule;
 import cardTests.testConfiguration.WeldJUnit4Runner;
-import helpers.PrinterHelper;
 
 import javafx.util.Pair;
 import service.BingoService;
 import java.util.*;
+import java.util.logging.Logger;
 
 import org.junit.runner.RunWith;
 import org.junit.Test;
@@ -36,13 +36,15 @@ public class WinnerBingoTest {
     Map<Integer, int [][] > mapBasicBingoCardCardIndexAndCardArray = new HashMap();
     Set<Integer> allGeneratedNumbersSet                            = new HashSet<>();
 
+    static final Logger logger = Logger.getLogger(WinnerBingoTest.class.getName());
+
     @Test
     public void testWinnerBingoCard() {
 
         final int BINGO_CARD_AMOUNT_TEST_SIZE = 2;
 
         Pair<Integer, int[][]> bingo = bingoService.getWinner(BINGO_CARD_AMOUNT_TEST_SIZE, mapBasicBingoCardCardIndexAndCardArray, allGeneratedNumbersSet,rule.getParameter());
-        PrinterHelper.printLog("verify winner bingo card " + bingoService.getStringBuilderBingo5x5Card(bingo.getValue()).toString());
+        logger.info("verify winner bingo card " + bingoService.getStringBuilderBingo5x5Card(bingo.getValue()).toString());
 
         List<Pair<Integer,Integer>> pairList = rule.getParameter();
 
