@@ -1,15 +1,22 @@
 package service;
 
+import helpers.PrinterHelper;
 import helpers.RandomHelper;
-import java.util.HashSet;
-import java.util.Set;
+import javafx.util.Pair;
+
+import java.util.*;
+import java.util.logging.Logger;
 
 import static helpers.RandomHelper.generateRandomNumberFromRange;
+import static helpers.UtilsHelper.copyOf;
+import static helpers.WinnerPatternHelper.checkWinner;
 
 public class BingoCardServiceImpl implements BingoService {
 
     final int ROW     = 5;
     final int COLUMNN = 5;
+
+    final static Logger logger = Logger.getLogger(BingoCardServiceImpl.class.getName());
 
     public int [][] generateBingo5x5Card() {
 
@@ -61,6 +68,83 @@ public class BingoCardServiceImpl implements BingoService {
         stringBuilderBingiCard.append("**********************************");
 
         return stringBuilderBingiCard;
+    }
+
+    public Pair<Integer, int [][]> getWinner(int cardAmountToTest,
+                                             Map<Integer, int [][] > mapBasicBingoCardCardIndexAndCardArray,
+                                             Set<Integer> allGeneratedNumbersSet,
+                                             List<Pair<Integer, Integer>> listOfWinnerIndexes) {
+
+        Set<Integer> alreadyGeneratedIntegersCacheSet         = new HashSet();
+        Map<Integer, int [][] > mapBingoCardIndexAndCardArray = new HashMap();
+
+        for (int i = 0; i <cardAmountToTest ; i++) {
+            mapBingoCardIndexAndCardArray.put(i, generateBingo5x5Card());
+        }
+
+        // copy all generated cards before calculate game
+        mapBingoCardIndexAndCardArray.keySet().forEach(
+                cardIndex -> mapBasicBingoCardCardIndexAndCardArray.put(cardIndex,(copyOf(mapBingoCardIndexAndCardArray.get(cardIndex))))
+        );
+
+        boolean bingo             = false;
+        int winnerBingoCardIndex  = 0;
+        int [][] winnerBingoCard  = null;
+
+        Set<Integer> allGeneratedNumbers = new HashSet<>();
+
+        // each number will be removed from card if it is hitted
+        while (!bingo) {
+
+            int randomNumberCandidate = generateRandomNumberFromRange(1, 75);
+
+            // bingo has only unique numbers from range(1,75), cache already generated numbers
+            while(alreadyGeneratedIntegersCacheSet.contains(randomNumberCandidate)) {
+                randomNumberCandidate = generateRandomNumberFromRange(1,75);
+            }
+
+            alreadyGeneratedIntegersCacheSet.add(randomNumberCandidate);
+            allGeneratedNumbers.add(randomNumberCandidate);
+
+            Set<Map.Entry<Integer,int[][]>> entrySetBingoCard = mapBingoCardIndexAndCardArray.entrySet();
+
+            for (Map.Entry<Integer, int[][]> keyValueIndexCardAndCardArray: entrySetBingoCard) {
+
+                for (int row = 0; row < 5; row++) {
+                    for (int column = 0; column < 5; column++) {
+
+                        if (keyValueIndexCardAndCardArray.getValue()[row][column] == randomNumberCandidate) {
+                            keyValueIndexCardAndCardArray.getValue()[row][column] = 0;
+                            if(checkWinner(keyValueIndexCardAndCardArray.getValue(),listOfWinnerIndexes)) {
+
+                                // index of winner card
+                                winnerBingoCardIndex = keyValueIndexCardAndCardArray.getKey();
+
+                                // array of winner card
+                                winnerBingoCard      = keyValueIndexCardAndCardArray.getValue();
+                                bingo = true;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        for (int [][] basicSet : mapBasicBingoCardCardIndexAndCardArray.values()) {
+            // PrinterHelper.printLog("random card");
+            logger.info("random card");
+            printBingo5x5Card(basicSet);
+            System.out.print(System.lineSeparator());
+        }
+
+        PrinterHelper.printLog("winner bingo card");
+        printBingo5x5Card(mapBasicBingoCardCardIndexAndCardArray.get(winnerBingoCardIndex));
+
+        // PrinterHelper.printLog("numbers generated until bingo " + allGeneratedNumbers.toString());
+        logger.info("numbers generated until bingo " + allGeneratedNumbers.toString());
+        allGeneratedNumbersSet.addAll(allGeneratedNumbers);
+
+        return new Pair<>(winnerBingoCardIndex, winnerBingoCard);
     }
 
     public int generateRandomNumberFromSpecificRange(int min, int max) {
