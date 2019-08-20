@@ -78,7 +78,7 @@ public class BingoCardServiceImpl implements BingoService {
 
         // copy all generated cards before calculate game
         mapBingoCardIndexAndCardArray.keySet().forEach(
-                cardIndex -> mapBasicBingoCardCardIndexAndCardArray.put(cardIndex,(copyOf(mapBingoCardIndexAndCardArray.get(cardIndex))))
+                cardIndex -> mapBasicBingoCardCardIndexAndCardArray.put(cardIndex,copyOf(mapBingoCardIndexAndCardArray.get(cardIndex)))
         );
 
         boolean bingo             = false;
@@ -127,7 +127,6 @@ public class BingoCardServiceImpl implements BingoService {
         for (int [][] basicSet : mapBasicBingoCardCardIndexAndCardArray.values()) {
             LOGGER.info("random card");
             printBingo5x5Card(basicSet);
-            System.out.print(System.lineSeparator());
         }
 
         LOGGER.info("winner bingo card");
