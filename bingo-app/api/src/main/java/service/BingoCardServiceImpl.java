@@ -2,7 +2,6 @@ package service;
 
 import helpers.RandomHelper;
 import javafx.util.Pair;
-
 import java.util.*;
 import java.util.logging.Logger;
 
@@ -18,26 +17,37 @@ class IterateThrowBingoCardWrapper {
     private IterateThrowBingoCardWrapper() {
     }
 
+
+    private static void randomNumberShootedInBingoProcess(Map.Entry<Integer, int[][]> keyValueIndexCardAndCardArray,
+                                                          int randomNumberCandidate,
+                                                          int row,
+                                                          int column,
+                                                          List<Pair<Integer, Integer>> listOfWinnerIndexes) {
+
+        if (keyValueIndexCardAndCardArray.getValue()[row][column] == randomNumberCandidate) {
+
+            keyValueIndexCardAndCardArray.getValue()[row][column] = 0;
+
+            if(checkWinner(keyValueIndexCardAndCardArray.getValue(),listOfWinnerIndexes)) {
+
+                // index of winner card
+                winnerBingoCardIndex = keyValueIndexCardAndCardArray.getKey();
+
+                // array of winner card
+                winnerBingoCard      = keyValueIndexCardAndCardArray.getValue();
+
+            }
+        }
+
+    }
+
     public static boolean processBingoCard(Map.Entry<Integer, int[][]> keyValueIndexCardAndCardArray,
                                     int randomNumberCandidate,
                                     List<Pair<Integer, Integer>> listOfWinnerIndexes) {
 
         for (int row = 0; row < 5; row++) {
             for (int column = 0; column < 5; column++) {
-
-                if (keyValueIndexCardAndCardArray.getValue()[row][column] == randomNumberCandidate) {
-                    keyValueIndexCardAndCardArray.getValue()[row][column] = 0;
-
-                    if(checkWinner(keyValueIndexCardAndCardArray.getValue(),listOfWinnerIndexes)) {
-
-                        // index of winner card
-                        winnerBingoCardIndex = keyValueIndexCardAndCardArray.getKey();
-
-                        // array of winner card
-                        winnerBingoCard      = keyValueIndexCardAndCardArray.getValue();
-                        return true;
-                    }
-                }
+                randomNumberShootedInBingoProcess(keyValueIndexCardAndCardArray, randomNumberCandidate, row,column,listOfWinnerIndexes);
             }
         }
         return false;
