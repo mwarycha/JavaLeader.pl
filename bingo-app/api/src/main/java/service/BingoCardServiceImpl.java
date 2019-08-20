@@ -88,10 +88,6 @@ public class BingoCardServiceImpl implements BingoService {
 
     }
 
-    public void printBingo5x5Card(int [][] arrayToBePrinted) {
-        LOGGER.info(getStringBuilderBingo5x5Card(arrayToBePrinted).toString());
-    }
-
     public StringBuilder getStringBuilderBingo5x5Card(int [][] arrayToBePrinted) {
         StringBuilder stringBuilderBingiCard = new StringBuilder();
         stringBuilderBingiCard.append("\n**********************************\n");
@@ -155,11 +151,11 @@ public class BingoCardServiceImpl implements BingoService {
 
         for (int [][] basicSet : mapBasicBingoCardCardIndexAndCardArray.values()) {
             LOGGER.info("random card");
-            printBingo5x5Card(basicSet);
+            LOGGER.info(getStringBuilderBingo5x5Card(basicSet).toString());
         }
 
         LOGGER.info("winner bingo card");
-        printBingo5x5Card(mapBasicBingoCardCardIndexAndCardArray.get(winnerBingoCardIndex));
+        LOGGER.info(getStringBuilderBingo5x5Card(mapBasicBingoCardCardIndexAndCardArray.get(winnerBingoCardIndex)).toString());
 
         LOGGER.info("numbers generated until bingo " + allGeneratedNumbers.toString());
         allGeneratedNumbersSet.addAll(allGeneratedNumbers);
