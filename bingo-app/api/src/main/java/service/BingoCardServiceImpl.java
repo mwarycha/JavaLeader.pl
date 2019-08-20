@@ -12,11 +12,11 @@ import static helpers.WinnerPatternHelper.checkWinner;
 
 class IterateThrowBingoCardWrapper {
 
-    private IterateThrowBingoCardWrapper() {
-    }
-
     static int winnerBingoCardIndex  = 0;
     static int [][] winnerBingoCard  = null;
+
+    private IterateThrowBingoCardWrapper() {
+    }
 
     public static boolean processBingoCard(Map.Entry<Integer, int[][]> keyValueIndexCardAndCardArray,
                                     int randomNumberCandidate,
