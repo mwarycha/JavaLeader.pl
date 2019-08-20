@@ -63,14 +63,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="13" />
-          <entry key="java" value="9304" />
+          <entry key="java" value="9391" />
           <entry key="jsp" value="1394" />
           <entry key="xml" value="310" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="9304" />
+          <entry key="JAVA" value="9391" />
           <entry key="JSP" value="1394" />
           <entry key="PLAIN_TEXT" value="13" />
           <entry key="XML" value="310" />
@@ -116,8 +116,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/src/main/java/service/BingoCardServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="145" column="63" selection-start-line="145" selection-start-column="63" selection-end-line="145" selection-end-column="63" />
+            <state relative-caret-position="435">
+              <caret line="44" column="53" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -412,7 +412,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/EMAWARY/Desktop/projects/JavaLeader.pl/bingo-app/api/src/main/java/helpers/UtilsHelper.java" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566327840758" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566327893093" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/single-project" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -609,7 +609,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.20607375" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29501083" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.5748373" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -846,8 +846,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api/src/main/java/service/BingoCardServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="145" column="63" selection-start-line="145" selection-start-column="63" selection-end-line="145" selection-end-column="63" />
+        <state relative-caret-position="435">
+          <caret line="44" column="53" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
