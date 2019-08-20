@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="cardTests.WinnerBingoTest" time="0.09" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="cardTests.WinnerBingoTest" time="0.082" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -19,7 +19,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_181\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\EMAWARY\AppData\Local\Temp\surefire1496601566690608037\surefirebooter951409557051576397.jar C:\Users\EMAWARY\AppData\Local\Temp\surefire1496601566690608037 2019-08-20T16-49-06_508-jvmRun1 surefire4520478306416496678tmp surefire_0820720602421049834tmp"/>
+    <property name="sun.java.command" value="C:\Users\EMAWARY\AppData\Local\Temp\surefire8327375740950639399\surefirebooter6837989316684420122.jar C:\Users\EMAWARY\AppData\Local\Temp\surefire8327375740950639399 2019-08-20T16-58-20_788-jvmRun1 surefire5226662036064198804tmp surefire_02773597210195018868tmp"/>
     <property name="surefire.test.class.path" value="C:\Users\EMAWARY\Desktop\projects\JavaLeader.pl\bingo-app\bingo-webapp\target\test-classes;C:\Users\EMAWARY\Desktop\projects\JavaLeader.pl\bingo-app\bingo-webapp\target\classes;C:\Users\EMAWARY\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\EMAWARY\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\EMAWARY\.m2\repository\javax\servlet\javax.servlet-api\3.0.1\javax.servlet-api-3.0.1.jar;C:\Users\EMAWARY\Desktop\projects\JavaLeader.pl\bingo-app\api\target\classes;C:\Users\EMAWARY\.m2\repository\org\jboss\weld\se\weld-se\2.2.10.Final\weld-se-2.2.10.Final.jar;C:\Users\EMAWARY\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\EMAWARY\.m2\repository\jstl\jstl\1.2\jstl-1.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\EMAWARY"/>
@@ -32,7 +32,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\EMAWARY\AppData\Local\Temp\surefire1496601566690608037\surefirebooter951409557051576397.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\EMAWARY\AppData\Local\Temp\surefire8327375740950639399\surefirebooter6837989316684420122.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_181\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_181\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -63,5 +63,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="testWinnerBingoCard" classname="cardTests.WinnerBingoTest" time="0.09"/>
+  <testcase name="testWinnerBingoCard" classname="cardTests.WinnerBingoTest" time="0.082"/>
 </testsuite>

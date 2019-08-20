@@ -47,12 +47,7 @@ public class BingoCardServiceImpl implements BingoService {
     }
 
     public void printBingo5x5Card(int [][] arrayToBePrinted) {
-        for (int row = 0; row < ROW; row++) {
-            for (int column = 0; column < COLUMNN; column++) {
-                System.out.print(arrayToBePrinted[row][column] + "\t");
-            }
-            System.out.print(System.lineSeparator());
-        }
+        LOGGER.info(getStringBuilderBingo5x5Card(arrayToBePrinted).toString());
     }
 
     public StringBuilder getStringBuilderBingo5x5Card(int [][] arrayToBePrinted) {
