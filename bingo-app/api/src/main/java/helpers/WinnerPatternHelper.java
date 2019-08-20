@@ -30,7 +30,6 @@ public class WinnerPatternHelper {
     }
 
     public static boolean checkWinner(int[][] bingoCard, List<Pair<Integer, Integer>> listOfWinnerIndexes) {
-
         List<Pair<Integer,Integer>> pairList = listOfWinnerIndexes;
         int winner = 0;
         for(Pair<Integer,Integer> pair : pairList) {

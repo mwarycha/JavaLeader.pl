@@ -10,6 +10,37 @@ import static helpers.RandomHelper.generateRandomNumberFromRange;
 import static helpers.UtilsHelper.copyOf;
 import static helpers.WinnerPatternHelper.checkWinner;
 
+class IterateThrowBingoCardWrapper {
+
+    static int winnerBingoCardIndex  = 0;
+    static int [][] winnerBingoCard  = null;
+
+    public static boolean processBingoCard(Map.Entry<Integer, int[][]> keyValueIndexCardAndCardArray,
+                                    int randomNumberCandidate,
+                                    List<Pair<Integer, Integer>> listOfWinnerIndexes) {
+
+        for (int row = 0; row < 5; row++) {
+            for (int column = 0; column < 5; column++) {
+
+                if (keyValueIndexCardAndCardArray.getValue()[row][column] == randomNumberCandidate) {
+                    keyValueIndexCardAndCardArray.getValue()[row][column] = 0;
+
+                    if(checkWinner(keyValueIndexCardAndCardArray.getValue(),listOfWinnerIndexes)) {
+
+                        // index of winner card
+                        winnerBingoCardIndex = keyValueIndexCardAndCardArray.getKey();
+
+                        // array of winner card
+                        winnerBingoCard      = keyValueIndexCardAndCardArray.getValue();
+                        return true;
+                    }
+                }
+            }
+        }
+        return false;
+    }
+}
+
 public class BingoCardServiceImpl implements BingoService {
 
     static final int ROW     = 5;
@@ -103,23 +134,10 @@ public class BingoCardServiceImpl implements BingoService {
             Set<Map.Entry<Integer,int[][]>> entrySetBingoCard = mapBingoCardIndexAndCardArray.entrySet();
 
             for (Map.Entry<Integer, int[][]> keyValueIndexCardAndCardArray: entrySetBingoCard) {
-
-                for (int row = 0; row < 5; row++) {
-                    for (int column = 0; column < 5; column++) {
-
-                        if (keyValueIndexCardAndCardArray.getValue()[row][column] == randomNumberCandidate) {
-                            keyValueIndexCardAndCardArray.getValue()[row][column] = 0;
-                            if(checkWinner(keyValueIndexCardAndCardArray.getValue(),listOfWinnerIndexes)) {
-
-                                // index of winner card
-                                winnerBingoCardIndex = keyValueIndexCardAndCardArray.getKey();
-
-                                // array of winner card
-                                winnerBingoCard      = keyValueIndexCardAndCardArray.getValue();
-                                bingo = true;
-                            }
-                        }
-                    }
+                if(IterateThrowBingoCardWrapper.processBingoCard(keyValueIndexCardAndCardArray, randomNumberCandidate, listOfWinnerIndexes)) {
+                    winnerBingoCardIndex = IterateThrowBingoCardWrapper.winnerBingoCardIndex;
+                    winnerBingoCard      = IterateThrowBingoCardWrapper.winnerBingoCard;
+                    bingo = true;
                 }
             }
         }
