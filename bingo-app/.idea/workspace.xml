@@ -2,7 +2,86 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37a2bcaf-7871-41fc-a37c-567cd370df44" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/helpers/RandomHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/helpers/RandomHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/target/api-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/bingo-webapp/WEB-INF/beans.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/bingo-webapp/WEB-INF/bingo.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/bingo-webapp/WEB-INF/classes/controllers/ShowBingoCardController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/bingo-webapp/WEB-INF/classes/controllers/ShowBingoCardControllerWithForwardToJsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/bingo-webapp/WEB-INF/classes/images/trophy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/bingo-webapp/WEB-INF/lib/api-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/bingo-webapp/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/bingo-webapp/WEB-INF/lib/log4j-1.2.17.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/bingo-webapp/WEB-INF/lib/log4j-api-2.8.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/bingo-webapp/WEB-INF/lib/log4j-core-2.8.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/bingo-webapp/WEB-INF/lib/log4j-web-2.8.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/bingo-webapp/WEB-INF/lib/weld-se-2.2.10.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/bingo-webapp/WEB-INF/lib/weld-servlet-1.1.10.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/bingo-webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/bingo-webapp/images/trophy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/bingo-webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/classes/images/trophy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-webapp/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/2019-08-09T12-03-30_759-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/2019-08-09T12-03-30_759-jvmRun1.dumpstream" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/2019-08-12T10-19-50_939-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/2019-08-12T10-26-44_678-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/2019-08-12T10-45-29_075-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/2019-08-12T11-18-10_912-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/2019-08-12T11-29-43_911-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/2019-08-12T11-36-29_214-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/2019-08-12T11-37-04_958-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/2019-08-12T11-39-59_784-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/2019-08-12T11-42-47_819-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/2019-08-12T11-45-04_967-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/2019-08-12T11-46-53_553-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/2019-08-12T11-49-17_284-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/2019-08-12T12-04-25_835-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/2019-08-12T13-19-39_639-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/2019-08-12T13-24-12_396-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/2019-08-12T13-27-04_262-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/2019-08-12T13-28-21_308-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/2019-08-12T13-47-44_249-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/2019-08-12T13-48-53_174-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/2019-08-12T13-59-28_977-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/2019-08-12T14-01-18_721-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/2019-08-12T14-03-55_776-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/2019-08-12T14-09-17_161-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/2019-08-12T14-21-25_999-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/2019-08-12T14-23-08_225-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/2019-08-12T14-24-09_653-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/2019-08-12T14-31-09_760-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/2019-08-12T14-34-21_812-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/2019-08-12T14-37-49_040-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/2019-08-12T14-39-14_808-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/2019-08-12T14-44-03_662-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/2019-08-12T14-46-06_092-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/2019-08-12T14-49-25_739-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/2019-08-12T14-50-42_920-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/2019-08-12T14-53-04_197-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/2019-08-12T14-58-24_197-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/2019-08-12T14-58-43_388-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/2019-08-12T15-00-01_366-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/2019-08-12T15-03-44_980-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/2019-08-12T15-08-52_526-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/2019-08-12T15-10-53_503-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/2019-08-12T15-15-23_621-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/2019-08-12T15-16-15_138-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/2019-08-12T15-18-52_014-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/2019-08-12T15-19-49_402-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/2019-08-12T15-20-56_505-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/2019-08-12T15-28-32_108-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/2019-08-12T15-43-31_894-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/2019-08-12T15-45-56_975-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/2019-08-12T17-00-58_664-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/2019-08-12T17-04-15_079-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/2019-08-13T09-05-54_714-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/TEST-cardTests.UniqueCardNumbersTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/TEST-cardTests.UniqueCardNumbersTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/TEST-cardTests.WinnerBingoTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/TEST-cardTests.WinnerBingoTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/cardTests.UniqueCardNumbersTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/cardTests.UniqueCardNumbersTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/cardTests.WinnerBingoTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-webapp/target/surefire-reports/cardTests.WinnerBingoTest.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -41,7 +120,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="5" />
-          <entry key="gitignore" value="1" />
+          <entry key="gitignore" value="2" />
           <entry key="java" value="325" />
           <entry key="jsp" value="6" />
           <entry key="png" value="1" />
@@ -55,21 +134,21 @@
           <entry key="Image" value="1" />
           <entry key="JAVA" value="325" />
           <entry key="JSP" value="6" />
-          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="PLAIN_TEXT" value="3" />
           <entry key="XML" value="61" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="13" />
-          <entry key="java" value="8900" />
+          <entry key="java" value="8901" />
           <entry key="jsp" value="1394" />
           <entry key="xml" value="310" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="8900" />
+          <entry key="JAVA" value="8901" />
           <entry key="JSP" value="1394" />
           <entry key="PLAIN_TEXT" value="13" />
           <entry key="XML" value="310" />
@@ -97,8 +176,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/src/main/java/service/BingoCardServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="49" column="77" selection-start-line="49" selection-start-column="77" selection-end-line="49" selection-end-column="77" />
+            <state relative-caret-position="-374">
+              <caret line="65" selection-start-line="65" selection-end-line="65" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -107,10 +186,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/src/main/java/helpers/RandomHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="48" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
+            <state relative-caret-position="306">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
@@ -128,7 +212,7 @@
         <entry file="file://$PROJECT_DIR$/api/src/main/java/helpers/WinnerPatternHelper.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
-              <caret line="21" column="55" lean-forward="true" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
+              <caret line="21" column="55" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -157,6 +241,7 @@
       <find>getWinner</find>
       <find>allGeneratedNumbersSet</find>
       <find>System</find>
+      <find>mapBasicBingoCardCardIndexAndCardArra</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -202,8 +287,8 @@
         <option value="$PROJECT_DIR$/bingo-webapp/src/test/java/cardTests/WinnerBingoTest.java" />
         <option value="$PROJECT_DIR$/bingo-webapp/src/test/java/cardTests/testConfiguration/ParameterRule.java" />
         <option value="$PROJECT_DIR$/bingo-webapp/src/test/java/cardTests/testConfiguration/WeldJUnit4Runner.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/service/BingoCardServiceImpl.java" />
         <option value="$PROJECT_DIR$/api/src/main/java/helpers/RandomHelper.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/service/BingoCardServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -452,7 +537,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566313472018" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566313891852" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/single-project" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -638,9 +723,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22068231" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22068231" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -649,7 +733,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.35900217" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.39479393" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.5748373" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -736,9 +820,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bingo-webapp/src/main/webapp/images/trophy.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/scratchbook/jenkins-test.txt">
       <provider selected="true" editor-type-id="text-editor" />
@@ -857,30 +938,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/service/BingoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/src/main/java/helpers/WinnerPatternHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
-          <caret line="21" column="55" lean-forward="true" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/service/BingoCardServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="49" column="77" selection-start-line="49" selection-start-column="77" selection-end-line="49" selection-end-column="77" />
+          <caret line="21" column="55" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -896,10 +957,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api/src/main/java/helpers/RandomHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="48" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
+        <state relative-caret-position="306">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/service/BingoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/service/BingoCardServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-374">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">

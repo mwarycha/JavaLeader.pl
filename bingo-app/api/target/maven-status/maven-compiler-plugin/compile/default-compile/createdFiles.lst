@@ -1,5 +1,0 @@
-service\BingoCardServiceImpl.class
-helpers\WinnerPatternHelper.class
-service\BingoService.class
-helpers\UtilsHelper.class
-helpers\RandomHelper.class
