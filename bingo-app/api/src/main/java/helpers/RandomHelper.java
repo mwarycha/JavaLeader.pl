@@ -4,10 +4,10 @@ import java.util.Random;
 
 public class RandomHelper {
 
+    private static Random RANDOM = new Random();
+
     private RandomHelper() {
     }
-
-    private static Random RANDOM = new Random();
 
     public static int generateRandomNumberFromRange(int min, int max) {
         if (min >= max) {

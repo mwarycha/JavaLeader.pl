@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="37a2bcaf-7871-41fc-a37c-567cd370df44" name="Default Changelist" comment="" />
+    <list default="true" id="37a2bcaf-7871-41fc-a37c-567cd370df44" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/helpers/RandomHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/helpers/RandomHelper.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/api/target/" />
@@ -60,14 +62,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="13" />
-          <entry key="java" value="8851" />
+          <entry key="java" value="8900" />
           <entry key="jsp" value="1394" />
           <entry key="xml" value="310" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="8851" />
+          <entry key="JAVA" value="8900" />
           <entry key="JSP" value="1394" />
           <entry key="PLAIN_TEXT" value="13" />
           <entry key="XML" value="310" />
@@ -92,11 +94,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/src/main/java/service/BingoCardServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="51" column="32" lean-forward="true" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="32" />
+            <state relative-caret-position="56">
+              <caret line="49" column="77" selection-start-line="49" selection-start-column="77" selection-end-line="49" selection-end-column="77" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -104,11 +106,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/src/main/java/helpers/RandomHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+            <state relative-caret-position="102">
+              <caret line="6" column="48" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -154,6 +156,7 @@
       <find>verify winner bingo card</find>
       <find>getWinner</find>
       <find>allGeneratedNumbersSet</find>
+      <find>System</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -199,8 +202,8 @@
         <option value="$PROJECT_DIR$/bingo-webapp/src/test/java/cardTests/WinnerBingoTest.java" />
         <option value="$PROJECT_DIR$/bingo-webapp/src/test/java/cardTests/testConfiguration/ParameterRule.java" />
         <option value="$PROJECT_DIR$/bingo-webapp/src/test/java/cardTests/testConfiguration/WeldJUnit4Runner.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/helpers/RandomHelper.java" />
         <option value="$PROJECT_DIR$/api/src/main/java/service/BingoCardServiceImpl.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/helpers/RandomHelper.java" />
       </list>
     </option>
   </component>
@@ -449,7 +452,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566313077717" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566313264508" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/single-project" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -635,8 +638,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22068231" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22068231" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -645,7 +649,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.45770064" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.35900217" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.5748373" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -863,20 +867,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/helpers/RandomHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/helpers/UtilsHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/src/main/java/helpers/WinnerPatternHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -889,11 +879,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api/src/main/java/service/BingoCardServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="51" column="32" lean-forward="true" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="32" />
+        <state relative-caret-position="56">
+          <caret line="49" column="77" selection-start-line="49" selection-start-column="77" selection-end-line="49" selection-end-column="77" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/helpers/UtilsHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/helpers/RandomHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="48" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
         </state>
       </provider>
     </entry>
