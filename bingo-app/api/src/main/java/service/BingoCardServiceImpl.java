@@ -37,7 +37,8 @@ class IterateThrowBingoCardWrapper {
         return false;
     }
 
-    public static boolean processIterateThrowBingoCard(Map.Entry<Integer, int[][]> keyValueIndexCardAndCardArray,
+    public static boolean processIterateThrowBingoCard(
+                                    Map.Entry<Integer, int[][]> keyValueIndexCardAndCardArray,
                                     int randomNumberCandidate,
                                     List<Pair<Integer, Integer>> listOfWinnerIndexes) {
 

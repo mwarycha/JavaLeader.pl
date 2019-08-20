@@ -13,7 +13,6 @@
     <packaging>war</packaging>
 
     <name>bingo-webapp Maven Webapp</name>
-    <!-- FIXME change it to the project's website -->
     <url>https://maven.javaleader.pl/</url>
 
     <properties>
@@ -31,11 +30,17 @@
             <scope>test</scope>
         </dependency>
 
-        <!--<dependency>-->
-            <!--<groupId>org.jboss.weld.servlet</groupId>-->
-            <!--<artifactId>weld-servlet</artifactId>-->
-            <!--<version>1.1.10.Final</version>-->
-        <!--</dependency>-->
+        <dependency>
+            <groupId>org.jboss.weld.servlet</groupId>
+            <artifactId>weld-servlet</artifactId>
+            <version>1.1.10.Final</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.jboss.weld.se</groupId>
+            <artifactId>weld-se</artifactId>
+            <version>1.1.10.Final</version>
+        </dependency>
 
         <dependency>
             <groupId>javax.servlet</groupId>
@@ -50,11 +55,6 @@
             <version>1.0-SNAPSHOT</version>
         </dependency>
 
-        <dependency>
-            <groupId>org.jboss.weld.se</groupId>
-            <artifactId>weld-se</artifactId>
-            <version>2.2.10.Final</version>
-        </dependency>
 
         <dependency>
             <groupId>log4j</groupId>
