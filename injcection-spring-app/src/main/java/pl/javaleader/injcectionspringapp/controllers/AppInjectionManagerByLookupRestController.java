@@ -1,7 +1,6 @@
 package pl.javaleader.injcectionspringapp.controllers;
 
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Lookup;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -9,15 +8,17 @@ import org.springframework.web.bind.annotation.RestController;
 import pl.javaleader.injcectionspringapp.service.Printer;
 
 @RestController
-public class AppInjectionManagerByFieldRestController {
+public class AppInjectionManagerByLookupRestController {
 
-    @Autowired
-    @Qualifier("printerImpl")
-    private Printer printer;
+    @Lookup("printerPrototypeImpl")
+    public Printer getPrinter() {
+        return null;
+    }
 
-    @GetMapping(path="/printerInjectedByField")
+    @GetMapping(path = "/printerInjectedByLookup")
     @ResponseBody
     public String getPrinterInjectedByField() {
-        return printer.print("printer injected by field");
+        return getPrinter().print("printer injected by field") + " " + (getPrinter() == getPrinter());
+
     }
 }
