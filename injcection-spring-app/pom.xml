@@ -8,10 +8,10 @@
 		<version>2.1.7.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>pl.edusession</groupId>
-	<artifactId>java-mail-app</artifactId>
+	<groupId>pl.javaleader</groupId>
+	<artifactId>injcection-spring-app</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>java-mail-app</name>
+	<name>injcection-spring-app</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -19,11 +19,6 @@
 	</properties>
 
 	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter</artifactId>
-		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -34,12 +29,6 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-mail</artifactId>
-		</dependency>
-
 	</dependencies>
 
 	<build>

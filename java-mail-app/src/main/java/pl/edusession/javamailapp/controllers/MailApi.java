@@ -18,7 +18,7 @@ public class MailApi {
 
     @GetMapping("/sendTestMail")
     public String sendMail() throws javax.mail.MessagingException {
-        mailService.sendMail("kontakt@javaleader.pl",
+        mailService.sendMail("",
                 "test message from spring boot mail api",
                 "test message",
                 true);
