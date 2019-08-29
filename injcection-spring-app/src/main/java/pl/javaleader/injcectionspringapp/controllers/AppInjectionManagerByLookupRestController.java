@@ -18,7 +18,7 @@ public class AppInjectionManagerByLookupRestController {
     @GetMapping(path = "/printerInjectedByLookup")
     @ResponseBody
     public String getPrinterInjectedByField() {
-        return getPrinter().print("printer injected by field") + " " + (getPrinter() == getPrinter());
+        return getPrinter().print("printer injected by lookup") + " " + (getPrinter() == getPrinter());
 
     }
 }
