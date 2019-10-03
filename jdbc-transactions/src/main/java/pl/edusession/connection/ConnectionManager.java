@@ -5,7 +5,6 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class ConnectionManager {
-
     public static Connection getConnectionManager(String connectionLink, String user, String password) throws SQLException {
         return DriverManager.getConnection(connectionLink, user, password);
     }

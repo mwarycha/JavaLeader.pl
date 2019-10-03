@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7609a51f-4b8e-4a39-beac-ea901a5790a4" name="Default Changelist" comment="" />
+    <list default="true" id="7609a51f-4b8e-4a39-beac-ea901a5790a4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edusession/StartUseCases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edusession/StartUseCases.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edusession/connection/ConnectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edusession/connection/ConnectionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edusession/db/operations/CRUD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edusession/db/operations/CRUD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/edusession/StartUseCases.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/edusession/connection/ConnectionManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edusession/connection/ConnectionManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/edusession/db/operations/CRUD.class" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -67,75 +75,32 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="18" />
+          <entry key="java" value="25" />
           <entry key="xml" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="18" />
+          <entry key="JAVA" value="25" />
           <entry key="XML" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="990" />
+          <entry key="java" value="1530" />
           <entry key="xml" value="137" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="990" />
+          <entry key="JAVA" value="1530" />
           <entry key="XML" value="137" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/edusession/connection/ConnectionManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/edusession/db/operations/CRUD.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="79" selection-start-line="21" selection-start-column="79" selection-end-line="21" selection-end-column="79" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/edusession/StartUseCases.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="799">
-              <caret line="47" column="29" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -186,8 +151,9 @@
         <option value="$PROJECT_DIR$/src/test/resources/ng/testng.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/pl/edusession/connection/InitDatabaseManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/edusession/db/operations/CRUD.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/edusession/connection/ConnectionManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/edusession/timercheck.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/edusession/db/operations/CRUD.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/edusession/StartUseCases.java" />
       </list>
     </option>
@@ -206,6 +172,11 @@
     <option name="enabledProfiles">
       <list>
         <option value="mysql" />
+      </list>
+    </option>
+    <option name="disabledProfiles">
+      <list>
+        <option value="h2" />
       </list>
     </option>
   </component>
@@ -230,10 +201,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-596" />
-    <option name="y" value="180" />
+    <option name="x" value="-240" />
+    <option name="y" value="114" />
     <option name="width" value="1936" />
-    <option name="height" value="1072" />
+    <option name="height" value="1065" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -335,7 +306,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570091909663" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570104441844" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -478,9 +449,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.84226644" visible="true" weight="0.15831557" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.84226644" visible="true" weight="0.15831557" />
       <window_info id="Image Layers" order="1" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -489,15 +459,15 @@
       <window_info id="Structure" order="6" sideWeight="0.15773354" weight="0.1913646" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.71908313" visible="true" weight="0.19631237" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.7185501" visible="true" weight="0.0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4989339" weight="0.5043384" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.28091684" side_tool="true" visible="true" weight="0.19631237" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.28144988" side_tool="true" visible="true" weight="0.0" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49946696" weight="0.329718" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.43176973" weight="0.329718" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.43123668" weight="0.329718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -594,10 +564,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edusession/connection/InitDatabaseManager.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/TimerTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        <state relative-caret-position="204">
+          <caret line="35" column="22" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edusession/timercheck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -606,8 +583,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/edusession/connection/ConnectionManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="238">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -616,17 +593,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/edusession/db/operations/CRUD.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="79" selection-start-line="21" selection-start-column="79" selection-end-line="21" selection-end-column="79" />
+        <state relative-caret-position="51">
+          <caret line="18" column="75" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="75" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edusession/connection/InitDatabaseManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/edusession/StartUseCases.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="1632">
+          <caret line="102" column="39" selection-start-line="102" selection-start-column="39" selection-end-line="102" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1713#1960#0" expanded="true" />
+            <element signature="e#1959#1960#0" expanded="true" />
+            <element signature="e#1985#2231#0" expanded="true" />
+            <element signature="e#2230#2231#0" expanded="true" />
+            <element signature="e#2611#2858#0" expanded="true" />
+            <element signature="e#2857#2858#0" expanded="true" />
+            <element signature="e#2887#3133#0" expanded="true" />
+            <element signature="e#3132#3133#0" expanded="true" />
           </folding>
         </state>
       </provider>
