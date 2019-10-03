@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7609a51f-4b8e-4a39-beac-ea901a5790a4" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1783083185">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="8" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.26" value="1" />
+          <entry key="project.open.time.29" value="1" />
+          <entry key="project.open.time.39" value="1" />
+          <entry key="project.open.time.45" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="9" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="1" />
+          <entry key="java" value="2158" />
+          <entry key="xml" value="541" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="2158" />
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="XML" value="541" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="2" />
+          <entry key="java" value="35" />
+          <entry key="xml" value="13" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="2" />
+          <entry key="JAVA" value="35" />
+          <entry key="XML" value="13" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="-1520857493">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.22" value="1" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="18" />
+          <entry key="xml" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="18" />
+          <entry key="XML" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="990" />
+          <entry key="xml" value="137" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="990" />
+          <entry key="XML" value="137" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/edusession/connection/ConnectionManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/edusession/db/operations/CRUD.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="79" selection-start-line="21" selection-start-column="79" selection-end-line="21" selection-end-column="79" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/edusession/StartUseCases.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="277">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="799">
+              <caret line="47" column="29" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>logg</find>
+      <find>engine</find>
+      <find>testMultiplyException</find>
+      <find>Test method</find>
+      <find>commit</find>
+    </findStrings>
+    <dirStrings>
+      <dir>C:\Users\EMAWARY\Desktop\projects\JavaLeader.pl\jdbc-transactions</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="$USER_HOME$/Downloads/tdd-assignment-short/tdd-assignment-short" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/InitDatabaseManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ConnectionManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/StartUseCases.java" />
+        <option value="$PROJECT_DIR$/src/main/java/CRUD.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/edusession/CRUD.java" />
+        <option value="$PROJECT_DIR$/src/test/java/TestSuite.java" />
+        <option value="$PROJECT_DIR$/source code/src/test/java/ClassToBeTested.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ClassToBeTested.java" />
+        <option value="$PROJECT_DIR$/src/test/java/MyTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ParameterizedTestFields.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ParameterizedTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/RegularExpressionGroupTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pl/testng/TestNGXMLTest.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/testng.xml" />
+        <option value="$PROJECT_DIR$/src/test/resources/ng/testng.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/edusession/connection/InitDatabaseManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/edusession/db/operations/CRUD.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/edusession/connection/ConnectionManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/edusession/StartUseCases.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$USER_HOME$/Downloads/apache-maven-3.6.1-bin/apache-maven-3.6.1" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+    <option name="enabledProfiles">
+      <list>
+        <option value="mysql" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="Profiles" type="6783ec58:MavenProjectsStructure$ProfilesNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="jdbc" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="jdbc" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-596" />
+    <option name="y" value="180" />
+    <option name="width" value="1936" />
+    <option name="height" value="1072" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="jdbc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jdbc-transactions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jdbc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jdbc-transactions" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jdbc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jdbc-transactions" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jdbc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jdbc-transactions" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jdbc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jdbc-transactions" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jdbc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jdbc-transactions" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pl" type="462c0819:PsiDirectoryNode" />
+              <item name="edusession" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jdbc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jdbc-transactions" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pl" type="462c0819:PsiDirectoryNode" />
+              <item name="edusession" type="462c0819:PsiDirectoryNode" />
+              <item name="connection" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jdbc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jdbc-transactions" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pl" type="462c0819:PsiDirectoryNode" />
+              <item name="edusession" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jdbc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jdbc-transactions" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pl" type="462c0819:PsiDirectoryNode" />
+              <item name="edusession" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+              <item name="operations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jdbc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jdbc-transactions" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jdbc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jdbc-transactions" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570091909663" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\EMAWARY\Desktop\projects\java-ee-online-training\materialy do kursu\5. JDBC\source code\src\test\resources" />
+      <recent name="C:\Users\EMAWARY\Desktop\projects\java-ee-online-training\materialy do kursu\5. JDBC\source code\src\test\java" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\EMAWARY\Desktop\projects\java-ee-online-training\materialy do kursu\5. JDBC\source code\src\main\resources" />
+      <recent name="C:\Users\EMAWARY\Desktop\projects\java-ee-online-training\materialy do kursu\5. JDBC\source code\src\test\resources" />
+      <recent name="C:\Users\EMAWARY\Desktop\projects\java-ee-online-training\materialy do kursu\5. JDBC\source code\src\test\resources\ng" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.StartUseCases">
+    <configuration name="MyTests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pl.junit.MyTests" />
+      <module name="source code" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyTests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pl.junit.MyTests" />
+      <module name="source code" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyTests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pl.junit.MyTests" />
+      <module name="source code" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StartUseCases" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pl.edusession.StartUseCases" />
+      <module name="jdbc-transactions" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.edusession.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParameterizedTests.testMultiplyException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="source code" />
+      <option name="PACKAGE_NAME" value="pl.junit" />
+      <option name="MAIN_CLASS_NAME" value="pl.junit.ParameterizedTests" />
+      <option name="METHOD_NAME" value="testMultiplyException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.MyTests" />
+      <item itemvalue="JUnit.ParameterizedTests.testMultiplyException" />
+      <item itemvalue="Application.StartUseCases" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.StartUseCases" />
+        <item itemvalue="JUnit.ParameterizedTests.testMultiplyException" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7609a51f-4b8e-4a39-beac-ea901a5790a4" name="Default Changelist" comment="" />
+      <created>1560858579163</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1560858579163</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="ParameterizedTestFields - 2019.06.19 at 14h 11m 31s.xml">
+      <configuration name="ParameterizedTestFields" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ParameterizedTestFields - 2019.06.19 at 14h 11m 48s.xml">
+      <configuration name="ParameterizedTestFields" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ParameterizedTestFields - 2019.06.19 at 15h 40m 56s.xml">
+      <configuration name="ParameterizedTestFields" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ParameterizedTestFields_testMultiplyException - 2019.06.19 at 15h 43m 11s.xml">
+      <configuration name="ParameterizedTestFields.testMultiplyException" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ParameterizedTestFields_testMultiplyException - 2019.06.19 at 15h 43m 16s.xml">
+      <configuration name="ParameterizedTestFields.testMultiplyException" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ParameterizedTestFields_testMultiplyException - 2019.06.19 at 15h 43m 21s.xml">
+      <configuration name="ParameterizedTestFields.testMultiplyException" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ParameterizedTests_testMultiplyException - 2019.06.19 at 15h 59m 57s.xml">
+      <configuration name="ParameterizedTests.testMultiplyException" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ParameterizedTests_testMultiplyException - 2019.06.19 at 16h 00m 20s.xml">
+      <configuration name="ParameterizedTests.testMultiplyException" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ParameterizedTests_testMultiplyException - 2019.06.19 at 16h 00m 50s.xml">
+      <configuration name="ParameterizedTests.testMultiplyException" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ParameterizedTests_testMultiplyException - 2019.06.19 at 16h 01m 07s.xml">
+      <configuration name="ParameterizedTests.testMultiplyException" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.84226644" visible="true" weight="0.15831557" />
+      <window_info id="Image Layers" order="1" />
+      <window_info id="Designer" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Structure" order="6" sideWeight="0.15773354" weight="0.1913646" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.71908313" visible="true" weight="0.19631237" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4989339" weight="0.5043384" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.28091684" side_tool="true" visible="true" weight="0.19631237" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49946696" weight="0.329718" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.43176973" weight="0.329718" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="7" visible="true" weight="0.07995736" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18283582" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.36008677" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.329718" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.329718" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="7" visible="true" weight="0.18710022" />
+    </layout-to-restore>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/h2database/h2/1.4.199/h2-1.4.199.jar!/org/h2/jdbc/JdbcStatement.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="119" selection-start-line="119" selection-end-line="119" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestSuite.java" />
+    <entry file="file://$PROJECT_DIR$/source code/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/source code/src/test/java/TestSuite.java" />
+    <entry file="file://$PROJECT_DIR$/source code/src/test/java/MyTests.java" />
+    <entry file="file://$PROJECT_DIR$/source code/src/test/java/ClassToBeTested.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runner/RunWith.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pl/junit/MyTests.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/pl/junit/ClassToBeTested.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/testng.xml" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/pl/testng/TestNGXMLTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/pl/junit/ParameterizedTests.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/pl/testng/RegularExpressionGroupTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/resources/testng.xml" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/sql/Statement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="89" column="8" selection-start-line="89" selection-start-column="8" selection-end-line="89" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/sql/PreparedStatement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="478" column="12" selection-start-line="478" selection-start-column="12" selection-end-line="478" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/sql/Connection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="457" column="65" lean-forward="true" selection-start-line="457" selection-start-column="65" selection-end-line="457" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="47" column="29" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edusession/connection/InitDatabaseManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edusession/connection/ConnectionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edusession/db/operations/CRUD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="79" selection-start-line="21" selection-start-column="79" selection-end-line="21" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/edusession/StartUseCases.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>jdbc-transactions</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: mysql:mysql-connector-java:5.1.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
