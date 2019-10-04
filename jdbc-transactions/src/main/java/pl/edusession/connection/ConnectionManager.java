@@ -8,7 +8,6 @@ public class ConnectionManager {
     public static Connection getConnectionManager(String connectionLink, String user, String password) throws SQLException {
         return DriverManager.getConnection(connectionLink, user, password);
     }
-
     public static void closeConnection(Connection connection) throws SQLException {
         connection.close();
     }

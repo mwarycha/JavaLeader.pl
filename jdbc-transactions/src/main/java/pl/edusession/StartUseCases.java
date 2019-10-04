@@ -8,7 +8,7 @@ import java.sql.SQLException;
 
 public class StartUseCases {
 
-    final static String h2ConnectionLink    = "jdbc:h2:~/test, myProp";
+    final static String h2ConnectionLink    = "jdbc:h2:~/test";
     final static String mysqlConnectionLink = "jdbc:mysql://localhost:3307/javaleader?useLegacyDatetimeCode=false&serverTimezone=UTC";
 
     private static Connection connection;
@@ -97,9 +97,9 @@ public class StartUseCases {
     }
 
     public static void main(String[] args) throws SQLException {
-        new StartUseCases(mysqlConnectionLink,"root", "root");
+        new StartUseCases(h2ConnectionLink,"sa", "");
         startTransactionReadCommitedTest();
-        startTransactionRepeatableRead();
-        startTransactionSerializable();
+        //startTransactionRepeatableRead();
+        //startTransactionSerializable();
     }
 }

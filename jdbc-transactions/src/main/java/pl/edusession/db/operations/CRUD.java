@@ -1,8 +1,6 @@
 package pl.edusession.db.operations;
 
 import java.sql.*;
-import java.util.TimerTask;
-import java.util.concurrent.CountDownLatch;
 
 import static java.lang.Thread.sleep;
 
@@ -25,51 +23,52 @@ public class CRUD {
         }
     }
 
-public static void getAllUsers(Connection connection) throws SQLException {
-    try
-    {
-        System.out.println("start first read");
-        printAllUsers(connection);
-        System.out.println("end first read");
+    public static void getAllUsers(Connection connection) throws SQLException {
+            System.out.println("start first read");
+            printAllUsers(connection);
+            System.out.println("end first read");
 
-        sleep(5000);
-        System.out.println("start second read");
-        printAllUsers(connection);
-        System.out.println("end second read");
-    }
-    catch(Exception e)
-    {
-        connection.rollback();
-    }
+            try {
+                sleep(100);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
 
-}
+            System.out.println("start second read");
+            printAllUsers(connection);
+            System.out.println("end second read");
+    }
 
     public static void insertUsers(Connection connection) throws SQLException {
+
         try {
             sleep(5000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+
         System.out.println("[INSERT]");
         String sqlInsert1 = "INSERT INTO users (email) VALUES ('user@mail.com');";
         PreparedStatement psInsert = connection.prepareStatement(sqlInsert1);
         psInsert.execute();
+
+       // connection.commit();
+    }
+
+    public static void updateUsers(Connection connection) throws SQLException {
+
+        try {
+            sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        System.out.println("[UPDATE]");
+        String updateSqlRowToUpdate = "UPDATE users SET email = 'example-update@example.com' WHERE email = 'user@mail.com'";
+
+        Statement stmt = connection.createStatement();
+        stmt.executeUpdate(updateSqlRowToUpdate);
+
         connection.commit();
     }
-
-public static void updateUsers(Connection connection) throws SQLException {
-    try {
-        sleep(5000);
-    } catch (InterruptedException e) {
-        e.printStackTrace();
-    }
-    System.out.println("[UPDATE]");
-    String updateSqlRowToUpdate = "UPDATE users SET email = 'example-update@example.com' WHERE email = 'user@mail.com'";
-
-    Statement stmt = connection.createStatement();
-    stmt.executeUpdate(updateSqlRowToUpdate);
-
-    connection.commit();
-}
-
 }
