@@ -39,6 +39,9 @@ class SecurityConfig extends WebSecurityConfigurerAdapter {
     // @formatter:off
     @Override
     protected void configure(HttpSecurity http) throws Exception {
+
+        //http.csrf().disable();
+
         http.antMatcher("/**")
                 .addFilterBefore(ssoFilter(), BasicAuthenticationFilter.class)
                 .authorizeRequests()
@@ -75,7 +78,7 @@ class SecurityConfig extends WebSecurityConfigurerAdapter {
         OAuth2ClientAuthenticationProcessingFilter githubFilter = new OAuth2ClientAuthenticationProcessingFilter(
                 "/connect/github");
         OAuth2RestTemplate githubTemplate = new OAuth2RestTemplate(github(), oauth2ClientContext);
-        githubFilter.setRestTemplate(facebookTemplate);
+        githubFilter.setRestTemplate(githubTemplate);
         tokenServices = new UserInfoTokenServices(githubResource().getUserInfoUri(),
                 github().getClientId());
         tokenServices.setRestTemplate(githubTemplate);
