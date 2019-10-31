@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Red Stapler</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width" />
+    <base href="/" />
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/3.3.7/css/bootstrap.min.css}" />
+</head>
+<body>
+<div id="navbar">
+    <span>OAuth2 - Single Sign On with Facebook</span>
+</div>
+<div id="wrapper">
+
+    <div class="unauthenticated">
+        <a href="/connect/facebook">click here</a>
+        <a href="/connect/github">click here</a>
+    </div>
+    <div class="authenticated" style="display: none">
+        Logged in as: <span id="user"></span>
+        <div>
+            <button onClick="logout()" class="btn">Logout</button>
+        </div>
+    </div>
+</div>
+
+
+<script th:fragment = "jquery"    th:src = "@{/webjars/jquery/2.2.4/jquery.min.js}"></script>
+<script th:fragment = "bootstrap" th:src = "@{/webjars/bootstrap/3.3.7/js/bootstrap.min.js}"></script>
+<script th:fragment = "main"      th:src = "@{/js/main.js}"></script>
+
+</body>
+</html>
