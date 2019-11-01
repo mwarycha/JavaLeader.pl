@@ -1,4 +1,4 @@
-package pl.javaleader.oauth2sso;
+package pl.javaleader.oauth2sso.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -1,31 +1,29 @@
 package pl.javaleader.oauth2sso.configurations;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.security.oauth2.resource.ResourceServerProperties;
 import org.springframework.boot.autoconfigure.security.oauth2.resource.UserInfoTokenServices;
-import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.boot.web.servlet.FilterRegistrationBean;
-import org.springframework.context.annotation.Bean;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import java.security.Principal;
 import java.util.ArrayList;
 import java.util.List;
-
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.oauth2.client.OAuth2ClientContext;
 import org.springframework.security.oauth2.client.OAuth2RestTemplate;
-import org.springframework.security.oauth2.client.filter.OAuth2ClientAuthenticationProcessingFilter;
-import org.springframework.security.oauth2.client.filter.OAuth2ClientContextFilter;
 import org.springframework.security.oauth2.client.token.grant.code.AuthorizationCodeResourceDetails;
-import org.springframework.security.oauth2.config.annotation.web.configuration.EnableOAuth2Client;
+import org.springframework.web.filter.CompositeFilter;
+import org.springframework.security.oauth2.provider.OAuth2Authentication;
 import org.springframework.security.web.authentication.www.BasicAuthenticationFilter;
 import org.springframework.security.web.csrf.CookieCsrfTokenRepository;
+import javax.servlet.Filter;
+
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.filter.CompositeFilter;
-
-import javax.servlet.Filter;
+import org.springframework.security.oauth2.config.annotation.web.configuration.EnableOAuth2Client;
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.Bean;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 @EnableOAuth2Client
@@ -35,12 +33,8 @@ class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     OAuth2ClientContext oauth2ClientContext;
 
-
-    // @formatter:off
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-
-        //http.csrf().disable();
 
         http.antMatcher("/**")
                 .addFilterBefore(ssoFilter(), BasicAuthenticationFilter.class)
@@ -50,14 +44,15 @@ class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .anyRequest()
                 .authenticated()
                 .and()
-                .logout()
-                .logoutSuccessUrl("/").permitAll().and().csrf()
-                .csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse());
+                    .logout()
+                    .logoutSuccessUrl("/").permitAll().and().csrf()
+                    .csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse());
     }
-    // @formatter:on
 
     @RequestMapping("/user")
     public Principal user(Principal principal) {
+        OAuth2Authentication oAuth2Authentication = (OAuth2Authentication) SecurityContextHolder.getContext().getAuthentication();
+        oAuth2Authentication.getAuthorities().forEach(x ->System.out.println(x));
         return principal;
     }
 
@@ -66,21 +61,19 @@ class SecurityConfig extends WebSecurityConfigurerAdapter {
         CompositeFilter filter = new CompositeFilter();
         List<Filter> filters = new ArrayList<>();
 
-        OAuth2ClientAuthenticationProcessingFilter facebookFilter = new OAuth2ClientAuthenticationProcessingFilter(
+        CustomOAuth2ClientAuthenticationProcessingFilter facebookFilter = new CustomOAuth2ClientAuthenticationProcessingFilter(
                 "/connect/facebook");
         OAuth2RestTemplate facebookTemplate = new OAuth2RestTemplate(facebook(), oauth2ClientContext);
         facebookFilter.setRestTemplate(facebookTemplate);
-        UserInfoTokenServices tokenServices = new UserInfoTokenServices(facebookResource().getUserInfoUri(),
-                facebook().getClientId());
+        UserInfoTokenServices tokenServices = new UserInfoTokenServices(facebookResource().getUserInfoUri(), facebook().getClientId());
         tokenServices.setRestTemplate(facebookTemplate);
         facebookFilter.setTokenServices(tokenServices);
 
-        OAuth2ClientAuthenticationProcessingFilter githubFilter = new OAuth2ClientAuthenticationProcessingFilter(
+        CustomOAuth2ClientAuthenticationProcessingFilter githubFilter = new CustomOAuth2ClientAuthenticationProcessingFilter(
                 "/connect/github");
         OAuth2RestTemplate githubTemplate = new OAuth2RestTemplate(github(), oauth2ClientContext);
         githubFilter.setRestTemplate(githubTemplate);
-        tokenServices = new UserInfoTokenServices(githubResource().getUserInfoUri(),
-                github().getClientId());
+        tokenServices = new UserInfoTokenServices(githubResource().getUserInfoUri(), github().getClientId());
         tokenServices.setRestTemplate(githubTemplate);
         githubFilter.setTokenServices(tokenServices);
 
@@ -89,15 +82,6 @@ class SecurityConfig extends WebSecurityConfigurerAdapter {
         filter.setFilters(filters);
 
         return filter;
-    }
-
-
-    @Bean
-    public FilterRegistrationBean oauth2ClientFilterRegistration(OAuth2ClientContextFilter filter) {
-        FilterRegistrationBean registration = new FilterRegistrationBean();
-        registration.setFilter(filter);
-        registration.setOrder(-100);
-        return registration;
     }
 
     @Bean
@@ -123,6 +107,4 @@ class SecurityConfig extends WebSecurityConfigurerAdapter {
     public ResourceServerProperties githubResource() {
         return new ResourceServerProperties();
     }
-
-
 }

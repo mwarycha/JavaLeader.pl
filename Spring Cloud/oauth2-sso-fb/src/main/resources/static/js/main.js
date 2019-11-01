@@ -3,13 +3,13 @@ if (window.location.hash == '#_=_'){
 }
 
 $.get( "/user", function(data) {
-    alert( "success" );
+alert( JSON.stringify(data) );
     $("#user").html(data.userAuthentication.details.name);
         $(".unauthenticated").hide()
         $(".authenticated").show()
     })
     .done(function() {
-        alert( "second success" );
+        alert( "success" );
     })
     .fail(function() {
         alert( "error" );
@@ -29,15 +29,15 @@ var logout = function() {
 }
 
 $.ajaxSetup({
-beforeSend : function(xhr, settings) {
-  if (settings.type == 'POST' || settings.type == 'PUT'
-      || settings.type == 'DELETE') {
-    if (!(/^http:.*/.test(settings.url) || /^https:.*/
-        .test(settings.url))) {
-      // Only send the token to relative URLs i.e. locally.
-      xhr.setRequestHeader("X-XSRF-TOKEN",
-          Cookies.get('XSRF-TOKEN'));
+    beforeSend : function(xhr, settings) {
+      if (settings.type == 'POST' || settings.type == 'PUT'
+          || settings.type == 'DELETE') {
+        if (!(/^http:.*/.test(settings.url) || /^https:.*/
+            .test(settings.url))) {
+          // Only send the token to relative URLs i.e. locally.
+          xhr.setRequestHeader("X-XSRF-TOKEN",
+              Cookies.get('XSRF-TOKEN'));
+        }
+      }
     }
-  }
-}
 });
