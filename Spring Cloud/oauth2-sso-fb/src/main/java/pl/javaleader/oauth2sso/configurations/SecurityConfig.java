@@ -50,7 +50,7 @@ class SecurityConfig extends WebSecurityConfigurerAdapter {
     }
 
     @RequestMapping("/user")
-    public Principal user(Principal principal) {
+    public Principal userPrincipal(Principal principal) {
         OAuth2Authentication oAuth2Authentication = (OAuth2Authentication) SecurityContextHolder.getContext().getAuthentication();
         oAuth2Authentication.getAuthorities().forEach(x ->System.out.println(x));
         return principal;
