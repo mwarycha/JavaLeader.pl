@@ -4,31 +4,27 @@ import org.springframework.boot.autoconfigure.security.oauth2.resource.ResourceS
 import org.springframework.boot.autoconfigure.security.oauth2.resource.UserInfoTokenServices;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
-import java.security.Principal;
 import java.util.ArrayList;
 import java.util.List;
-import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.oauth2.client.OAuth2ClientContext;
 import org.springframework.security.oauth2.client.OAuth2RestTemplate;
 import org.springframework.security.oauth2.client.token.grant.code.AuthorizationCodeResourceDetails;
 import org.springframework.web.filter.CompositeFilter;
-import org.springframework.security.oauth2.provider.OAuth2Authentication;
 import org.springframework.security.web.authentication.www.BasicAuthenticationFilter;
 import org.springframework.security.web.csrf.CookieCsrfTokenRepository;
 import javax.servlet.Filter;
 
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 import org.springframework.security.oauth2.config.annotation.web.configuration.EnableOAuth2Client;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.context.annotation.Configuration;
 
-@SpringBootApplication
+@Configuration
+@EnableWebSecurity
 @EnableOAuth2Client
-@RestController
-class SecurityConfig extends WebSecurityConfigurerAdapter {
+public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
     OAuth2ClientContext oauth2ClientContext;
@@ -39,7 +35,8 @@ class SecurityConfig extends WebSecurityConfigurerAdapter {
         http.antMatcher("/**")
                 .addFilterBefore(ssoFilter(), BasicAuthenticationFilter.class)
                 .authorizeRequests()
-                .antMatchers("/", "/connect/**", "/webjars/**")
+                .antMatchers( "/resources/**").permitAll()
+                .antMatchers("/connect/**", "/webjars/**", "/", "/js/**", "/css/**", "/img/**", "/vendor/**", "/scss/**", "/logo/**")
                 .permitAll()
                 .anyRequest()
                 .authenticated()
@@ -47,13 +44,6 @@ class SecurityConfig extends WebSecurityConfigurerAdapter {
                     .logout()
                     .logoutSuccessUrl("/").permitAll().and().csrf()
                     .csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse());
-    }
-
-    @RequestMapping("/user")
-    public Principal userPrincipal(Principal principal) {
-        OAuth2Authentication oAuth2Authentication = (OAuth2Authentication) SecurityContextHolder.getContext().getAuthentication();
-        oAuth2Authentication.getAuthorities().forEach(x ->System.out.println(x));
-        return principal;
     }
 
     private Filter ssoFilter() {

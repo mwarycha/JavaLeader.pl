@@ -19,7 +19,6 @@ alert( JSON.stringify(data) );
 });
 
 var logout = function() {
-    alert('test');
     $.post("/logout", function() {
       $("#user").html('');
       $(".unauthenticated").show();

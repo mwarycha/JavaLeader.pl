@@ -28,7 +28,7 @@ protected void successfulAuthentication(HttpServletRequest request, HttpServletR
 
             @Override
             public Collection<? extends GrantedAuthority> getAuthorities() {
-                return AuthorityUtils.createAuthorityList("ROLE_ADMIN", "ROLE_USER");
+                return AuthorityUtils.createAuthorityList("ROLE_ADMIN", "ROLE_USER", "ROLE_ANONYMOUS");
             }
 
             @Override
