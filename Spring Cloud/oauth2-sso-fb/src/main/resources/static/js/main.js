@@ -3,19 +3,19 @@ if (window.location.hash == '#_=_'){
 }
 
 $.get( "/user", function(data) {
-alert( JSON.stringify(data) );
+
     $("#user").html(data.userAuthentication.details.name);
         $(".unauthenticated").hide()
         $(".authenticated").show()
     })
     .done(function() {
-        alert( "success" );
+
     })
     .fail(function() {
-        alert( "error" );
+
     })
     .always(function() {
-        alert( "finished" );
+
 });
 
 var logout = function() {
@@ -24,7 +24,13 @@ var logout = function() {
       $(".unauthenticated").show();
       $(".authenticated").hide();
     });
-    return true;
+
+    return redirect_to_home_page();
+}
+
+var redirect_to_home_page = function() {
+    window.alert('Wylogowano')
+    window.location.href = 'http://localhost:8088';
 }
 
 $.ajaxSetup({

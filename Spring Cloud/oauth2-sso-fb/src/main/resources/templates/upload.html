@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-    <head th:replace="fragments/head :: head" />
+<head th:replace="fragments/head :: head" />
 <body>
 
 <!-- Navigation -->
@@ -18,8 +18,8 @@
             </div>
             <div class="authenticated" style="display: none">
                 Zalogowano jako: <span id="user"></span>
-                <button onClick="logout();" class="btn btn-primary btn-block">Wyloguj się</button>
-                <button onclick="window.location.href='/upload'" class="btn btn-warning btn-block">Wgraj PDF  <i class="fas fa-file-pdf"></i></button>
+                <button onClick="logout()" class="btn btn-primary btn-block"><i class="fas fa-sign-out-alt"></i> Wyloguj się</button>
+                <button onclick="window.location.href='/upload'" class="btn btn-warning btn-block"><i class="fas fa-file-pdf"></i> Wgraj </button>
             </div>
         </div>
     </div>
@@ -48,42 +48,24 @@
             </div>
         </div>
     </div>
-</header>
 
-<!-- Icons Grid -->
-<section class="features-icons bg-light text-center">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-4">
-                <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                    <div class="features-icons-icon d-flex">
-                        <i class="icon-screen-desktop m-auto text-primary"></i>
-                    </div>
-                    <h3>Profesjonalizm</h3>
-                    <p class="lead mb-0">Treści są weryfikowane przez specjalistów zanim trafią do wyszukiwarki</p>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                    <div class="features-icons-icon d-flex">
-                        <i class="icon-layers m-auto text-primary"></i>
-                    </div>
-                    <h3>Dostępność</h3>
-                    <p class="lead mb-0">Wyszukiwarka PDF dostępna jest za darmo i dla wszystkich. Każdy może tworzyć treści i udostępniać je innym</p>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="features-icons-item mx-auto mb-0 mb-lg-3">
-                    <div class="features-icons-icon d-flex">
-                        <i class="icon-check m-auto text-primary"></i>
-                    </div>
-                    <h3>Wygoda</h3>
-                    <p class="lead mb-0">Wysokiej jakości materiały IT w postaci dokumentów PDF w jednym miejscu pisane przez ludzi z pasją dla ludzi z pasją</p>
+    <div class="upload-container">
+        <div class="text-left upload-content">
+            <div class="single-upload">
+                <h3 class="text-black-50">Wgraj swój PDF</h3>
+                <form id="singleUploadForm" name="singleUploadForm">
+                    <input id="singleFileUploadInput" type="file" name="file" class="file-input text-black-50" />
+                    <button type="submit" class="primary submit-btn">Wyślij do weryfikacji</button>
+                </form>
+                <div class="upload-response">
+                    <div class="text-black-50" id="singleFileUploadError"></div>
+                    <div class="text-black-50" id="singleFileUploadSuccess"></div>
                 </div>
             </div>
         </div>
     </div>
-</section>
+
+</header>
 
 <div th:replace="fragments/footer :: footer">&copy; 2019 Java Development</div>
 </body>

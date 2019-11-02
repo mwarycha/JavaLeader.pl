@@ -6,7 +6,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class ControllerApi {
     @GetMapping("/")
-    String getPublicContent() {
+    public String getPublicContent() {
         return "index";
+    }
+
+    @GetMapping("/upload")
+    public String getUpload() {
+        return "upload";
     }
 }

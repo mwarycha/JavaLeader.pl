@@ -29,6 +29,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     OAuth2ClientContext oauth2ClientContext;
 
+    @Autowired
+    private MyLogoutSuccessHandlerOne myLogoutSuccessHandler;
+
     @Override
     protected void configure(HttpSecurity http) throws Exception {
 
@@ -41,8 +44,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .anyRequest()
                 .authenticated()
                 .and()
-                    .logout()
-                    .logoutSuccessUrl("/").permitAll().and().csrf()
+                    .logout().
+                     logoutSuccessHandler(myLogoutSuccessHandler).permitAll().and().csrf()
                     .csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse());
     }
 
