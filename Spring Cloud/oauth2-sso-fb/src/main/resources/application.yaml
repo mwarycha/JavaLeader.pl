@@ -13,7 +13,7 @@ facebook:
 github:
   client:
     clientId:
-    clientSecret: 
+    clientSecret:
     accessTokenUri: https://github.com/login/oauth/access_token
     userAuthorizationUri: https://github.com/login/oauth/authorize
     clientAuthenticationScheme: form
@@ -22,4 +22,4 @@ github:
     userInfoUri: https://api.github.com/user
 
 server:
-  port: 8085
+  port: 8086
