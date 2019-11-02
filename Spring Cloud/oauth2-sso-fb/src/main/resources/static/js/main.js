@@ -24,18 +24,15 @@ var logout = function() {
       $(".unauthenticated").show();
       $(".authenticated").hide();
     })
-
-    .done(function() {
-         window.location.href = 'http://localhost:8088';
-        })
-    .fail(function() {
-
-    })
-    .always(function() {
-
-    });
-
-    return true;
+     .done(function() {
+       window.location.href = "http://localhost:8089";
+     })
+     .fail(function(xhr, status, error) {
+       alert(xhr.responseText);
+     })
+     .always(function() {
+       alert( "finished" );
+     });
 }
 
 $.ajaxSetup({
