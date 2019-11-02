@@ -23,14 +23,19 @@ var logout = function() {
       $("#user").html('');
       $(".unauthenticated").show();
       $(".authenticated").hide();
+    })
+
+    .done(function() {
+         window.location.href = 'http://localhost:8088';
+        })
+    .fail(function() {
+
+    })
+    .always(function() {
+
     });
 
-    return redirect_to_home_page();
-}
-
-var redirect_to_home_page = function() {
-    window.alert('Wylogowano')
-    window.location.href = 'http://localhost:8088';
+    return true;
 }
 
 $.ajaxSetup({

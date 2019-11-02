@@ -37,7 +37,7 @@ function uploadSingleFile(file) {
         if(xhr.status == 200) {
 
             singleFileUploadError.style.display   = "none";
-            singleFileUploadSuccess.innerHTML     = "<p class='text-success'>Plik wgrany prawidłowo i oczekuje teraz na weryfikacje</p><p>pobierz : <a href='" + response.fileDownloadUri + "' target='_blank'>" + response.fileDownloadUri + "</a></p>";
+            singleFileUploadSuccess.innerHTML     = "<p class='text-success'><i class='fas fa-check text-success'></i> Plik wgrany prawidłowo i oczekuje teraz na weryfikację zanim trafi do wyszukiwarki</p><p><i class='fas fa-download'></i> pobierz : <a href='" + response.fileDownloadUri + "' target='_blank'>" + response.fileDownloadUri + "</a></p>";
             singleFileUploadSuccess.style.display = "block";
         } else {
             singleFileUploadSuccess.style.display = "none";

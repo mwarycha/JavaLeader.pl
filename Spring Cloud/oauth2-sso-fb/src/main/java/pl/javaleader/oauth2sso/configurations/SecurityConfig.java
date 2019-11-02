@@ -39,7 +39,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .addFilterBefore(ssoFilter(), BasicAuthenticationFilter.class)
                 .authorizeRequests()
                 .antMatchers( "/resources/**").permitAll()
-                .antMatchers("/connect/**", "/webjars/**", "/", "/js/**", "/css/**", "/img/**", "/vendor/**", "/scss/**", "/logo/**")
+                .antMatchers("/connect/**", "/webjars/**", "/", "/js/**", "/css/**", "/img/**", "/vendor/**", "/scss/**", "/logo/**","/contact-process")
                 .permitAll()
                 .anyRequest()
                 .authenticated()
