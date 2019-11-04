@@ -2,6 +2,8 @@ if (window.location.hash == '#_=_'){
   history.replaceState? history.replaceState(null, null, window.location.href.split('#')[0]) : window.location.hash = '';
 }
 
+var searchUserVal = document.querySelector('#searchVal');
+
 $.get( "/user", function(data) {
     $("#user").html(data.userAuthentication.details.name);
         $(".unauthenticated").hide()
@@ -47,10 +49,10 @@ $.ajaxSetup({
 });
 
 var search = function() {
- $.get("/search", function(data) {
+ $.get("/search?searchUserVal="+searchUserVal.value, function(data) {
     })
     .done(function(data) {
-        $("#search").load("/search");
+        $("#search").load("/search?searchUserVal="+searchUserVal.value);
           $('html, body').animate({
                     scrollTop: $("#search").offset().top
                 }, 2000);

@@ -4,7 +4,11 @@
     </head>
     <body>
         <section th:fragment="search-results" class="features-icons bg-light text-center">
-            <h1><i class="fas fa-search"></i> Wyniki wyszukiwania</h1>
+
+            <div th:switch="true">
+                <h1 th:case="${resultsSize} > 0"><i class="fas fa-search"></i> Wyniki wyszukiwania</h1>
+                <h1 th:case="${resultsSize} == 0"> Brak wyników dla podanej frazy :(</h1>
+            </div>
             <div class="container">
                 <div class="row">
                     <th:block th:each="file: ${allFiles}">

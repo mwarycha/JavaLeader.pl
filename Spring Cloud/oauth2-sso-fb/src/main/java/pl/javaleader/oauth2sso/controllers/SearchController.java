@@ -1,6 +1,7 @@
 package pl.javaleader.oauth2sso.controllers;
 
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import pl.javaleader.oauth2sso.model.DBFile;
 import pl.javaleader.oauth2sso.repositories.DBFileRepository;
@@ -29,12 +30,17 @@ public class SearchController {
     }
 
     @RequestMapping(value="/search")
-    public String searchResults(Model model) {
+    public String searchResults(Model model, @RequestParam("searchUserVal") String searchUserVal) {
 
         List<DBFile> listOfAllFiles         = dbFileRepository.findAll();
         List<FileSearched> fileSearchedList = new ArrayList();
 
         for (DBFile file : listOfAllFiles) {
+
+            if(!file.getFileName().contains(searchUserVal)) {
+                continue;
+            }
+
             String fileDownloadUri = ServletUriComponentsBuilder.fromCurrentContextPath()
                     .path("/downloadFile/")
                     .path(file.getId())
@@ -44,7 +50,8 @@ public class SearchController {
             fileSearchedList.add(fileSearched);
         }
 
-        model.addAttribute("allFiles", fileSearchedList);
+        model.addAttribute("allFiles"  , fileSearchedList);
+        model.addAttribute("resultsSize", fileSearchedList.size());
 
         return "fragments/search-results :: search-results";
     }
