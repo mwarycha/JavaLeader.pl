@@ -42,6 +42,7 @@ function uploadSingleFile(file) {
         } else {
             singleFileUploadSuccess.style.display = "none";
             singleFileUploadError.innerHTML = (response.message) || "wystąpił błąd";
+            singleFileUploadError.style.display = "block";
         }
     }
 
