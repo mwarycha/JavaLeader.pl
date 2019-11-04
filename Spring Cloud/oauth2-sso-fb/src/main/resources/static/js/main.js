@@ -3,29 +3,26 @@ if (window.location.hash == '#_=_'){
 }
 
 $.get( "/user", function(data) {
-
     $("#user").html(data.userAuthentication.details.name);
         $(".unauthenticated").hide()
         $(".authenticated").show()
     })
     .done(function() {
-
     })
     .fail(function() {
-
     })
     .always(function() {
-
 });
 
 var logout = function() {
+
     $.post("/logout", function() {
       $("#user").html('');
       $(".unauthenticated").show();
       $(".authenticated").hide();
     })
      .done(function() {
-       window.location.href = "http://localhost:8089";
+       window.location.href = "http://localhost:8090";
      })
      .fail(function(xhr, status, error) {
        alert(xhr.responseText);
@@ -48,3 +45,23 @@ $.ajaxSetup({
       }
     }
 });
+
+var search = function() {
+ $.get("/search", function(data) {
+    })
+    .done(function(data) {
+        $("#search").load("/search");
+          $('html, body').animate({
+                    scrollTop: $("#search").offset().top
+                }, 2000);
+    })
+   .fail(function(xhr, status, error) {
+       alert(xhr.responseText);
+     })
+   .always(function() {
+    });
+}
+
+searchForm.addEventListener('submit', function(event){
+    event.preventDefault();
+}, true);

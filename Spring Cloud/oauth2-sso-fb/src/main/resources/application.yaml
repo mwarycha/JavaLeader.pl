@@ -22,7 +22,7 @@ github:
     userInfoUri: https://api.github.com/user
 
 server:
-  port: 8089
+  port: 8090
 
 spring:
   http:
