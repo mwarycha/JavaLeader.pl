@@ -1,12 +1,14 @@
 package pl.javaleader.oauth2sso.controllers;
 
-import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
 import pl.javaleader.oauth2sso.model.Contactdata;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.stereotype.Controller;
 
 @Controller
 public class ControllerApi {
+
     @GetMapping("/")
     public String getPublicContent(Model model) {
         model.addAttribute("contactdata", new Contactdata());

@@ -22,7 +22,7 @@ public class DBFileStorageService {
 
         try {
             // Check if the file's name contains invalid characters
-            if(fileName.contains("..")) {
+            if(fileName.contains("..") || !file.getContentType().equals("application/pdf")) {
                 throw new FileStorageException("Sorry! Filename contains invalid path sequence " + fileName);
             }
 

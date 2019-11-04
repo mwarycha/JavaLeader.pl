@@ -12,16 +12,18 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import pl.javaleader.oauth2sso.model.DBFile;
 import pl.javaleader.oauth2sso.model.UploadFileResponse;
-
-import org.springframework.beans.factory.annotation.Autowired;
+import pl.javaleader.oauth2sso.service.DBFileStorageService;
 
 @RestController
 public class FileController {
 
     private static final Logger logger = LoggerFactory.getLogger(FileController.class);
 
-    @Autowired
-    private pl.javaleader.oauth2sso.service.DBFileStorageService DBFileStorageService;
+    private DBFileStorageService DBFileStorageService;
+
+    public FileController(pl.javaleader.oauth2sso.service.DBFileStorageService DBFileStorageService) {
+        this.DBFileStorageService = DBFileStorageService;
+    }
 
     @PostMapping("/uploadFile")
     public UploadFileResponse uploadFile(@RequestParam("file") MultipartFile file) {

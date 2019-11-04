@@ -37,7 +37,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .addFilterBefore(ssoFilter(), BasicAuthenticationFilter.class)
                 .authorizeRequests()
                 .antMatchers( "/resources/**").permitAll()
-                .antMatchers("/connect/**", "/webjars/**", "/", "/js/**", "/css/**", "/img/**", "/vendor/**", "/scss/**", "/logo/**","/contact-process", "/search")
+                .antMatchers("/connect/**", "/webjars/**", "/", "/js/**", "/css/**", "/img/**", "/vendor/**", "/scss/**", "/logo/**","/contact-process", "/search","/private-policy")
                 .permitAll()
                 .anyRequest()
                 .authenticated()
@@ -51,16 +51,14 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         CompositeFilter filter = new CompositeFilter();
         List<Filter> filters = new ArrayList<>();
 
-        CustomOAuth2ClientAuthenticationProcessingFilter facebookFilter = new CustomOAuth2ClientAuthenticationProcessingFilter(
-                "/connect/facebook");
+        CustomOAuth2ClientAuthenticationProcessingFilter facebookFilter = new CustomOAuth2ClientAuthenticationProcessingFilter("/connect/facebook");
         OAuth2RestTemplate facebookTemplate = new OAuth2RestTemplate(facebook(), oauth2ClientContext);
         facebookFilter.setRestTemplate(facebookTemplate);
         UserInfoTokenServices tokenServices = new UserInfoTokenServices(facebookResource().getUserInfoUri(), facebook().getClientId());
         tokenServices.setRestTemplate(facebookTemplate);
         facebookFilter.setTokenServices(tokenServices);
 
-        CustomOAuth2ClientAuthenticationProcessingFilter githubFilter = new CustomOAuth2ClientAuthenticationProcessingFilter(
-                "/connect/github");
+        CustomOAuth2ClientAuthenticationProcessingFilter githubFilter = new CustomOAuth2ClientAuthenticationProcessingFilter("/connect/github");
         OAuth2RestTemplate githubTemplate = new OAuth2RestTemplate(github(), oauth2ClientContext);
         githubFilter.setRestTemplate(githubTemplate);
         tokenServices = new UserInfoTokenServices(githubResource().getUserInfoUri(), github().getClientId());

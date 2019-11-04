@@ -1,7 +1,6 @@
 package pl.javaleader.oauth2sso.controllers;
 
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import pl.javaleader.oauth2sso.model.DBFile;
 import pl.javaleader.oauth2sso.repositories.DBFileRepository;
@@ -12,6 +11,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Getter
 @AllArgsConstructor
@@ -50,7 +50,7 @@ public class SearchController {
             fileSearchedList.add(fileSearched);
         }
 
-        model.addAttribute("allFiles"  , fileSearchedList);
+        model.addAttribute("allFiles"   , fileSearchedList);
         model.addAttribute("resultsSize", fileSearchedList.size());
 
         return "fragments/search-results :: search-results";
