@@ -57,7 +57,7 @@ public class SearchController {
     }
 
     private String cutString(String str) {
-        int MIN = 1;
+        int MIN = 0;
         int MAX = 16;
         int MAX_LENGTH_OF_STRING = 15;
         if(str.length() > MAX_LENGTH_OF_STRING) {

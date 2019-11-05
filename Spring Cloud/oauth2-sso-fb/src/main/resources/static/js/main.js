@@ -1,4 +1,4 @@
-if (window.location.hash == '#_=_'){
+if (window.location.hash == '#_=_') {
   history.replaceState? history.replaceState(null, null, window.location.href.split('#')[0]) : window.location.hash = '';
 }
 
@@ -17,7 +17,6 @@ $.get( "/user", function(data) {
 });
 
 var logout = function() {
-
     $.post("/logout", function() {
       $("#user").html('');
       $(".unauthenticated").show();
@@ -34,20 +33,6 @@ var logout = function() {
      });
 }
 
-$.ajaxSetup({
-    beforeSend : function(xhr, settings) {
-      if (settings.type == 'POST' || settings.type == 'PUT'
-          || settings.type == 'DELETE') {
-        if (!(/^http:.*/.test(settings.url) || /^https:.*/
-            .test(settings.url))) {
-          // Only send the token to relative URLs i.e. locally.
-          xhr.setRequestHeader("X-XSRF-TOKEN",
-              Cookies.get('XSRF-TOKEN'));
-        }
-      }
-    }
-});
-
 var search = function() {
  $.get("/search?searchUserVal="+searchUserVal.value, function(data) {
     })
@@ -63,6 +48,20 @@ var search = function() {
    .always(function() {
     });
 }
+
+$.ajaxSetup({
+    beforeSend : function(xhr, settings) {
+      if (settings.type == 'POST' || settings.type == 'PUT'
+          || settings.type == 'DELETE') {
+        if (!(/^http:.*/.test(settings.url) || /^https:.*/
+            .test(settings.url))) {
+          // Only send the token to relative URLs i.e. locally.
+          xhr.setRequestHeader("X-XSRF-TOKEN",
+              Cookies.get('XSRF-TOKEN'));
+        }
+      }
+    }
+});
 
 searchForm.addEventListener('submit', function(event){
     event.preventDefault();
