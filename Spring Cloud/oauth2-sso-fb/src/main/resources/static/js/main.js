@@ -23,7 +23,7 @@ var logout = function() {
       $(".authenticated").hide();
     })
      .done(function() {
-       window.location.href = "http://localhost:8090";
+       window.location.href = "https://knowj.javaleader.pl";
      })
      .fail(function(xhr, status, error) {
        alert(xhr.responseText);
