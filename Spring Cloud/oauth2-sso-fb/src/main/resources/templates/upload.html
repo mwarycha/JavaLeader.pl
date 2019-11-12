@@ -4,27 +4,30 @@
 
     <body>
 
-        <!-- Navigation -->
-        <nav class="navbar navbar-light bg-light static-top">
-            <div class="container">
-                <a class="navbar-brand"  href="/"><img style="width:100%;height:100%" class="img-fluid" th:src="@{/logo/JavaLeader_logo_v2.png}"/></a>
-                <div id="wrapper">
-                    <div class="unauthenticated">
-                        <a id= "fb-button" class="btn btn-primary btn-block" href = "/connect/facebook">
-                            <span class="text-white fab fa-facebook-f"></span> Zaloguj przez FB
-                        </a>
-                        <a id = "github-button" class="btn btn-primary btn-block" href="/connect/github">
-                            <span class="text-white fab fa-github"></span> Zaloguj przez GitHub
-                        </a>
-                    </div>
-                    <div class="authenticated" style="display: none">
-                        Zalogowano jako: <span id="user"></span>
-                        <button onClick="logout()" class="btn btn-primary btn-block"><i class="fas fa-sign-out-alt"></i> Wyloguj się</button>
-                        <button onclick="window.location.href='/upload'" class="btn btn-warning btn-block"><i class="fas fa-file-pdf"></i> Wgraj </button>
-                    </div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-light bg-light static-top">
+        <div class="container">
+            <a class="navbar-brand"  href="/"><img style="width:250%;height:250%" class="img-fluid" th:src="@{/logo/JavaLeader_logo_v2.png}"/></a>
+            <div id="wrapper">
+
+                <div class="unauthenticated">
+                    <!--<a id= "fb-button" class="btn btn-primary btn-block" href = "/connect/facebook">-->
+                    <!--<span class="text-white fab fa-facebook-f"></span> Zaloguj przez FB-->
+                    <!--</a>-->
+                    <a id = "github-button" class="btn btn-primary py-3 px-4 btn-block btn-pill" href="/connect/github">
+                        <span class="text-white fab fa-github"></span> Zaloguj przez GitHub
+                    </a>
                 </div>
+
+                <div class="authenticated" style="display: none">
+                    Zalogowano jako: <span id="user"></span>
+                    <a href="#" onClick="logout();" class="btn btn-primary py-3 px-4 btn-block btn-pill"><i class="fas fa-sign-out-alt"></i> Wyloguj się</a>
+                    <a href="#" onclick="window.location.href='/upload'" class="btn btn-warning py-3 px-4 btn-block btn-pill">Wgraj tutaj swój dokument PDF  <i class="fas fa-file-pdf"></i></a>
+                </div>
+
             </div>
-        </nav>
+        </div>
+    </nav>
 
         <!-- Masthead -->
         <header class="masthead text-white text-center">

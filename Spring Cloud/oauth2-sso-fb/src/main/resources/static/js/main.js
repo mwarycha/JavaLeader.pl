@@ -26,10 +26,10 @@ var logout = function() {
        window.location.href = "https://knowj.javaleader.pl";
      })
      .fail(function(xhr, status, error) {
-       alert(xhr.responseText);
+       // alert(xhr.responseText);
      })
      .always(function() {
-       alert( "finished" );
+       // alert( "finished" );
      });
 }
 
@@ -43,7 +43,7 @@ var search = function() {
                 }, 2000);
     })
    .fail(function(xhr, status, error) {
-       alert(xhr.responseText);
+       // alert(xhr.responseText);
      })
    .always(function() {
     });
