@@ -1,0 +1,1207 @@
+Wikibooks (en)
+Wikibooks Atom feed
+Shelf:Computer software
+Shelf:Internet
+w:web application
+Tutorial
+User Page Builder
+Category:Shelf:Web applications
+Category:Completed books
+Category:Book:Wikibooks Stacks/Shelves
+Category:Shelf:Web applications/all books
+Category:Completed books
+Category:Shelf:Web applications
+Category:Book:Wikibooks Stacks/Shelves
+RapidSMS Developers Guide
+Category:Shelf:Web applications
+Category:Books nearing completion
+Category:Book:Wikibooks Stacks/Shelves
+Category:Shelf:Web applications/all books
+Category:Books nearing completion
+Category:Shelf:Web applications
+Category:Book:Wikibooks Stacks/Shelves
+MediaWiki Administrator's Handbook
+Category:Shelf:Web applications
+Category:Half-finished books
+Category:Book:Wikibooks Stacks/Shelves
+Zoph
+Category:Shelf:Web applications/all books
+Category:Half-finished books
+Category:Shelf:Web applications
+Category:Book:Wikibooks Stacks/Shelves
+An Introduction to Weblogs
+Apache
+Blogging
+Gmail
+Rich Internet Applications for SLA Research
+Category:Shelf:Web applications
+Category:Partly developed books
+Category:Book:Wikibooks Stacks/Shelves
+Mambo Open Source
+Category:Shelf:Web applications/all books
+Category:Partly developed books
+Category:Shelf:Web applications
+Category:Book:Wikibooks Stacks/Shelves
+Co-Life
+EBay
+Google Services And Products
+Install osDate
+PHProjekt
+Sahana
+The StackExchange User Guide
+TiddlyWiki
+Wikimedia
+Yubnub
+Category:Shelf:Web applications
+Category:Freshly started books
+Category:Book:Wikibooks Stacks/Shelves
+CRE Loaded Features
+Modx
+SilverStripe
+The Developer's Guide to WordPress
+Umbraco
+Understanding Noah's Classifieds
+Category:Shelf:Web applications/all books
+Category:Freshly started books
+Category:Shelf:Web applications
+Category:Book:Wikibooks Stacks/Shelves
+Wikipedia Equality
+Category:Shelf:Web applications
+Category:Books by completion status/all books
+Category:Book:Wikibooks Stacks/Shelves
+TiddlyWiki Manual
+Category:Shelf:Web applications/all books
+Category:Shelf:Web applications
+Category:Books by completion status/all books
+Category:Book:Wikibooks Stacks/Shelves
+Shelf:TiddlyWiki
+Shelf:Web content management systems
+Category:Shelf:Web applications
+Category:Book:Wikibooks Stacks/Shelves
+Category:Shelf:Web applications/all books
+Category:Featured books
+Category:Book:Wikibooks Stacks/Shelves
+This page is semi-protected.
+Special:Categories
+Category:Shelf:Computer software
+Category:Shelf:Internet
+Category:Pages with template loops
+Category:Book:Wikibooks Stacks/Shelves
+Category:Semi-protected pages
+Discussion about edits from this IP address [n]
+A list of edits made from this IP address [y]
+You are encouraged to create an account and log in; however, it is not mandatory
+You are encouraged to log in; however, it is not mandatory [o]
+View the content page [c]
+Discussion about the content page (does not exist) [t]
+This page is protected.
+You can view its source [e]
+Past revisions of this page [h]
+Visit the main page
+Visit the main page [z]
+Find help on how to use and edit Wikibooks
+Check out what Wikibooks has to offer
+Learn recipes from around the world
+Books for children
+The best of Wikibooks
+A list of recent changes in the wiki [r]
+Support Wikibooks
+Discuss Wikibooks-related questions and concerns with others
+Find your way around the Wikibooks community
+Important community news
+Frequent tasks that you can help with
+Pages detailing important rules and procedures
+Alternative methods of communication
+A list of all wiki pages that link here [j]
+Recent changes in pages linked from this page [k]
+Upload files [u]
+A list of all special pages [q]
+Permanent link to this revision of the page
+More information about this page
+Information on how to cite this page
+Add interlanguage links
+Printable version of this page [p]
+wmf:Privacy policy
+Wikibooks:Welcome
+Wikibooks:General disclaimer
+Wikibooks (en)
+Wikibooks Atom feed
+Department:Computing
+w:computer science
+JPEG - Idea and Practice
+Usability for Nerds
+Category:Shelf:Computer science
+Category:Completed books
+Category:Book:Wikibooks Stacks/Shelves
+A Little C Primer
+Active Server Pages
+Ada Programming
+Ada Style Guide
+Algorithms
+Apache Ant
+Basic Computing Using Windows
+Bourne Shell Scripting
+C Programming
+C Sharp Programming
+Color Models: RGB, HSV, HSL
+Cyberbotics' Robot Curriculum
+Data Mining Algorithms In R
+F Sharp Programming
+Fortran 77 Tutorial
+Introduction to .NET Framework 3.0
+JsonCpp
+Knowing Knoppix
+LaTeX
+Lua Programming
+More C++ Idioms
+Non-Programmer's Tutorial for Python 2.6
+Non-Programmer's Tutorial for Python 3
+Sidux
+Structured Query Language
+Tcl Programming
+The Python Class
+Web Application Security Guide
+Wiki Assistant
+X86 Disassembly
+XML - Managing Data Exchange
+Category:Shelf:Computer science/all books
+Category:Completed books
+Category:Shelf:Computer science
+Category:Book:Wikibooks Stacks/Shelves
+ROSE Compiler Framework
+Category:Shelf:Computer science
+Category:Books nearing completion
+Category:Book:Wikibooks Stacks/Shelves
+A Beginner's Python Tutorial
+A Quick Introduction to Unix
+Advanced phone customization
+Algorithm Implementation
+An Awk Primer
+BlitzMax
+Cascading Style Sheets
+Formal Logic
+Grsecurity
+Haskell
+Ict@innovation: Free your IT Business in Africa
+Ict@innovation: Training Guide on Linux System Administration, LPI Level 1
+Introduction to newLISP
+Java Programming
+Java Web Application Development With Click Framework
+K3D JavaScript Canvas Library
+Logic for Computer Scientists
+Optimizing C++
+Optimizing Code for Speed
+Parallel Spectral Numerical Methods
+PHP Programming
+PlanoTse Handbook for Job Search Automation
+PostgreSQL
+Programming Mac OS X with Cocoa for Beginners
+Python Programming
+QBasic
+Rebol Programming
+SQL Dialects Reference
+The Sway Reference Manual
+Think Python
+Visual Basic
+XForms
+Category:Shelf:Computer science/all books
+Category:Books nearing completion
+Category:Shelf:Computer science
+Category:Book:Wikibooks Stacks/Shelves
+Artificial Neural Networks
+Compiler Construction
+Computability and Complexity
+Data Compression
+Game Creation with XNA
+Introduction to Programming Languages
+Category:Shelf:Computer science
+Category:Half-finished books
+Category:Book:Wikibooks Stacks/Shelves
+A Brief Introduction to the LaTeX Typesetting Environment
+A Neutral Look at Operating Systems
+ACE+TAO Opensource Programming Notes
+ActionScript Programming
+Aros
+Authoring Webpages
+BASIC Programming
+C++ Programming
+Cellular Automata
+Clojure Programming
+Common Lisp
+Communication Networks
+Configuring Sound on Linux
+Cross-Platform Game Programming with gameplay3d
+Data Structures
+Digital Circuits
+Embedded Control Systems Design
+Embedded Systems
+Fedora And Red Hat System Administration
+First steps towards system programming under MS-DOS 7
+Game Maker Programming
+Guide to Unix
+HyperText Markup Language
+Io Programming
+Java Persistence
+Java Swings
+JavaScript
+Logic for Computer Science
+MATLAB Programming
+Microprocessor Design
+Oberon
+Octave Programming Tutorial
+OpenGL Programming
+Parrot Virtual Machine
+Perl Programming
+PHP and MySQL Programming
+Puppy Linux
+Puredyne
+Raku Programming
+Robotics
+Ruby on Rails
+Ruby Programming
+Scheme Programming
+Serial Programming
+Set Theory
+Some Basic and Inefficient Prime Number Generating Algorithms
+SQL Exercises
+Swift Introduction
+The Linux Kernel
+The Science of Programming
+The Way of the Java
+TI-Basic Z80 Programming
+Wiki-based archival description and storage
+WikiSkills Handbook
+Windows Programming
+Write Yourself a Scheme in 48 Hours
+X86 Assembly
+XQuery
+Category:Shelf:Computer science/all books
+Category:Half-finished books
+Category:Shelf:Computer science
+Category:Book:Wikibooks Stacks/Shelves
+A Level Computer Science Programming Guide
+AP Computer Science
+Coding and Information Theory
+Computer Science Design Patterns
+Cryptography
+Data Management in Bioinformatics
+From Lamer to Hacker
+Guide to Game Development
+Optimal Classification
+Relational Database Design
+Category:Shelf:Computer science
+Category:Partly developed books
+Category:Book:Wikibooks Stacks/Shelves
+360 Assembly
+6502 Assembly
+68000 Assembly
+A Beginner's Guide to D
+A Beginner's Guide to MS Windows Optimization
+Adobe GoLive Guide
+Alcor6L
+An Introduction to Python For Undergraduate Engineers
+ANSI C with Unix
+AnyLang Programming Language Comparison
+AppleScript Programming
+Artificial Intelligence
+ASP.NET
+Autodesk Vault Programmer's Cookbook
+AWK
+Bash Shell Scripting
+Blades of Avernum Script Reference
+Blender 3D: Blending Into Python
+Building a Beowulf Cluster
+C Sharp for Beginners
+C Shell Scripting
+C++ Programming As A Set Of Problems
+Canvas 2D Web Apps
+CCAPS
+CDuce
+Cg Programming
+Chip Design Made Easy
+Choose Your Own Pyventure
+Cocoa Programming
+Coding Cookbook
+Coding Divert Sockets
+ColdFusion Programming
+Common Intermediate Language
+Common JavaScript Manual
+Compojure
+Computer Go
+Computer Programming
+Computer Systems Engineering
+CORBA Programming
+Create Your Own Sim Games
+Curl
+Data Coding Theory
+Delphi Programming
+Developing Genealogy Web-Pages
+Digital Signal Processing
+Distributed Systems
+Entry Level PHP Web Application Development
+Erlang Programming
+Evolution of Operating Systems Designs
+Expert Systems
+Finite Model Theory
+Floating Point
+Forth
+Fortran
+FreeNAS
+Futurebasic
+Gambas
+GLBasic Programming
+GLSL Programming
+GNU C Compiler Internals
+GTK+ By Example
+How To Backup Operating Systems
+How to program a computer if you are a child
+How to Think Like a Computer Scientist: Learning with Python 2nd Edition
+How to Write a Program
+IIS and FastCGI
+J2ME Programming
+Java JDBC using SQLite
+Karrigell
+Kojo explorations
+Learning Clojure
+Linux Applications Debugging Techniques
+Linux Guide
+Linux Networking
+Lisp Programming
+LPI Linux Certification
+Mac OS X Tiger
+Mathematica
+Mathematical Proof
+Mathematics with Python and Ruby
+MediaWiki User Guide
+Message-Passing Interface
+Mindstorms Robotics
+MIPS Assembly
+MIRC Scripting
+Modeling from A to Z
+Objective-C Programming
+OpenSCAD User Manual
+Operating System Design
+Pascal Programming
+PBASIC Programming
+Pixilang
+PostScript FAQ
+Programming AI with Leaf
+Programming for Palm OS
+Programming Mac OS X with Cocoa for Beginners 2nd Edition
+Programming with Gtk2-Perl
+Programming with Moose
+Prolog
+PyGTK For GUI Programming
+R Programming
+Regular Expressions
+Reverse Engineering
+RGB+D Video Processing
+Roblox Game Development
+Robotics Kinematics and Dynamics
+RTEMS for Embedded Software Developers
+Scratch
+SDL (Simple DirectMedia Layer)
+Semiconductors
+Shell Programming
+SMF Records
+Software Development with Continuous Integration
+Software Engineering with an Agile Development Framework
+SPARC Assembly
+SPARQL
+Standard ML Programming
+Starting and Running a Wiki Website
+SuperCard Programming
+TI 83 Plus Assembly
+TI-Basic 84 Programming
+TI-Basic 89 Programming
+Turing
+UNIX Computing Security
+Using Ubuntu Linux
+VisSim
+Visual Basic .NET
+Web Development
+WebObjects
+Wiki Pedagogy
+Windows Registry Hacks
+Windows Vista
+Windows XP
+X Window Programming
+XHTML
+XRX
+XSLTForms
+ZK
+Category:Shelf:Computer science/all books
+Category:Partly developed books
+Category:Shelf:Computer science
+Category:Book:Wikibooks Stacks/Shelves
+Applied A-Level ICT
+Assembly Language and Computer Organization
+Computer Science Explored
+Computer Security
+Game Creation with the Unity Game Engine
+KS3 Computing
+Methods in Human Computer Interaction
+Modelling Theory and Practice
+Open Metadata Handbook
+OpenSSL
+RUP - IBM Rational Unified Process
+Visualizing Computation
+Category:Shelf:Computer science
+Category:Freshly started books
+Category:Book:Wikibooks Stacks/Shelves
+.NET Development Foundation
+99 Elm Problems
+A Guide To PIC Microcontroller Documentation
+A Practical Guide To Digital Data Collection
+Advanced Data Structures and Algorithms
+Advanced Robotics Book
+Agile Software Engineering Cheatsheets
+Allegro Programming
+Amiblitz
+Android
+Annotations of The Art of Computer Programming Volume 1
+Apache Portable Runtime
+APE Users Guide
+Application Development with Harbour
+Applied Robotics
+Artificial Intelligence for Computational Sustainability: A Lab Companion
+Asymptote
+ATRIAS 2.1 Handbook
+ATS: Programming with Theorem-Proving
+AvernumScript
+Bare-metal Raspberry Pi Programming
+Beginning Java
+Biostatistics with R
+Brlcad
+Business Basic
+C Sharp Reference
+Carbon Programming
+Classic Mac OS
+Collection of Computer Programs on Project Euler
+Competitive Programming
+Component Based Development
+Computer Literacy
+Computer Programming Principles
+Concurrent Clean
+ConTeXt
+Creating a simple 3D game engine in XNA
+D (The Programming Language)
+D Programming
+De-chroming chromebooks
+DirectX
+Doom Modding
+DXFortran
+Eclipse
+Eiffel Programming
+Embedded Control Systems for Intelligent Machines
+ErlyWeb
+FLTK
+FORA
+Fortran 2003
+FPI Script
+Fundamentals of C Programming
+GCC Debugging
+Geographic Information Systems
+Getting Started With Kivy Tutorial
+GNewSense
+GNU Autoconf
+GNU Data Language
+Go From Scratch
+Go Programming
+Go Programming Language Cookbook
+GRUB Installation After Windows Installation
+GUI Design Principles
+Haiku
+Harvard Chart Method
+Haxe Programming
+How to Use Rhino Mocks
+How to Write a Compiler
+How Wikipedia Works
+Icon Programming
+Intro To C++
+Introducing Julia
+Introduction to 2D Linux Game Programming
+Introduction to BASIC
+Introduction to Programming
+Introduction to Python Programming
+Introduction to Software Engineering
+Introductory PLC Programming
+Introspector
+Irony - Language Implementation Kit
+Java EE Programming
+JSON
+Julia for MATLAB Users
+Lambda Calculus
+Learning C With Game Concepts
+Learning D With Project Euler
+Learning Python 3 with the Linkbot
+Let Us GCC
+Linoleum
+Linux Audio: A Guide For Beginner and Beyond
+Linux From Scratch
+Logo Programming
+Lua Functional Programming
+Lua in SpringRTS
+Lush
+Mac OS X Leopard
+MediaWiki Developer's Handbook
+Memory Management
+Mercury Programming
+Minix 3
+Mojolicious
+Monkey
+MUMPS Programming
+NetBeans
+Nimrod Programming
+Object Oriented Paradigm
+Objective-J
+OCaml
+Oz Programming
+Palm OS Guide
+Parallel Computing and Computer Clusters
+PHP vs ColdFusion
+Plezuro
+Plug-in Development for Google Desktop
+Polymorphic Data Structures in C
+PowerPC Assembly
+Practical DevOps for Big Data
+Programmable Logic
+Programming Ajax
+Programming HP Calculators
+Programming Language Concepts Using C and C++
+Programming Languages
+Programming Text Adventures In Basic
+Programming with ooc
+PyKDE Programming
+Python Beginner to Expert
+PyTorch
+Q3Map2
+Qt
+Rails 3
+REALbasic
+Release Management
+Rexx Programming
+Robotics and the World
+Ruby By Examples
+Ruby Hacking Guide
+Saylor.org's C++ Programming
+Scala
+Scribunto: An Introduction
+Script Languages Synopsis
+Scriptol
+Seam
+Self-Replicating Automata
+Slackersbible
+Smalltalk Programming
+Smalltalk the fun way
+Software Engineering
+Software Engineers Handbook
+Software Quality Assurance
+SQLite
+SQL\400
+Starting A Website
+Switching from Mac OS X to Windows 7
+Switching from macOS to Linux
+Symbian
+Systems Of Logic
+TeX
+The Mojavi 3 Book
+The Performance Guide
+The Zope 3 Book
+Theos Tutorials for iOS
+TI-Basic Programs
+Torque2d
+Understanding C++
+UNIX Basics
+Using PHPEclipse
+Using the 3D Connexion SDK
+Vala Programming
+Valgrind
+VHDL for FPGA Design
+Web Programming
+Web Programming in Visual Basic .NET
+Wiki Dispute Resolution
+WikiRobotics
+Windows 8
+Windows Add-ons
+Windows Troubleshooter Guide
+Windows: An Overview
+Wisdom in wiki production
+WxWidgets
+Xandros
+XBasic
+XBLite
+XML Schema
+XProc
+XSLT
+Yesod web framework
+Z80 Assembly
+Zope
+ZZT-OOP
+Category:Shelf:Computer science/all books
+Category:Freshly started books
+Category:Shelf:Computer science
+Category:Book:Wikibooks Stacks/Shelves
+BTEC IT Unit 20 - Website Design
+Foundations of Computer Science
+Introduction to Numerical Methods
+Machine Translation
+Models and Theories in Human-Computer Interaction
+Radium Core
+Category:Shelf:Computer science
+Category:Books by completion status/all books
+Category:Book:Wikibooks Stacks/Shelves
+A First Course to Network Coding
+Ad Hoc Data Analysis From The Unix Command Line
+Adriane-Manual
+Bug Free Programming
+Chipmunk Basic pocketManual
+Clipper Tutorial: a Guide to Open Source Clipper(s)
+Conversational bots
+Core War
+DarkBASIC Programming
+Dragon
+Elm programming language
+File Checksum Integrity Verifier (FCIV) Examples
+Getting Your Feet Wet With Hackintosh
+HackTheCamp CookBook
+HTML 5 Programming and Web development
+Introduction to ActionScript 2.0
+Introduction to ActionScript 3.0
+Java Logging
+JMonkeyEngine:Beginner
+Keyword Test Case Design
+Live distro and Full Linux Install
+Logic and Set Theory
+Mathematical Proof and the Principles of Mathematics
+Modern C++: The Good Parts
+Object Oriented Programming
+Open VOGEL
+OpenJSCAD User Guide
+OpenMP
+Operating System Fundamentals
+Operating Systems
+Programming for the consultant
+Programming Fundamentals
+Programming in 1L a
+PWCT
+Python and Math
+Python book of magic
+Python Imaging Library
+Ring
+Ruby Code Examples
+Sed
+Source SDK: Mastering the Source
+Style Presentation Modes in Opera 12.16
+Support Vector Machines
+The Pyrogenesis Engine
+Visual Basic for Applications
+Wikis for Retail Store Managers
+Windows Batch Scripting
+Windows File Search
+Windows Recovery with an Image
+XPath
+Yet Another Haskell Tutorial
+Category:Shelf:Computer science/all books
+Category:Shelf:Computer science
+Category:Books by completion status/all books
+Category:Book:Wikibooks Stacks/Shelves
+Shelf:Algorithms and data structures
+Shelf:Artificial intelligence
+Shelf:Automata theory
+Shelf:Computer engineering
+Shelf:Computer programming
+Shelf:Mathematical logic
+Shelf:Operating systems
+Shelf:Software engineering
+Category:Shelf:Computer science
+Category:Book:Wikibooks Stacks/Shelves
+Ada Programming
+Algorithms
+C Programming
+C Sharp Programming
+Formal Logic
+Haskell
+Knowing Knoppix
+LaTeX
+Non-Programmer's Tutorial for Python 2.6
+Non-Programmer's Tutorial for Python 3
+Write Yourself a Scheme in 48 Hours
+X86 Disassembly
+XForms
+XML - Managing Data Exchange
+Category:Shelf:Computer science/all books
+Category:Featured books
+Category:Book:Wikibooks Stacks/Shelves
+This page is semi-protected.
+Special:Categories
+Category:Department:Computing
+Category:Book:Wikibooks Stacks/Shelves
+Category:Semi-protected pages
+Discussion about edits from this IP address [n]
+A list of edits made from this IP address [y]
+You are encouraged to create an account and log in; however, it is not mandatory
+You are encouraged to log in; however, it is not mandatory [o]
+View the content page [c]
+Discussion about the content page (does not exist) [t]
+This page is protected.
+You can view its source [e]
+Past revisions of this page [h]
+Visit the main page
+Visit the main page [z]
+Find help on how to use and edit Wikibooks
+Check out what Wikibooks has to offer
+Learn recipes from around the world
+Books for children
+The best of Wikibooks
+A list of recent changes in the wiki [r]
+Support Wikibooks
+Discuss Wikibooks-related questions and concerns with others
+Find your way around the Wikibooks community
+Important community news
+Frequent tasks that you can help with
+Pages detailing important rules and procedures
+Alternative methods of communication
+A list of all wiki pages that link here [j]
+Recent changes in pages linked from this page [k]
+Upload files [u]
+A list of all special pages [q]
+Permanent link to this revision of the page
+More information about this page
+Information on how to cite this page
+위키책:컴퓨터 과학 – Korean
+Add interlanguage links
+Printable version of this page [p]
+wmf:Privacy policy
+Wikibooks:Welcome
+Wikibooks:General disclaimer
+Wikibooks (en)
+Wikibooks Atom feed
+Department:Computing
+w:computer software
+Big Seven Crypto Study
+Khepera III Toolbox
+Lua Programming
+Category:Shelf:Computer software
+Category:Completed books
+Category:Book:Wikibooks Stacks/Shelves
+Basic Computing Using Windows
+Bourne Shell Scripting
+Creating a Simple 3D Game with XNA
+GENtle
+Knowing Knoppix
+OpenSSH
+Question Writer Manual
+RAC Attack - Oracle Cluster Database at Home
+Sidux
+Simulation with AnyLogic
+Structured Query Language
+Tutorial
+User Page Builder
+Using SPSS and PASW
+Category:Shelf:Computer software/all books
+Category:Completed books
+Category:Shelf:Computer software
+Category:Book:Wikibooks Stacks/Shelves
+Cryptsetup
+Goldbug
+PlanoTse Handbook for Job Search Automation
+Category:Shelf:Computer software
+Category:Books nearing completion
+Category:Book:Wikibooks Stacks/Shelves
+A Quick Introduction to Unix
+Advanced phone customization
+Animating Weapons for Counter-Strike Source
+ANTFARM
+Blender 3D: Noob to Pro
+Git
+Grsecurity
+Ict@innovation: Free your IT Business in Africa
+Ict@innovation: Training Guide on Linux System Administration, LPI Level 1
+Inkscape
+Learning the vi Editor
+MeGUI
+Mewa Film User's Guide
+MySQL
+PostgreSQL
+RapidSMS Developers Guide
+RCA Open Source Application: ROSA Manual
+ROSE Compiler Framework
+Using Firefox
+Category:Shelf:Computer software/all books
+Category:Books nearing completion
+Category:Shelf:Computer software
+Category:Book:Wikibooks Stacks/Shelves
+CAT-Tools
+Radium SmartChain
+SwisTrack
+Trainz
+XRADON Supernet
+Category:Shelf:Computer software
+Category:Half-finished books
+Category:Book:Wikibooks Stacks/Shelves
+A Neutral Look at Operating Systems
+Aros
+Beginner's Guide to Adobe Flash
+Blender 3D: HotKeys
+Blender 3D: MemoBook
+Celestia
+Configuring Sound on Linux
+ERP Internals
+Fedora And Red Hat System Administration
+First steps towards system programming under MS-DOS 7
+GIMP
+Guide to Unix
+Guide to X11
+Java Persistence
+Maple
+MATLAB Programming
+MediaWiki Administrator's Handbook
+Microsoft SQL Server
+Oberon
+Online OsiriX Documentation
+Oracle Database
+PHP and MySQL Programming
+Puppy Linux
+Puredyne
+Question Writer Tracker Manual
+SAS
+The Linux Kernel
+Transformative Applications in Education
+Windows Programming
+Zoph
+Category:Shelf:Computer software/all books
+Category:Half-finished books
+Category:Shelf:Computer software
+Category:Book:Wikibooks Stacks/Shelves
+Blackstar
+DisablingBells
+GNU Health
+Ktorrent
+Map This!
+MythTV
+RattleCAD User Manual
+Roblox Game Development
+TripleA
+VSphere Web Client
+ZynAddSubFX
+Category:Shelf:Computer software
+Category:Partly developed books
+Category:Book:Wikibooks Stacks/Shelves
+A Beginner's Guide to MS Windows Optimization
+Advanced QoS for IPCop
+An Introduction to Weblogs
+ANSI C with Unix
+Apache
+AutoCAD
+Blender 3D: Blending Into Python
+Blogging
+Building a Beowulf Cluster
+Business Integration Engine
+CA Unicenter NSM Textbook
+Converting MySQL to PostgreSQL
+CS Command Line Tools - Setup Manual (wiki version)
+Cygwin
+DataPerfect
+DChip
+DD-WRT
+Design of Main Memory Database System
+Designing Sound in SuperCollider
+Eac3to
+ERP5 Handbook
+Evolution of Operating Systems Designs
+FFMPEG An Intermediate Guide
+Final Cut Pro
+Financial Modelling in Microsoft Excel
+Find File Professional
+Flux Database
+FreeNAS
+Gambas
+GLPK
+Gmail
+Haxorware Modem Firmware
+How To Backup Operating Systems
+ILife
+Indexing Web with Head-r
+Internet Explorer
+JET Database
+Kdenlive
+Linux Applications Debugging Techniques
+Linux Guide
+Linux Networking
+LPI Linux Certification
+Mac OS X Tiger
+Mambo Open Source
+Mathematica
+Metasploit
+Microsoft Office
+MINC
+Openbravo POS
+OpenClinica User Manual
+OpenSCAD User Manual
+Operating System Design
+Opticks Developer Guide
+Oracle and DB2, Comparison and Compatibility
+Pixlr Editor
+Pro Engineer
+QEMU
+Reaktor
+Render a SolidWorks Model in Maya
+Revit User's Manual
+Rich Internet Applications for SLA Research
+Shell Programming
+Software Tools For Molecular Microscopy
+SourceAFIS
+Stata
+Subversion
+Sunvox Tutorial
+System Monitoring with Xymon
+Understanding Darcs
+UNIX Computing Security
+Using POSper
+Using Ubuntu Linux
+Using Your Dealer Management System
+VisSim
+Webots Odor Simulation
+Windows Registry Hacks
+Windows Vista
+Windows XP
+Wings 3D
+Category:Shelf:Computer software/all books
+Category:Partly developed books
+Category:Shelf:Computer software
+Category:Book:Wikibooks Stacks/Shelves
+AquaResp
+Component Based Development
+Dashboard Architecture
+Emulation
+EQUIP4J
+FontLab
+Global Map Download Tool
+HP Media Vault
+HydroGeoSphere
+Jini and Network Computing
+Marcion
+Practical DevOps for Big Data
+RPG Maker 2003
+Uim
+Usenet Explorer User's Manual
+Windows Live
+Category:Shelf:Computer software
+Category:Freshly started books
+Category:Book:Wikibooks Stacks/Shelves
+3DTin User's Guide
+Anim8or - Basics to Advanced
+AsUnit
+Audacity
+Autodesk 3ds Max
+Autodesk Inventor
+Beyond Blender Render
+Blender 3D Reference Guide
+Blender 3D: Game-making in Blender
+Blender Game Engine for Morons
+BOINC
+Bryce
+CamStudio
+Classic Mac OS
+Co-Life
+Computer Literacy
+CRE Loaded Features
+Database Management with Kexi
+DBMS
+Delta3D
+Disim Highway Simulator
+EBay
+Emacs
+EXELearning
+Fedena
+Freefem
+FreeMind
+Game Design Using Blender
+GarageBand
+Gerris Manual
+GFI Software
+Global Illumination and HDRI Maps in 3D Studio Max
+GNewSense
+Gnuplot
+Google Services And Products
+GRUB Installation After Windows Installation
+GStreamer
+Haiku
+Houdini 101
+ICEM CFD
+Install osDate
+InteriCAD T5 User Manual
+Introduction to 2D Linux Game Programming
+ITunes
+Kicad
+Legal Practice Management
+LibreOffice
+Linux Audio: A Guide For Beginner and Beyond
+Linux From Scratch
+Mac OS X Leopard
+Make
+Mandelbulb3D
+MariaDB
+Maxima
+Media Centers Based on Wyplayer
+Microsoft Project Crash Course
+Minix 3
+Modx
+MPlayer
+MPSolve
+OpenCanvas
+OpenOffice.org
+Osmo Documentation
+Paint.NET
+Palm OS Guide
+Perlwikibot
+PHProjekt
+Potopt Molecular Dynamics Suite
+POV-Ray
+ProLaw
+Radmind
+Sage
+Sahana
+SAP ERP
+Scribus
+SilverStripe
+Slackersbible
+Sphinx Search
+SQLite
+Sublime Text Handbook
+Sunvox Reference
+Switching from Mac OS X to Windows 7
+Switching from macOS to Linux
+Symbian
+The Developer's Guide to WordPress
+The StackExchange User Guide
+The Unofficial Enlightenment User's Manual
+TiddlyWiki
+Tomato Firmware
+Umbraco
+Understanding Noah's Classifieds
+UNIX Basics
+Using GNOME
+Using KDE
+Using Mahara
+Using Plasma
+Using Ratpoison
+Version Control
+Wikimedia
+Windows 8
+Windows Add-ons
+Windows Movie Maker
+Windows Troubleshooter Guide
+Windows: An Overview
+WordPerfect
+Xandros
+YafRay
+Yubnub
+Category:Shelf:Computer software/all books
+Category:Freshly started books
+Category:Shelf:Computer software
+Category:Book:Wikibooks Stacks/Shelves
+Granite WMS
+Lino Developer's Guide
+Od
+Pidgin
+Uniq
+VirtualBox
+Category:Shelf:Computer software
+Category:Books by completion status/all books
+Category:Book:Wikibooks Stacks/Shelves
+Ad Hoc Data Analysis From The Unix Command Line
+Adriane-Manual
+Animation:Master Features
+Commit Often, Perfect Later, Publish Once: Git Best Practices
+Cut
+Excel VBA
+GENtle 2
+Getting Your Feet Wet With Hackintosh
+Grep
+Hexdump
+Introduction to Database Systems
+Komodo Edit
+Less
+Libreboot
+Live distro and Full Linux Install
+Master builder
+Open Source Psychology
+Operating System Fundamentals
+Operating Systems
+ROOT
+SPM
+TiddlyWiki Manual
+Using YouTube Videos
+Wikipedia Equality
+Windows Batch Scripting
+Windows File Search
+Windows Recovery with an Image
+Word VBA
+Category:Shelf:Computer software/all books
+Category:Shelf:Computer software
+Category:Books by completion status/all books
+Category:Book:Wikibooks Stacks/Shelves
+Shelf:Business software
+Shelf:Database management systems
+Shelf:Desktop environments
+Shelf:Educational software
+Shelf:Firmware
+Shelf:Microsoft software
+Shelf:Multimedia software
+Shelf:Office suites
+Shelf:Open source software
+Shelf:Operating systems
+Shelf:Revision control software
+Shelf:Scientific software
+Shelf:Utility software
+Shelf:Web applications
+Category:Shelf:Computer software
+Category:Book:Wikibooks Stacks/Shelves
+Blender 3D: Noob to Pro
+Knowing Knoppix
+Category:Shelf:Computer software/all books
+Category:Featured books
+Category:Book:Wikibooks Stacks/Shelves
+This page is semi-protected.
+Special:Categories
+Category:Department:Computing
+Category:Book:Wikibooks Stacks/Shelves
+Category:Semi-protected pages
+Discussion about edits from this IP address [n]
+A list of edits made from this IP address [y]
+You are encouraged to create an account and log in; however, it is not mandatory
+You are encouraged to log in; however, it is not mandatory [o]
+View the content page [c]
+Discussion about the content page (does not exist) [t]
+This page is protected.
+You can view its source [e]
+Past revisions of this page [h]
+Visit the main page
+Visit the main page [z]
+Find help on how to use and edit Wikibooks
+Check out what Wikibooks has to offer
+Learn recipes from around the world
+Books for children
+The best of Wikibooks
+A list of recent changes in the wiki [r]
+Support Wikibooks
+Discuss Wikibooks-related questions and concerns with others
+Find your way around the Wikibooks community
+Important community news
+Frequent tasks that you can help with
+Pages detailing important rules and procedures
+Alternative methods of communication
+A list of all wiki pages that link here [j]
+Recent changes in pages linked from this page [k]
+Upload files [u]
+A list of all special pages [q]
+Permanent link to this revision of the page
+More information about this page
+Information on how to cite this page
+Add interlanguage links
+Printable version of this page [p]
+wmf:Privacy policy
+Wikibooks:Welcome
+Wikibooks:General disclaimer
