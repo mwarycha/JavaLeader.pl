@@ -9,7 +9,7 @@ public class ProcessWikiLinksController {
 
     public void process() {
 
-        Observer<String> observers = new Observer<String>() {
+        Observer<String> observer = new Observer<String>() {
             @Override
             public void onCompleted() {
                 System.out.println("process completed");
@@ -30,7 +30,8 @@ public class ProcessWikiLinksController {
             }
         };
 
-        Observable.from(WikiManager.urls).subscribe(observers);
+        Observable.from(WikiManager.urls).subscribe(observer);
+
     }
 
     public static void main(String[] args) {
