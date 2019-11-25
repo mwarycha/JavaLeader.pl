@@ -8,14 +8,14 @@ import service.BingoService;
 import java.util.*;
 import java.util.logging.Logger;
 
+import static helpers.WinnerPatternHelper.getHorizontalIndexesPattern;
+import static helpers.WinnerPatternHelper.getVerticalIndexesPattern;
+import static org.junit.Assert.assertEquals;
+
 import org.junit.runner.RunWith;
 import org.junit.Test;
 import javax.inject.Inject;
 import org.junit.Rule;
-
-import static helpers.WinnerPatternHelper.getHorizontalIndexesPattern;
-import static helpers.WinnerPatternHelper.getVerticalIndexesPattern;
-import static org.junit.Assert.assertEquals;
 
 @RunWith(WeldJUnit4Runner.class)
 public class WinnerBingoTest {
