@@ -34,6 +34,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
 
         http.antMatcher("/**")
+                 // adds a filter before the position of the specified filter class
                 .addFilterBefore(ssoFilter(), BasicAuthenticationFilter.class)
                 .authorizeRequests()
                 .antMatchers( "/resources/**").permitAll()
