@@ -12,7 +12,7 @@ public class BenchmarkFolding {
     @Fork(value = 1, warmups = 1)
     @Warmup(iterations = 1, time = 1)
     @Measurement(iterations = 1, time = 1, timeUnit = TimeUnit.MICROSECONDS)
-    public int testConstantFoldingWithOptimization(Params param) {
+    public int testConstantFoldingWithOptimizationOne() {
         int a = 1;
         int b = 2;
         int sum = a + b;
@@ -25,7 +25,7 @@ public class BenchmarkFolding {
     @Fork(value = 1, warmups = 1)
     @Warmup(iterations = 1, time = 1)
     @Measurement(iterations = 1, time = 1, timeUnit = TimeUnit.MICROSECONDS)
-    public int testConstantFoldingWithoutOptimization(Params params) {
+    public int testConstantFoldingWithoutOptimizationTwo(Params params) {
         int a = params.a;
         int b = params.b;
         int sum = a + b;

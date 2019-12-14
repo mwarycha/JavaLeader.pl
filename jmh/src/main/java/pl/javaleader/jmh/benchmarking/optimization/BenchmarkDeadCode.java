@@ -13,7 +13,7 @@ public class BenchmarkDeadCode {
     @Fork(value = 1, warmups = 1)
     @Warmup(iterations = 1, time = 1)
     @Measurement(iterations = 1, time = 1, timeUnit = TimeUnit.MICROSECONDS)
-    public void  testDeadCode() {
+    public void  testDeadCodeOne() {
         Supplier<String> supplier = ()-> "javaleader.pl";
         if (supplier == null) {
             throw new IllegalArgumentException("Supplier cannot be null");
@@ -27,7 +27,7 @@ public class BenchmarkDeadCode {
     @Fork(value = 1, warmups = 1)
     @Warmup(iterations = 1, time = 1)
     @Measurement(iterations = 1, time = 1, timeUnit = TimeUnit.MICROSECONDS)
-    public void  testDeadCode(Blackhole blackhole) {
+    public void  testDeadCodeTwo(Blackhole blackhole) {
         Supplier<String> supplier = ()-> "javaleader.pl";
         if (supplier == null) {
             throw new IllegalArgumentException("Supplier cannot be null");

@@ -16,7 +16,7 @@ public class BenchmarkFactorial {
     @Fork(value = 1, warmups = 4)
     @Warmup(iterations = 3, time = 1)
     @Measurement(iterations = 5, time = 2)
-    public int testFactorialWithLoopForWithSmallNumber() {
+    public int testFactorialWithLoopForWithSmallNumberOne() {
         return Factorial.getFactorialFor(param);
     }
  
@@ -26,7 +26,7 @@ public class BenchmarkFactorial {
     @Fork(value = 1, warmups = 4)
     @Warmup(iterations = 3, time = 1)
     @Measurement(iterations = 5, time = 2)
-    public int testFactorialWithRecursiveMethodWithSmallNumber() {
+    public int testFactorialWithRecursiveMethodWithSmallNumberTwo() {
         return Factorial.getFactorialRec(param);
     }
 }

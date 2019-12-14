@@ -15,7 +15,7 @@ public class BenchmarkFactorial {
     @Fork(value = 1, warmups = 1)
     @Warmup(iterations = 0, time = 1)
     @Measurement(iterations = 1, time = 1, timeUnit = TimeUnit.MICROSECONDS)
-    public Tuple testFactorialWithLoopFor(ParamsGroup params) {
+    public Tuple testFactorialWithLoopForOne(ParamsGroup params) {
         params.addToSet(String.valueOf(Thread.currentThread().getId()) + " [testFactorialWithLoopFor] " + params);
         params.getThreadsId();
         int factorialForSmallNumber = Factorial.getFactorialFor(params.SMALL_NUMBER);
@@ -31,7 +31,7 @@ public class BenchmarkFactorial {
     @Fork(value = 1, warmups = 1)
     @Warmup(iterations = 0, time = 1)
     @Measurement(iterations = 1, time = 1, timeUnit = TimeUnit.MICROSECONDS)
-    public Tuple testFactorialWithRecursiveMethod(ParamsGroup params) {
+    public Tuple testFactorialWithRecursiveMethodTwo(ParamsGroup params) {
         params.addToSet(String.valueOf(Thread.currentThread().getId() + " [testFactorialWithRecursiveMethod] " + params));
         params.getThreadsId();
         int factorialRecSmallNumber = Factorial.getFactorialRec(params.SMALL_NUMBER);

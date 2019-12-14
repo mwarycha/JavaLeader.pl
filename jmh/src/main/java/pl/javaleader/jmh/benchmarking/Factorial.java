@@ -1,16 +1,13 @@
 package pl.javaleader.jmh.benchmarking;
 
-import static java.lang.Thread.sleep;
-
 public class Factorial {
 
     public static int getFactorialFor(int number) {
-        try {
-            sleep(2000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
+        int factorial = 1;
+        for (int i = 2; i <= number; i++) {
+            factorial *= i;
         }
-        return 0;
+        return factorial;
     }
 
     public static int getFactorialRec(int number) {
