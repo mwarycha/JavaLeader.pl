@@ -1,0 +1,5 @@
+Bundle-SymbolicName: osgi-example
+Bundle-Version: 1.0.0.SNAPSHOT
+Import-Package: pl.javaleader;version="1.0.0.SNAPSHOT",org.osgi.framework
+Export-Package: pl.javaleader;version="1.0.0.SNAPSHOT"
+Bundle-Activator: pl.javaleader.Activator
