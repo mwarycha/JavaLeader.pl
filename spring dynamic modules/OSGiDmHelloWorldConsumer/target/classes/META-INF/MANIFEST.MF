@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1576956026960
+Build-Jdk: 13.0.1
+Built-By: EMAWARY
+Bundle-ManifestVersion: 2
+Bundle-Name: OSGiDmHelloWorldConsumer
+Bundle-SymbolicName: OSGiDmHelloWorldConsumer
+Bundle-Vendor: Baptiste Wicht
+Bundle-Version: 1.0.1.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.bw.osgi.consumer;version="1.0.1";uses:="pl.javaleade
+ r.ws",pl.javaleader;version="1.0.1";uses:="pl.javaleader.ws"
+Import-Package: javax.swing,pl.javaleader.ws;version="[1.0,2)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+Tool: Bnd-4.2.0.201903051501
