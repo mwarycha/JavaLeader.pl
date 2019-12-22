@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-Name: camel-bundle-1
+Bundle-SymbolicName: camel-bundle-1
+Bundle-Version: 1.0.0
+Bundle-Description: Camel Bundle 1
+Bundle-Vendor: IT-eye
+Bundle-Category: example
+Import-Package: org.osgi.framework, org.apache.commons.logging, org.apache.camel.builder, org.apache.camel.model
