@@ -14,8 +14,11 @@ import org.springframework.stereotype.Service;
 @Service
 public class DBFileStorageService {
 
-    @Autowired
     private DBFileRepository dbFileRepository;
+	
+	public DBFileStorageService(DBFileRepository dbFileRepository) {
+		this.dbFileRepository = dbFileRepository;
+	}
 
     public DBFile storeFile(MultipartFile file) {
         // Normalize file name
