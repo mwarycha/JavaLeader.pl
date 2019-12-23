@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b9d72d2-7d7f-4bb2-ad2d-6097303fcb80" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../file-upload/src/main/java/pl/javaleader/fileupload/service/DBFileStorageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../file-upload/src/main/java/pl/javaleader/fileupload/service/DBFileStorageService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../javaleader-osgi-camel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaleader-osgi-camel/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../javaleader-osgi-camel/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaleader-osgi-camel/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OSGiDmHelloWorldConsumer/.idea/libraries/Maven__com_sun_mail_javax_mail_1_5_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OSGiDmHelloWorldConsumer/.idea/libraries/Maven__javax_activation_activation_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OSGiDmHelloWorldConsumer/.idea/libraries/Maven__javax_javaee_api_7_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OSGiDmHelloWorldConsumer/OSGiDmHelloWorldConsumer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../OSGiDmHelloWorldConsumer/OSGiDmHelloWorldConsumer.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -143,8 +137,10 @@
     <session id="-1161986446">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
     </session>
@@ -229,7 +225,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-106" />
     <option name="y" value="398" />
     <option name="width" value="1936" />
@@ -243,9 +239,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -298,11 +291,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576956301724" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../spring-integration-active-mq-spring-boot" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -340,15 +336,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-106" y="398" width="1936" height="751" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Designer" order="1" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.24626866" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.2489339" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" />
