@@ -8,11 +8,8 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class ActiveMQConfig {
-
-    public static final String JAVA_LEADER_QUEUE = "javaLeaderQueue";
-
     @Bean
     public Queue javaLeaderQueue() {
-        return new ActiveMQQueue(JAVA_LEADER_QUEUE);
+        return new ActiveMQQueue("javaLeaderQueue");
     }
 }

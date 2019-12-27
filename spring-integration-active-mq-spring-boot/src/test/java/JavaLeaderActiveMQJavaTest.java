@@ -8,10 +8,9 @@ import javax.jms.Session;
 import javax.jms.TextMessage;
 
 import junit.framework.TestCase;
-import org.springframework.boot.test.OutputCapture;
+import org.springframework.boot.test.rule.OutputCapture;
 import org.springframework.test.context.junit4.SpringRunner;
 import pl.javaleader.springintegrationactivemqspringboot.SpringIntegrationActiveMqSpringBootApplication;
-import pl.javaleader.springintegrationactivemqspringboot.configurations.ActiveMQConfig;
 
 import org.junit.After;
 import org.junit.Before;
@@ -19,7 +18,6 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @RunWith(SpringRunner.class)
@@ -30,10 +28,9 @@ public class JavaLeaderActiveMQJavaTest extends TestCase {
     public OutputCapture outputCapture = new OutputCapture();
  
     @Autowired
-    @Qualifier("jmsConnectionFactory")
-    ConnectionFactory jmsConnectionFactory;
+    ConnectionFactory connectionFactory;
 
-    String queueName = ActiveMQConfig.JAVA_LEADER_QUEUE;
+    String queueName = "javaLeaderQueue";
 
     MessageProducer jmsamqproducer;
     Destination jmsamqdestination;
@@ -42,7 +39,7 @@ public class JavaLeaderActiveMQJavaTest extends TestCase {
 
     @Before
     public void setUpJmsSession() throws JMSException {
-        jmsamqconn = jmsConnectionFactory.createConnection();
+        jmsamqconn = connectionFactory.createConnection();
         jmsamqconn.start();
         jmsamqsession     = jmsamqconn.createSession(false, Session.AUTO_ACKNOWLEDGE);
         jmsamqdestination = jmsamqsession.createQueue(queueName);

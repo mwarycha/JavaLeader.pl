@@ -2,7 +2,6 @@ package groovy
 
 import org.springframework.boot.test.context.SpringBootContextLoader
 import pl.javaleader.springintegrationactivemqspringboot.SpringIntegrationActiveMqSpringBootApplication
-import pl.javaleader.springintegrationactivemqspringboot.configurations.ActiveMQConfig
 import spock.lang.Specification
 import javax.jms.Connection
 import javax.jms.ConnectionFactory
@@ -12,7 +11,6 @@ import javax.jms.MessageProducer
 import javax.jms.Session
 import javax.jms.TextMessage
 
-import org.springframework.beans.factory.annotation.Qualifier
 import org.springframework.test.context.ContextConfiguration
 import org.springframework.beans.factory.annotation.Autowired
 
@@ -20,10 +18,9 @@ import org.springframework.beans.factory.annotation.Autowired
 class JavaLeaderServiceTest extends Specification{
 
     @Autowired
-    @Qualifier("jmsConnectionFactory")
     ConnectionFactory connectionFactory
 
-    String queueName = ActiveMQConfig.JAVA_LEADER_QUEUE
+    String queueName = "javaLeaderQueue"
     Session session
     Destination destination
     MessageProducer producer
