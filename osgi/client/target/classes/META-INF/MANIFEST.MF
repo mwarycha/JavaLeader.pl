@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1577795285035
+Build-Jdk: 1.8.0_181
+Built-By: emawary
+Bundle-Activator: pl.javaleader.client.JavaLeaderClient
+Bundle-ManifestVersion: 2
+Bundle-Name: client
+Bundle-SymbolicName: pl.javaleader.client
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: pl.javaleader.client;version="1.0.0.SNAPSHOT";uses:="org
+ .osgi.framework"
+Import-Package: org.osgi.framework;version="[1.8,2)",pl.javaleader.servi
+ ce;version="[1.0,2)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.6))"
+Tool: Bnd-3.3.0.201609221906
