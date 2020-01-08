@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<wsdl:definitions targetNamespace="http://ws.javaleader.pl/" name="CalculatorImplService" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://ws.javaleader.pl/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <wsdl:types>
+        <xs:schema targetNamespace="http://ws.javaleader.pl/" xmlns:tns="http://ws.javaleader.pl/" version="1.0" elementFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+            <xs:element name="addidtion" type="tns:addidtion"/>
+            <xs:element name="addidtionResponse" type="tns:addidtionResponse"/>
+            <xs:element name="subtraction" type="tns:subtraction"/>
+            <xs:element name="subtractionResponse" type="tns:subtractionResponse"/>
+            <xs:complexType name="addidtion">
+                <xs:sequence>
+                    <xs:element name="arg0" type="xs:int"/>
+                    <xs:element name="arg1" type="xs:int"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="addidtionResponse">
+                <xs:sequence>
+                    <xs:element name="return" type="xs:int"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="subtraction">
+                <xs:sequence>
+                    <xs:element name="arg0" type="xs:int"/>
+                    <xs:element name="arg1" type="xs:int"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="subtractionResponse">
+                <xs:sequence>
+                    <xs:element name="return" type="xs:int"/>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:schema>
+    </wsdl:types>
+    <wsdl:message name="subtractionResponse">
+        <wsdl:part name="parameters" element="tns:subtractionResponse"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="subtraction">
+        <wsdl:part name="parameters" element="tns:subtraction"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="addidtion">
+        <wsdl:part name="parameters" element="tns:addidtion"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="addidtionResponse">
+        <wsdl:part name="parameters" element="tns:addidtionResponse"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:portType name="Calculator">
+        <wsdl:operation name="addidtion">
+            <wsdl:input name="addidtion" message="tns:addidtion"> </wsdl:input>
+            <wsdl:output name="addidtionResponse" message="tns:addidtionResponse"> </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="subtraction">
+            <wsdl:input name="subtraction" message="tns:subtraction"> </wsdl:input>
+            <wsdl:output name="subtractionResponse" message="tns:subtractionResponse"> </wsdl:output>
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:binding name="CalculatorImplServiceSoapBinding" type="tns:Calculator">
+        <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+        <wsdl:operation name="addidtion">
+            <soap:operation style="document" soapAction=""/>
+            <wsdl:input name="addidtion">
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="addidtionResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="subtraction">
+            <soap:operation style="document" soapAction=""/>
+            <wsdl:input name="subtraction">
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="subtractionResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:service name="CalculatorImplService">
+        <wsdl:port name="CalculatorImplPort" binding="tns:CalculatorImplServiceSoapBinding">
+            <soap:address location="http://localhost:8181/cxf/calcService"/>
+        </wsdl:port>
+    </wsdl:service>
+</wsdl:definitions>
