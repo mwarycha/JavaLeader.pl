@@ -31,5 +31,4 @@ public class BingoHelper {
         List<List<Double>> winnerBingoCard = (List<List<Double>>) bingodata.get("winnerBingoCard");
         return toArray(winnerBingoCard);
     }
-
 }

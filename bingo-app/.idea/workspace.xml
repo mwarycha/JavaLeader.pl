@@ -2,6 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37a2bcaf-7871-41fc-a37c-567cd370df44" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../bingo-app-client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bingo-app-client/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bingo-app-client/bingo-app-client.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bingo-app-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bingo-app-client/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bingo-app-client/src/main/java/controller/BingoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bingo-app-client/src/main/java/controller/BingoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bingo-app-client/src/main/java/utils/BingoHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bingo-app-client/src/main/java/utils/BingoHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -506,7 +511,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/EMAWARY/Desktop/projects/JavaLeader.pl/bingo-app/api/src/main/java/helpers/UtilsHelper.java" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578673290887" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578673811476" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -692,6 +697,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25426438" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
