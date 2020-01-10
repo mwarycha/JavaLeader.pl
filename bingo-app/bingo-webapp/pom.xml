@@ -19,7 +19,10 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.7</maven.compiler.source>
         <maven.compiler.target>1.7</maven.compiler.target>
+        <jersey2.version>2.19</jersey2.version>
+        <jaxrs.version>2.0.1</jaxrs.version>
     </properties>
+
 
     <dependencies>
 
@@ -61,10 +64,43 @@
             <version>1.2.17</version>
         </dependency>
 
+        <!-- add jersey support -->
+        <!-- JAX-RS -->
+        <dependency>
+            <groupId>javax.ws.rs</groupId>
+            <artifactId>javax.ws.rs-api</artifactId>
+            <version>${jaxrs.version}</version>
+        </dependency>
+
+        <!-- Jersey 2.19 -->
+        <dependency>
+            <groupId>org.glassfish.jersey.containers</groupId>
+            <artifactId>jersey-container-servlet</artifactId>
+            <version>${jersey2.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.glassfish.jersey.core</groupId>
+            <artifactId>jersey-server</artifactId>
+            <version>${jersey2.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.glassfish.jersey.core</groupId>
+            <artifactId>jersey-client</artifactId>
+            <version>${jersey2.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.glassfish.jersey.media</groupId>
+            <artifactId>jersey-media-json-jackson</artifactId>
+            <version>${jersey2.version}</version>
+        </dependency>
+
+        <!-- add jersey support -->
+
     </dependencies>
 
     <build>
-        <finalName>bingo-webapp</finalName>
+        <finalName>ROOT</finalName>
         <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
             <plugins>
                 <plugin>
