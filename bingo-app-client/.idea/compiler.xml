@@ -6,8 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="bingo-app-client" />
+        <module name="bingo-api" />
+        <module name="bingo-game-war" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="bingo-game" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
