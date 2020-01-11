@@ -21,7 +21,7 @@ public class UtilsClass {
         return getGson().fromJson(jsonString, Map.class);
     }
 
-    public static Integer[][] toArray(List<List<Double>> listOfDoubleList) {
+    public static Integer[][] ListOfDoubleListTo2DIntegerArray(List<List<Double>> listOfDoubleList) {
         Integer[][] intArray = new Integer[listOfDoubleList.size()][];
         int elem = 0;
         for (List<Double> numbers : listOfDoubleList) {
