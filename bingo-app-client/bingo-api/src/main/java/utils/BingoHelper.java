@@ -15,6 +15,8 @@ import static utils.UtilsClass.ListOfDoubleListTo2DIntegerArray;
 
 public class BingoHelper {
 
+    public static int NUMBER_OF_BINGO_GAMES = 1;
+
     static Map<Object, Object> bingodata = getMapFromJson(getBingoData());
 
     public static Integer getWinnerBingoCardIndex() {
@@ -42,6 +44,10 @@ public class BingoHelper {
         return ListOfDoubleListTo2DIntegerArray(winnerBingoCard);
     }
 
+    public static void refresh() {
+        bingodata = getMapFromJson(getBingoData());
+    }
+
     private static String getBingoData() {
 
          ClientConfig clientConfig = new ClientConfig();
@@ -49,7 +55,7 @@ public class BingoHelper {
          WebTarget webTarget       = client.target(getBaseURI());
 
          String response = webTarget.path("/api").
-                path("/bingo/get/3").
+                path("/bingo/get/" + NUMBER_OF_BINGO_GAMES).
                 request().
                 accept(MediaType.APPLICATION_JSON).
                 get(String.class);
