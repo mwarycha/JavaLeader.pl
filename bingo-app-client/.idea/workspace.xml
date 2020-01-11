@@ -3,15 +3,45 @@
   <component name="ChangeListManager">
     <list default="true" id="e39a99e3-b10f-41a1-ad87-7a4fd9bba31d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bingo-api/src/main/java/utils/BingoHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-api/src/main/java/utils/BingoHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bingo-api/target/bingo-api-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-api/target/bingo-api-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bingo-api/target/classes/utils/BingoHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-api/target/classes/utils/BingoHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bingo-game-war/src/main/java/controllers/BingoCardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-game-war/src/main/java/controllers/BingoCardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-api/target/bingo-api-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-api/target/classes/META-INF/beans.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-api/target/classes/service/BingoService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-api/target/classes/service/BingoServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-api/target/classes/utils/BingoHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-api/target/classes/utils/UtilsClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-api/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/bingo-game-war/target/bingo-game-war.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bingo-game-war/target/bingo-game-war/WEB-INF/classes/controllers/BingoCardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-game-war/target/bingo-game-war/WEB-INF/classes/controllers/BingoCardController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bingo-game-war/target/bingo-game-war/WEB-INF/lib/bingo-api-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-game-war/target/bingo-game-war/WEB-INF/lib/bingo-api-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bingo-game-war/target/classes/controllers/BingoCardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-game-war/target/classes/controllers/BingoCardController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bingo-game-war/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-game-war/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-game-war/target/bingo-game-war/WEB-INF/beans.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-game-war/target/bingo-game-war/WEB-INF/bingo.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-game-war/target/bingo-game-war/WEB-INF/classes/controllers/BingoCardController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-game-war/target/bingo-game-war/WEB-INF/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-game-war/target/bingo-game-war/WEB-INF/lib/aopalliance-repackaged-2.5.0-b32.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-game-war/target/bingo-game-war/WEB-INF/lib/bingo-api-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-game-war/target/bingo-game-war/WEB-INF/lib/gson-2.8.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-game-war/target/bingo-game-war/WEB-INF/lib/hk2-api-2.5.0-b32.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-game-war/target/bingo-game-war/WEB-INF/lib/hk2-locator-2.5.0-b32.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-game-war/target/bingo-game-war/WEB-INF/lib/hk2-utils-2.5.0-b32.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-game-war/target/bingo-game-war/WEB-INF/lib/javassist-3.20.0-GA.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-game-war/target/bingo-game-war/WEB-INF/lib/javax.annotation-api-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-game-war/target/bingo-game-war/WEB-INF/lib/javax.inject-2.5.0-b32.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-game-war/target/bingo-game-war/WEB-INF/lib/javax.ws.rs-api-2.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-game-war/target/bingo-game-war/WEB-INF/lib/jersey-client-2.25.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-game-war/target/bingo-game-war/WEB-INF/lib/jersey-common-2.25.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-game-war/target/bingo-game-war/WEB-INF/lib/jersey-guava-2.25.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-game-war/target/bingo-game-war/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-game-war/target/bingo-game-war/WEB-INF/lib/osgi-resource-locator-1.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-game-war/target/bingo-game-war/WEB-INF/lib/weld-se-1.1.10.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-game-war/target/bingo-game-war/WEB-INF/lib/weld-servlet-1.1.10.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-game-war/target/bingo-game-war/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-game-war/target/bingo-game-war/images/trophy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-game-war/target/bingo-game-war/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-game-war/target/classes/controllers/BingoCardController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-game-war/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-game-war/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-game-war/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../bingo-app/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bingo-app/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -72,6 +102,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="2" />
+          <entry key="gitignore" value="4" />
           <entry key="iml" value="1" />
           <entry key="java" value="57" />
           <entry key="jsp" value="11" />
@@ -84,6 +115,7 @@
           <entry key="IDEA_MODULE" value="1" />
           <entry key="JAVA" value="57" />
           <entry key="JSP" value="11" />
+          <entry key="PLAIN_TEXT" value="4" />
           <entry key="XML" value="30" />
         </counts>
       </usages-collector>
@@ -109,74 +141,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bingo-api/src/main/java/service/BingoServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="46" lean-forward="true" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#227#228#0" expanded="true" />
-                <element signature="e#284#285#0" expanded="true" />
-                <element signature="e#348#349#0" expanded="true" />
-                <element signature="e#545#546#0" expanded="true" />
-                <element signature="e#605#606#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bingo-api/src/main/java/service/BingoService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bingo-api/src/main/java/utils/BingoHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="33" column="72" selection-start-line="33" selection-start-column="63" selection-end-line="33" selection-end-column="72" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#643#644#0" expanded="true" />
-                <element signature="e#720#721#0" expanded="true" />
-                <element signature="e#1869#1870#0" expanded="true" />
-                <element signature="e#1929#1930#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/bingo-game-war/src/main/java/controllers/BingoCardController.java">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bingo-api/src/main/java/utils/UtilsClass.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#246#247#0" expanded="true" />
-                <element signature="e#326#327#0" expanded="true" />
-                <element signature="e#362#363#0" expanded="true" />
-                <element signature="e#395#396#0" expanded="true" />
-                <element signature="e#454#455#0" expanded="true" />
-                <element signature="e#518#519#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="255">
+              <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -254,8 +223,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="729" />
-    <option name="y" value="426" />
+    <option name="x" value="332" />
+    <option name="y" value="76" />
     <option name="width" value="1296" />
     <option name="height" value="776" />
   </component>
@@ -281,62 +250,6 @@
             <path>
               <item name="bingo-app-client" type="b2602c69:ProjectViewProjectNode" />
               <item name="bingo-app-client" type="462c0819:PsiDirectoryNode" />
-              <item name="bingo-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bingo-app-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bingo-app-client" type="462c0819:PsiDirectoryNode" />
-              <item name="bingo-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bingo-app-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bingo-app-client" type="462c0819:PsiDirectoryNode" />
-              <item name="bingo-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bingo-app-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bingo-app-client" type="462c0819:PsiDirectoryNode" />
-              <item name="bingo-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bingo-app-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bingo-app-client" type="462c0819:PsiDirectoryNode" />
-              <item name="bingo-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bingo-app-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bingo-app-client" type="462c0819:PsiDirectoryNode" />
-              <item name="bingo-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bingo-app-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bingo-app-client" type="462c0819:PsiDirectoryNode" />
-              <item name="bingo-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bingo-app-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bingo-app-client" type="462c0819:PsiDirectoryNode" />
               <item name="bingo-game-war" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -351,59 +264,6 @@
               <item name="bingo-game-war" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bingo-app-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bingo-app-client" type="462c0819:PsiDirectoryNode" />
-              <item name="bingo-game-war" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bingo-app-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bingo-app-client" type="462c0819:PsiDirectoryNode" />
-              <item name="bingo-game-war" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bingo-app-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bingo-app-client" type="462c0819:PsiDirectoryNode" />
-              <item name="bingo-game-war" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bingo-app-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bingo-app-client" type="462c0819:PsiDirectoryNode" />
-              <item name="bingo-game-war" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bingo-app-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bingo-app-client" type="462c0819:PsiDirectoryNode" />
-              <item name="bingo-game-war" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bingo-app-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bingo-app-client" type="462c0819:PsiDirectoryNode" />
-              <item name="bingo-game-war" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -414,7 +274,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578761077745" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578761138945" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -493,7 +353,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Designer" order="1" />
@@ -626,7 +486,7 @@
     <entry file="file://$PROJECT_DIR$/bingo-api/src/main/java/service/BingoServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="46" lean-forward="true" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
+          <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#227#228#0" expanded="true" />
@@ -662,7 +522,7 @@
     <entry file="file://$PROJECT_DIR$/bingo-api/src/main/java/utils/UtilsClass.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
-          <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#246#247#0" expanded="true" />
@@ -682,6 +542,19 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bingo-game-war/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bingo-api/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
         </state>
       </provider>
     </entry>
