@@ -222,9 +222,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="332" />
-    <option name="y" value="76" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-363" />
+    <option name="y" value="481" />
     <option name="width" value="1296" />
     <option name="height" value="776" />
   </component>
@@ -274,7 +274,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578761138945" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578761239781" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -288,11 +288,11 @@
       <recent name="service" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\EMAWARY\Desktop\projects\JavaLeader.pl\bingo-app-client\bingo-api" />
+      <recent name="C:\Users\EMAWARY\Desktop\projects\JavaLeader.pl\bingo-app-client\bingo-game-war" />
+      <recent name="C:\Users\EMAWARY\Desktop\projects\JavaLeader.pl\bingo-app-client" />
       <recent name="C:\Users\EMAWARY\Desktop\projects\JavaLeader.pl\bingo-app-client\bingo-game-war\src\main\webapp" />
       <recent name="C:\Users\EMAWARY\Desktop\projects\JavaLeader.pl\bingo-app-client\bingo-game-war\src\main\webapp\WEB-INF" />
-      <recent name="C:\Users\EMAWARY\Desktop\projects\JavaLeader.pl\bingo-app-client\bingo-api\src\main\resources" />
-      <recent name="C:\Users\EMAWARY\Desktop\projects\JavaLeader.pl\bingo-app-client\bingo-game-war\src\main" />
-      <recent name="C:\Users\EMAWARY\Desktop\projects\JavaLeader.pl\bingo-app-client\bingo-game\src\main" />
     </key>
   </component>
   <component name="RunDashboard">
