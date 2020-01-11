@@ -2,7 +2,6 @@ package utils;
 
 import com.google.gson.internal.LinkedTreeMap;
 import org.glassfish.jersey.client.ClientConfig;
-
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.WebTarget;

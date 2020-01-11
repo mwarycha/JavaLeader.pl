@@ -42,6 +42,7 @@ public class BingoCardController extends HttpServlet {
         return Integer.parseInt(request.getParameter("game"));
     }
 
+    // not used
     public BingoService getServiceBeanFromWeldContext() {
         Weld weld = new Weld();
         WeldContainer container = weld.initialize();
