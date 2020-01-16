@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+}
+
+group   'pl.javaleader'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile project(":api")
+}
+
+task javaLeaderMsgHelloWorld
+
+javaLeaderMsgHelloWorld.doFirst( {
+    println "This is done first JavaLeader.pl"
+} );
+
+javaLeaderMsgHelloWorld.doLast( {
+    println "This is done last JavaLeader.pl"
+} );

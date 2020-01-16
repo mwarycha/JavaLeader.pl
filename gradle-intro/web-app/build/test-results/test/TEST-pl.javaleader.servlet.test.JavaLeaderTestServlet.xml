@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="pl.javaleader.servlet.test.JavaLeaderTestServlet" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-01-15T10:28:48" hostname="PL-00001722" time="0.812">
+  <properties/>
+  <testcase name="doPostWithoutName" classname="pl.javaleader.servlet.test.JavaLeaderTestServlet" time="0.809"/>
+  <testcase name="doGet" classname="pl.javaleader.servlet.test.JavaLeaderTestServlet" time="0.001"/>
+  <testcase name="doPostWithName" classname="pl.javaleader.servlet.test.JavaLeaderTestServlet" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

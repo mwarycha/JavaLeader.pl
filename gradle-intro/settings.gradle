@@ -1,0 +1,4 @@
+rootProject.name = 'gradle-intro'
+include 'api'
+include 'web-app'
+
