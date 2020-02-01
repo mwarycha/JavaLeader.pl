@@ -14,9 +14,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class EmployeeClient {
 
-    //public static final String serverUrl = "http://employees-api.default.svc.cluster.local:8081/getAllEmployees";
+    public static final String serverUrl = "http://emp-api.default.svc.cluster.local:8081/getAllEmployees";
 
-    public static final String serverUrl = "http://localhost:8081/getAllEmployees";
+    //public static final String serverUrl = "http://localhost:8081/getAllEmployees";
 
     public static void main(String[] args) {
         SpringApplication.run(EmployeeClient.class, args);
@@ -30,6 +30,7 @@ public class EmployeeClient {
 
     @GetMapping("/employee/{id}")
     public static String getEmployeeById1(@PathVariable("id") int id){
+        System.out.println("LOG");
         System.out.println(serverUrl);
         String findEmployee = null;
         try {
