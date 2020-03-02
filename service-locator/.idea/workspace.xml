@@ -2,13 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98eb84ef-90b2-489b-ab36-1790bc18c9b8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../mockito-call-methods/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mockito-call-methods/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mockito-call-methods/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mockito-call-methods/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mockito-call-methods/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mockito-call-methods/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mockito-call-methods/mockito-call-methods.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/service/locator/Cache.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/service/locator/Cache.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/service/locator/Context.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/service/locator/Context.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/service/locator/Cache.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/service/locator/Context.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pl/service/locator/Service.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pl/service/locator/ServiceFirstImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/service/locator/ServiceLocator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/service/locator/ServiceLocator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/service/locator/ServiceLocatorPatternDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/service/locator/ServiceLocatorPatternDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/service/locator/ServiceLocator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/service/locator/ServiceLocatorPatternDemo.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pl/service/locator/ServiceSecondImpl.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -23,11 +27,12 @@
     <session id="792264930">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -126,7 +131,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -184,6 +188,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -240,14 +245,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Designer" order="1" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.21428572" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.21641791" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" />
@@ -264,7 +269,7 @@
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Theme Preview" order="2" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info anchor="right" id="Maven Projects" order="4" visible="true" weight="0.077292114" />
+      <window_info anchor="right" id="Maven Projects" order="4" visible="true" weight="0.21162046" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
