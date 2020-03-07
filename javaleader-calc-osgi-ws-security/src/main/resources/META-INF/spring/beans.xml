@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:jaxws="http://cxf.apache.org/jaxws"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+  http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
+
+    <!-- przy próbie wywołania usługi usługa wywoła kod zaimplementowany w interceptorze -->
+    <jaxws:endpoint
+            id = "calcService"
+            implementor = "pl.javaleader.ws.CalculatorImpl"
+            address = "/calcService">
+        <jaxws:inInterceptors>
+            <ref bean="requestInterceptor" />
+        </jaxws:inInterceptors>
+
+    </jaxws:endpoint>
+
+    <bean id="requestInterceptor" class="org.apache.cxf.ws.security.wss4j.WSS4JInInterceptor">
+        <constructor-arg>
+            <map>
+                <entry key="action" value="Timestamp Signature Encrypt"/>
+                <entry key="signaturePropFile"     value = "META-INF/spring/server_sign.properties" />
+                <entry key="decryptionPropFile"    value = "META-INF/spring/server_sign.properties" />
+                <entry key="passwordCallbackClass" value = "pl.javaleader.security.ServiceKeystorePasswordCallback" />
+            </map>
+        </constructor-arg>
+    </bean>
+
+
+</beans>

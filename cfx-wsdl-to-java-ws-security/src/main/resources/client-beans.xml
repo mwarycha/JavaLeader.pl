@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:jaxws="http://cxf.apache.org/jaxws"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
+
+    <jaxws:client id="calcClient"
+                  serviceClass="pl.javaleader.ws.Calculator"
+                  address="http://localhost:8181/cxf/calcService" >
+
+    <jaxws:outInterceptors>
+        <bean class="org.apache.cxf.ws.security.wss4j.WSS4JOutInterceptor">
+        <constructor-arg>
+
+                <map>
+                    <entry key="action" value="Timestamp Signature Encrypt"/>
+                    <entry key="user" value="javaleader.pl" />
+                    <entry key="signaturePropFile" value = "META-INF/wsdl/labs/client_sign.properties" />
+                    <entry key="encryptionPropFile" value = "META-INF/wsdl/labs/client_sign.properties" />
+                    <entry key="encryptionUser" value="javaleader.pl" />
+                    <entry key="signatureKeyIdentifier" value="DirectReference"/>
+                    <entry key="passwordCallbackClass" value="pl.javaleader.security.ServiceKeystorePasswordCallback"/>
+                    <entry key="signatureParts" value="{Element}{http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd}Timestamp;{Element}{http://schemas.xmlsoap.org/soap/envelope/}Body"/>
+                    <entry key="encryptionParts" value="{Element}{http://www.w3.org/2000/09/xmldsig#}Signature;{Content}{http://schemas.xmlsoap.org/soap/envelope/}Body"/>
+                    <entry key="encryptionKeyTransportAlgorithm" value="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
+                    <entry key="encryptionSymAlgorithm" value="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/>
+                    <entry key="signatureAlgorithm" value="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+                </map>
+
+        </constructor-arg>
+        </bean>
+
+
+    </jaxws:outInterceptors>
+
+    </jaxws:client>
+
+
+
+
+</beans>
