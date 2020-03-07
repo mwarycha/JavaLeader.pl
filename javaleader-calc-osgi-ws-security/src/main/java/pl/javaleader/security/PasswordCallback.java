@@ -9,7 +9,7 @@ import javax.security.auth.callback.UnsupportedCallbackException;
 
 // keytool -genkeypair -alias javaleader.pl -keyalg RSA -keysize 2048 -sigalg SHA256withRSA -validity 365 -keystore javaleader2.jks
 
-public class ServiceKeystorePasswordCallback implements CallbackHandler {
+public class PasswordCallback implements CallbackHandler {
     public void handle(Callback[] callbacks) throws IOException, UnsupportedCallbackException {
         for (int i = 0; i < callbacks.length; i++) {
             WSPasswordCallback pc = (WSPasswordCallback) callbacks[0];

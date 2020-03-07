@@ -6,7 +6,7 @@ import javax.security.auth.callback.CallbackHandler;
 import javax.security.auth.callback.UnsupportedCallbackException;
 import org.apache.ws.security.WSPasswordCallback;
 
-public class ServiceKeystorePasswordCallback implements CallbackHandler {
+public class PasswordCallback implements CallbackHandler {
     public void handle(Callback[] callbacks) throws IOException,
 
 

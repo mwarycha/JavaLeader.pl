@@ -21,7 +21,7 @@ http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
                     <entry key="encryptionPropFile" value = "META-INF/wsdl/labs/client_sign.properties" />
                     <entry key="encryptionUser" value="javaleader.pl" />
                     <entry key="signatureKeyIdentifier" value="DirectReference"/>
-                    <entry key="passwordCallbackClass" value="pl.javaleader.security.ServiceKeystorePasswordCallback"/>
+                    <entry key="passwordCallbackClass" value="pl.javaleader.security.PasswordCallback"/>
                     <entry key="signatureParts" value="{Element}{http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd}Timestamp;{Element}{http://schemas.xmlsoap.org/soap/envelope/}Body"/>
                     <entry key="encryptionParts" value="{Element}{http://www.w3.org/2000/09/xmldsig#}Signature;{Content}{http://schemas.xmlsoap.org/soap/envelope/}Body"/>
                     <entry key="encryptionKeyTransportAlgorithm" value="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
