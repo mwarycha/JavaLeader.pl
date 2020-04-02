@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:camel="http://camel.apache.org/schema/spring"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+          http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+          http://camel.apache.org/schema/spring
+          http://camel.apache.org/schema/spring/camel-spring.xsd
+          http://www.springframework.org/schema/util
+          http://www.springframework.org/schema/util/spring-util-4.2.xsd">
+
+    <bean id="camelContextBck" class="pl.javaleader.spring.dsl.CamelContextBck" />
+    <bean id="processFiles"    class="pl.javaleader.spring.dsl.ProcessFiles"    />
+
+    <camelContext xmlns="http://camel.apache.org/schema/spring">
+        <routeBuilder ref="camelContextBck" />
+    </camelContext>
+
+</beans>
