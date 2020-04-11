@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-Name: wsdl-camel-bundle
+Bundle-SymbolicName: wsdl-camel-bundle
+Bundle-Version: 1.0.5
+Bundle-Description: Camel Bundle 1
+Bundle-Vendor: IT-eye
+Import-Package: org.apache.cxf.bus.spring,org.osgi.framework, org.apache.commons.logging, org.apache.camel.builder, org.apache.camel.model,org.apache.camel,pl.javaleader,javax.xml,javax.xml.namespace,javax.xml.bind
