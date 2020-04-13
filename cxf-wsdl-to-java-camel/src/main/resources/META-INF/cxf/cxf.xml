@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:jaxws="http://cxf.apache.org/jaxws"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cxf="http://cxf.apache.org/core"
        xsi:schemaLocation="
 http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
 
      <bean id="cxf" class="org.apache.cxf.bus.spring.SpringBus" />
+
+     <bean id="loggingInInterceptor" class="org.apache.cxf.interceptor.LoggingInInterceptor"/>
+     <bean id="logOutInterceptor" class="org.apache.cxf.interceptor.LoggingOutInterceptor"/>
+
+     <cxf:bus>
+          <cxf:inInterceptors>
+               <ref bean="loggingInInterceptor"/>
+          </cxf:inInterceptors>
+          <cxf:outInterceptors>
+               <ref bean="logOutInterceptor"/>
+          </cxf:outInterceptors>
+     </cxf:bus>
 
 </beans>
