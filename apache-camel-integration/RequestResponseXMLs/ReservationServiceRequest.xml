@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:quot="http://air.sample.com/quote/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <quot:getQuote>
+         <getQuote>
+            <source>HYD</source>
+            <destination>CHN</destination>
+            <date>25/09/2013</date>
+            <airline>All</airline>
+         </getQuote>
+      </quot:getQuote>
+   </soapenv:Body>
+</soapenv:Envelope>

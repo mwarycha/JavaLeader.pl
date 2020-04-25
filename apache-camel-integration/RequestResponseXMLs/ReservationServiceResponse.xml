@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Body>
+      <res:getQuoteResponse xmlns:res="http://air.sample.com/quote/">
+         <getQuoteResponse>
+            <price>
+               <airLine>INDIGO</airLine>
+               <price>4000</price>
+            </price>
+            <price>
+               <airLine>SPICEJET</airLine>
+               <price>4500</price>
+            </price>
+         </getQuoteResponse>
+      </res:getQuoteResponse>
+   </soap:Body>
+</soap:Envelope>

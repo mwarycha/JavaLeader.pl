@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Configures the Camel Context -->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:broker="http://activemq.apache.org/schema/core"
+	xmlns:cxf="http://camel.apache.org/schema/cxf" xmlns:camel="http://camel.apache.org/schema/spring"
+	xsi:schemaLocation="
+       http://www.springframework.org/schema/beans 
+       http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+       http://activemq.apache.org/schema/core 
+       http://activemq.apache.org/schema/core/activemq-core.xsd
+       http://camel.apache.org/schema/spring 
+       http://camel.apache.org/schema/spring/camel-spring.xsd
+	   http://camel.apache.org/schema/cxf 
+	   http://camel.apache.org/schema/cxf/camel-cxf.xsd">
+
+
+	<!-- Needed Apache CXF imports -->
+	<import resource="classpath:META-INF/cxf.xml" />
+
+	<!-- beans -->
+	<bean id="requestValidator" class="com.sample.processor.RequestValidator" />
+	<bean id="getXMLStreamSource" class="com.sample.processor.PrepareXMLStreamProcessor" />
+	<bean id="aggregateData" class="com.sample.aggregate.AggregateResponse" />
+	<bean id="processResponse" class="com.sample.processor.ProcessResponse" />
+	<bean id="exceptionHandler" class="com.sample.processor.ExceptionHandler" />
+	<bean id="logAudit" class="com.sample.processor.AuditLog" />
+
+	<!-- Endpoint of MockService for Airline A -->
+	<cxf:cxfEndpoint id="airlineAEndpoint"
+		address="http://localhost:8080/cxf-sample-airlineA-1.0/services/AirLineAQuote" serviceClass="com.sample.aira.quote.AirLineAQuote"
+		wsdlURL="wsdl/ReservationServiceAirlineA.wsdl">
+		<cxf:properties>
+			<entry key="dataFormat" value="PAYLOAD" />
+		</cxf:properties>
+	</cxf:cxfEndpoint>
+
+
+	<!-- Endpoint of MockService for Airline B -->
+	<cxf:cxfEndpoint id="airlineBEndpoint"
+		address="http://localhost:8080/cxf-sample-airlineB-1.0/services/AirLineBQuote" serviceClass="com.sample.airb.quote.AirLineBQuote"
+		wsdlURL="wsdl/ReservationServiceAirlineB.wsdl">
+		<cxf:properties>
+			<entry key="dataFormat" value="PAYLOAD" />
+		</cxf:properties>
+	</cxf:cxfEndpoint>
+
+	<!-- Endpoint of Reservation Service -->
+
+	<cxf:cxfEndpoint id="reservationService" address="/QuoteService"
+		serviceClass="com.sample.air.quote.AirLineQuote" wsdlURL="wsdl/ReservationService.wsdl">
+		<cxf:properties>
+			<entry key="dataFormat" value="PAYLOAD" />
+			<entry key="schema-validation-enabled" value="true" />
+		</cxf:properties>
+	</cxf:cxfEndpoint>
+
+	<camel:camelContext id="camelContext">
+
+		<camel:route id="airLineQuoteRoute">
+
+			<camel:from uri="cxf:bean:reservationService" />
+
+			<camel:wireTap uri="direct:logInfo"/>
+
+			<camel:log
+				message="*********** After receving the inbound request ************ " />
+
+			<camel:log
+				message="*********** Validating the request - Starts ************ " />
+
+			<camel:to uri="bean:requestValidator" />
+
+			<camel:log message="*********** Validating the request - Ends ************ " />
+
+			<camel:choice>
+				<camel:when>
+					<camel:simple>${header.airLines} == 'AirLineA'</camel:simple>
+					<camel:to uri="direct:getQuoteA"></camel:to>
+				</camel:when>
+				<camel:when>
+					<camel:simple>${header.airLines} == 'AirLineB'</camel:simple>
+					<camel:to uri="direct:getQuoteB"></camel:to>
+				</camel:when>
+				<camel:when>
+					<camel:simple>${header.airLines} == 'All'</camel:simple>
+					<camel:to uri="direct:getQuoteMulticast"></camel:to>
+				</camel:when>
+			</camel:choice>
+
+			<!-- To handle exceptions occurred -->
+			<camel:onException>
+				<camel:exception>java.lang.Exception</camel:exception>
+				<camel:to uri="bean:exceptionHandler" />
+				<camel:log message="Exception occured ${exception.message}" />
+			</camel:onException>
+		</camel:route>
+
+
+		<camel:route id="getQuoteMultiCastRoute">
+			<camel:from uri="direct:getQuoteMulticast" />
+
+			<camel:log message="Route getQuoteMultiCastRoute Starts .... " />
+
+			<camel:multicast strategyRef="aggregateData"
+				parallelProcessing="true">
+				<camel:to uri="direct:getQuoteA" />
+				<camel:to uri="direct:getQuoteB" />
+			</camel:multicast>
+
+			<camel:to uri="bean:processResponse" />
+
+			<camel:to uri="xslt://process_response.xsl" />
+			<camel:onException>
+				<camel:exception>java.lang.Exception</camel:exception>
+				<camel:log message="Exception occured ${exception.message}" />
+				<camel:to uri="bean:exceptionHandler" />
+			</camel:onException>
+
+			<camel:log message="Route getQuoteMultiCastRoute Ends .... "
+				loggingLevel="DEBUG" />
+		</camel:route>
+
+		<camel:route id="getQuoteAirLineARoute">
+			<camel:from uri="direct:getQuoteA" />
+			<camel:log message="Route getQuoteAirLineARoute Starts .... " />
+
+			<camel:to uri="bean:getXMLStreamSource" />
+
+			<camel:log message="*********** Transforming the request ************ " />
+			<camel:to uri="xslt://airlineA_req_transform.xsl" />
+
+
+			<camel:setHeader headerName="operationNamespace">
+				<camel:simple>http://aira.sample.com/quote/</camel:simple>
+			</camel:setHeader>
+
+			<camel:setHeader headerName="SOAPAction">
+				<camel:simple>http://aira.sample.com/quote/getQuoteOperation</camel:simple>
+			</camel:setHeader>
+
+			<camel:log
+				message="Before calling Airline A Endpoint for Operation: ${header.operationName}" />
+
+			<camel:to uri="cxf:bean:airlineAEndpoint" />
+
+			<camel:log
+				message="After calling Airline A Endpoint for Operation: ${header.operationName}" />
+
+			<camel:log message="*********** Transforming the response Airline A ************ " />
+			<camel:to uri="xslt://airline_resp_transform.xsl" />
+
+			<camel:onException>
+				<camel:exception>java.lang.Exception</camel:exception>
+				<camel:log message="Exception occured ${exception.message}" />
+				<camel:to uri="bean:exceptionHandler" />
+			</camel:onException>
+			<camel:log message="Route getQuoteAirLineARoute Ends .... " />
+		</camel:route>
+
+		<camel:route id="getQuoteAirLineBRoute">
+			<camel:from uri="direct:getQuoteB" />
+
+			<camel:log message="Route getQuoteAirLineBRoute Starts .... " />
+
+			<camel:to uri="bean:getXMLStreamSource" />
+
+			<camel:log message="*********** Transforming the request Airline B ************ " />
+			<camel:to uri="xslt://airlineB_req_transform.xsl" />
+
+			<camel:setHeader headerName="operationNamespace">
+				<camel:simple>http://airb.sample.com/quote/</camel:simple>
+			</camel:setHeader>
+			
+			<camel:setHeader headerName="SOAPAction">
+				<camel:simple>http://airb.sample.com/quote/getQuoteOperation</camel:simple>
+			</camel:setHeader>
+
+			<camel:log
+				message="Before calling Airline B Endpoint for Operation: ${header.operationName}" />
+
+			<camel:to uri="cxf:bean:airlineBEndpoint" />
+
+			<camel:log
+				message="After calling Airline B Endpoint for Operation: ${header.operationName}" />
+
+			<camel:log message="*********** Transforming the response ************ " />
+			<camel:to uri="xslt://airline_resp_transform.xsl" />
+
+			<camel:onException>
+				<camel:exception>java.lang.Exception</camel:exception>
+				<camel:log message="Exception occured ${exception.message}" />
+				<camel:to uri="bean:exceptionHandler" />
+			</camel:onException>
+
+			<camel:log message="Route getQuoteAirLineBRoute Ends .... "
+				loggingLevel="DEBUG" />
+		</camel:route>
+
+		<camel:route id = "auditLogging">
+			<camel:from uri="direct:logInfo"/>
+			<camel:to uri="bean:logAudit"/>   
+		</camel:route>
+
+	</camel:camelContext>
+</beans>

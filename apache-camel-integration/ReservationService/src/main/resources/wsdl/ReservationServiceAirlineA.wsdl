@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+	xmlns:tns="http://aira.sample.com/quote/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="AirLineAQuote"
+	targetNamespace="http://aira.sample.com/quote/">
+	<wsdl:types>
+		<xsd:schema targetNamespace="http://aira.sample.com/quote/">
+			<xsd:element name="getQuote">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="getQuote" type="tns:getQuoteRequest" />
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+
+			<xsd:complexType name="getQuoteRequest">
+				<xsd:sequence>
+					<xsd:element name="source" type="xsd:string"></xsd:element>
+					<xsd:element name="destination" type="xsd:string"></xsd:element>
+					<xsd:element name="date" type="xsd:string"></xsd:element>
+					<xsd:element name="airline" type="xsd:string"
+						minOccurs="0"></xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+
+			<xsd:element name="getQuoteResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="getQuoteResponse" type="tns:getQuoteResp" />
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+
+			<xsd:complexType name="getQuoteResp">
+				<xsd:sequence>
+					<xsd:element name="price" minOccurs="0" 
+						type="tns:Quote"></xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+
+			<xsd:complexType name="Quote">
+				<xsd:sequence>
+					<xsd:element name="airLine" type="xsd:string" fixed="AirLineA"/>
+					<xsd:element name="price" type="xsd:string" />
+				</xsd:sequence>
+			</xsd:complexType>
+
+			<xsd:element name="getQuoteFault">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="code" type="xsd:string"></xsd:element>
+						<xsd:element name="msg" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:schema>
+	</wsdl:types>
+	<wsdl:message name="getQuoteOperationRequest">
+		<wsdl:part element="tns:getQuote" name="parameters" />
+	</wsdl:message>
+	<wsdl:message name="getQuoteOperationResponse">
+		<wsdl:part element="tns:getQuoteResponse" name="parameters" />
+	</wsdl:message>
+	<wsdl:message name="getQuoteOperationFault">
+		<wsdl:part name="parameters" element="tns:getQuoteFault"></wsdl:part>
+	</wsdl:message>
+	<wsdl:portType name="AirLineAQuote">
+		<wsdl:operation name="getQuoteOperation">
+			<wsdl:input message="tns:getQuoteOperationRequest" />
+			<wsdl:output message="tns:getQuoteOperationResponse" />
+			<wsdl:fault name="fault" message="tns:getQuoteOperationFault"></wsdl:fault>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="AirLineQuoteSOAP" type="tns:AirLineAQuote">
+		<soap:binding style="document"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="getQuoteOperation">
+			<soap:operation soapAction="http://aira.sample.com/quote/getQuoteOperation" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="AirLineAQuoteService">
+		<wsdl:port binding="tns:AirLineQuoteSOAP" name="AirLineQuoteSOAP">
+			<soap:address location="http://localhost:8080/QuoteOperation" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

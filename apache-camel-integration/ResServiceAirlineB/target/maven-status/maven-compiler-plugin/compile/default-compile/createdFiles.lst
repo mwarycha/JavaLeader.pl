@@ -1,0 +1,12 @@
+com\sample\airb\quote\GetQuoteResponse.class
+com\sample\airb\quote\GetQuoteFault.class
+com\sample\airb\quote\AirLineBQuote.class
+com\sample\airb\quote\Quote.class
+com\sample\airb\quote\GetQuoteResp.class
+com\sample\impl\ReservationServiceImpl.class
+com\sample\airb\quote\package-info.class
+com\sample\airb\quote\ObjectFactory.class
+com\sample\airb\quote\GetQuote.class
+com\sample\airb\quote\AirLineBQuoteService.class
+com\sample\airb\quote\GetQuoteRequest.class
+com\sample\airb\quote\GetQuoteOperationFault.class
