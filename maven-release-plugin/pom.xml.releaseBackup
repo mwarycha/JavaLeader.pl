@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>pl.javaleader</groupId>
+    <artifactId>maven-release-plugin</artifactId>
+    <version>1.48-SNAPSHOT</version>
+
+    <distributionManagement>
+        <repository>
+            <id>JavaLeader</id>
+            <url>http://localhost:8081/repository/JavaLeader/</url>
+        </repository>
+       <snapshotRepository>
+           <id>JavaLeaderSnaphot</id>
+           <url>http://localhost:8081/repository/JavaLeaderSnaphot/</url>
+       </snapshotRepository>
+    </distributionManagement>
+
+    <build>
+        <plugins>
+                <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                    <version>2.5.3</version>
+                <configuration>
+                    <tagNameFormat>v@{project.version}</tagNameFormat>
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
+                </configuration>
+            </plugin>
+
+
+        </plugins>
+    </build>
+
+    <scm>
+        <url>scm:git:file://C:/Users/mwarycha/Desktop/scratchbook.git</url>
+        <connection>scm:git:file://C:/Users/mwarycha/Desktop/scratchbook.git</connection>
+        <developerConnection>scm:git:file://C:/Users/mwarycha/Desktop/scratchbook.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>central</id>
+            <name>Central Repository</name>
+            <url>https://repo.maven.apache.org/maven2</url>
+            <layout>default</layout>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <releases>
+                <updatePolicy>never</updatePolicy>
+            </releases>
+        </pluginRepository>
+    </pluginRepositories>
+
+    <repositories>
+        <repository>
+            <id>Central Maven repository</id>
+            <name>Central Maven repository https</name>
+            <url>https://repo.maven.apache.org/maven2</url>
+        </repository>
+    </repositories>
+
+</project>
