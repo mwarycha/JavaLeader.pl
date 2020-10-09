@@ -1,0 +1,27 @@
+@import '~@angular/material/theming';
+@include mat-core();
+
+/* ======== angular material custom theme ======== */
+$my-custom-primary: mat-palette($mat-deep-purple);
+$my-custom-accent: mat-palette($mat-pink, 100, 500, A100);
+$my-custom-warn: mat-palette($mat-lime);
+
+// Light theme
+$my-custom-theme: mat-light-theme($my-custom-primary, $my-custom-accent, $my-custom-warn);
+
+// Dark theme
+$my-custom-theme: mat-dark-theme($my-custom-primary, $my-custom-accent, $my-custom-warn);
+
+// Main theme defination
+@include angular-material-theme($my-custom-theme);
+
+// Alternate Angular Material Theme
+.my-alternate-theme {
+  $my-alternate-primary: mat-palette($mat-red);
+  $my-alternate-accent: mat-palette($mat-green, 400);
+  $my-alternate-warn: mat-palette($mat-grey);
+
+  $my-alternate-theme: mat-light-theme($my-alternate-primary, $my-alternate-accent, $my-alternate-warn);
+
+  @include angular-material-theme($my-alternate-theme);
+}
