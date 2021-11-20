@@ -1,0 +1,157 @@
+<h1 style="text-align: center;">Integracja Keycloak z Spring Boot</h1>
+<strong>Keycloak</strong> to serwer uwierzytelniania oraz autoryzacji użytkowników. Posiada prosty panel administracyjny pozwalający w intuicyjny sposób zarządzać użytkownikami oraz ich uprawnieniami. Dla uproszczenia serwer Keycloaka uruchomimy lokalnie na swojej maszynie. Pobieramy spakowany plik ze strony - <a href="https://www.keycloak.org/downloads.html">https://www.keycloak.org/downloads.html</a>. Na chwile pisania tego artykułu jest to wersja <strong>15.0.2</strong>. Przechodzimy do folderu <strong>./bin</strong> i uruchamiamy Keycloaka poleceniem:
+<pre class="prettyprint">standalone.bat</pre>
+serwer znajduję się pod adresem:
+<pre class="prettyprint">http://localhost:8080/auth/</pre>
+Należy utworzyć inicjalnego użytkownika z prawami administratora. Po tej operacji logujemy się już jako administrator do Keycloaka:
+<pre class="prettyprint">http://localhost:8080/auth/admin/</pre>
+Tworzymy tzw. <strong>Realm</strong> czyli przestrzeń w której będziemy zarządzać użytkownikami oraz ich uprawnieniami:
+
+<img class="alignnone wp-image-5787" src="https://javaleader.pl/wp-content/uploads/2021/11/realm_keycloak.png" alt="" width="584" height="209" />
+
+Tworzymy klienta - aplikacja która będzie korzystała z <strong>Keycloaka</strong> do uwierzytelniania i autoryzacji użytkowników:
+
+<img class="alignnone wp-image-5792" src="https://javaleader.pl/wp-content/uploads/2021/11/client_keycloak.png" alt="" width="419" height="293" />
+
+Konfigurujemy klienta:
+<ul>
+ 	<li>"<em>Access Type</em>" - <strong>confidential</strong></li>
+ 	<li>"<em>Service Accounts Enabled</em>" - <strong>ON</strong></li>
+ 	<li>"<em>Authorization Enabled</em>" - <strong>ON</strong></li>
+</ul>
+<img class="alignnone wp-image-5794" src="https://javaleader.pl/wp-content/uploads/2021/11/client_settings_keycloak.png" alt="" width="878" height="668" />
+
+W zakładce '<em>credentials</em>' widoczny jest <strong>client-secret</strong> który wymagany będzie w konfiguracji aplikacji Spring Boota ze względu na <strong>"Access Type" = confidential</strong>:
+
+<img class="alignnone size-full wp-image-5796" src="https://javaleader.pl/wp-content/uploads/2021/11/secret_keycloak.png" alt="" width="990" height="314" />
+
+W zakładce '<strong>Roles</strong>' dodajemy role <strong>na poziomie klienta</strong>. Dla przykładu dodajmy 3 podstawowe role:
+<ul>
+ 	<li>User,</li>
+ 	<li>Moderator,</li>
+ 	<li>Admin.</li>
+</ul>
+Następnie tworzymy <strong>globalne</strong> role - tzw.  '<strong>Realm Role</strong>' jak poniżej:
+
+<img class="alignnone wp-image-5799" src="https://javaleader.pl/wp-content/uploads/2021/11/realm_role_keycloak.png" alt="" width="720" height="509" />
+
+Dodajmy w zakładce '<strong>Users</strong>' kolejno użytkowników przypisując im odpowiednio <strong>globalne role</strong> oraz nadając im przykładowe hasła:
+
+<img class="alignnone wp-image-5802" src="https://javaleader.pl/wp-content/uploads/2021/11/user_keycloak.png" alt="" width="885" height="498" />
+
+analogicznie postępujemy dla użytkowników '<strong>User</strong>' oraz '<strong>Admin</strong>'.
+<h2>Generowanie Tokena dostępowego JWT</h2>
+Otwieramy link: <strong>OpenID Endpoint Configuration</strong>:
+
+<img class="alignnone size-full wp-image-5808" src="https://javaleader.pl/wp-content/uploads/2021/11/endpoint_config_keycloak.png" alt="" width="889" height="451" />
+
+Kopiujemy <strong>token_endpoint</strong>:
+<pre class="prettyprint">http://localhost:8080/auth/realms/pljavaleader/protocol/openid-connect/token"</pre>
+I z użyciem dowolnego klienta Rest HTTP np. <strong>Advanced REST Client</strong> wysyłamy żądanie <strong>POST</strong>:
+
+<img class="alignnone size-full wp-image-5812" src="https://javaleader.pl/wp-content/uploads/2021/11/access_token_keycloak.png" alt="" width="1134" height="818" />
+
+Zdekodujmy <strong>access_token</strong> do postaci czytelnej z użyciem popularnego narzędzia <strong>https://jwt.io/:</strong>
+
+<img class="alignnone size-full wp-image-5814" src="https://javaleader.pl/wp-content/uploads/2021/11/jwt_keycloak.png" alt="" width="356" height="682" />
+
+Widać, że token ten dotyczy użytkownika <strong>user</strong> który posiada:
+<ul>
+ 	<li>globalną role: <strong>app-user</strong>,</li>
+ 	<li>role na poziomie klienta: <strong>User</strong>.</li>
+</ul>
+<h2>Konfiguracja aplikacji opartej o Spring Boot z wykorzystaniem Keycloak</h2>
+Tworzymy nowy projekt Spring Boota - plik <strong>pom.xml</strong> - niezbędne zależności:
+<pre class="prettyprint">&lt;dependencies&gt;
+	&lt;dependency&gt;
+		&lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+		&lt;artifactId&gt;spring-boot-starter&lt;/artifactId&gt;
+	&lt;/dependency&gt;
+	&lt;dependency&gt;
+		&lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+		&lt;artifactId&gt;spring-boot-starter-security&lt;/artifactId&gt;
+	&lt;/dependency&gt;
+	&lt;dependency&gt;
+		&lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+		&lt;artifactId&gt;spring-boot-starter-test&lt;/artifactId&gt;
+		&lt;scope&gt;test&lt;/scope&gt;
+	&lt;/dependency&gt;
+	&lt;dependency&gt;
+		&lt;groupId&gt;org.keycloak&lt;/groupId&gt;
+		&lt;artifactId&gt;keycloak-spring-boot-starter&lt;/artifactId&gt;
+		&lt;version&gt;9.0.2&lt;/version&gt;
+	&lt;/dependency&gt;
+&lt;/dependencies&gt;</pre>
+dodajemy sekcję <strong>dependency-management</strong>:
+<pre class="prettyprint">&lt;dependencyManagement&gt;
+	&lt;dependencies&gt;
+		&lt;dependency&gt;
+			&lt;groupId&gt;org.keycloak.bom&lt;/groupId&gt;
+			&lt;artifactId&gt;keycloak-adapter-bom&lt;/artifactId&gt;
+			&lt;version&gt;9.0.2&lt;/version&gt;
+			&lt;type&gt;pom&lt;/type&gt;
+			&lt;scope&gt;import&lt;/scope&gt;
+		&lt;/dependency&gt;
+	&lt;/dependencies&gt;
+&lt;/dependencyManagement&gt;</pre>
+oraz kompletujemy plik <strong>application.properties</strong> na podstawie danych skonfigurowanych wcześniej w <strong>Keycloak</strong>:
+<pre class="prettyprint">server.port                         = 8000
+keycloak.realm                      = pljavaleader
+keycloak.auth-server-url            = http://localhost:8080/auth
+keycloak.ssl-required               = external
+keycloak.resource                   = spring-boot-keycloak
+keycloak.credentials.secret         = c2e6ac81-f2ab-4c78-a41c-891a767ec6f5
+keycloak.use-resource-role-mappings = true
+</pre>
+Jako, że aplikacja działać będzie na przykładowym porcie <strong>8000</strong> dodajmy w konfiguracji <strong>Keycloaka</strong> adres na który zostaniemy przekierowani po prawidłowym zalogowaniu się:
+
+<img class="alignnone size-full wp-image-5822" src="https://javaleader.pl/wp-content/uploads/2021/11/valid_redirect_url_keycloak.png" alt="" width="1218" height="810" />
+
+Tworzymy przykładowy <strong>RestController</strong> gdzie dostęp do poszczególnych endpointów zabezpieczony jest odpowiednimi rolami:
+<pre class="prettyprint">@RestController
+@RequestMapping("/api")
+public class Api {
+
+    @RolesAllowed({"User", "Moderator", "Admin"})
+    @RequestMapping(value = "/readPost", method = RequestMethod.GET)
+    public ResponseEntity&lt;String&gt; readPost() {
+        return ResponseEntity.ok("USER ACCESS");
+    }
+
+    @RolesAllowed("Moderator")
+    @RequestMapping(value = "/modifyPost", method = RequestMethod.GET)
+    public ResponseEntity&lt;String&gt; modifyPost() {
+        return ResponseEntity.ok("MODERATOR ACCESS");
+    }
+
+    @RolesAllowed("Admin")
+    @RequestMapping(value = "/deletePost", method = RequestMethod.GET)
+    public ResponseEntity&lt;String&gt; deletePost() {
+        return ResponseEntity.ok("ADMIN ACCESS");
+    }
+}</pre>
+Przejdźmy w przeglądarce na adres:
+<pre class="prettyprint">http://localhost:8000/api/readPost</pre>
+zostanie nam przedstawiona strona logowania:
+
+<img class="alignnone wp-image-5823" src="https://javaleader.pl/wp-content/uploads/2021/11/login_page_keycloak.png" alt="" width="407" height="330" />
+
+Po wpisaniu prawidłowych danych zostaniemy przekierowani na stronę:
+<pre class="prettyprint">http://localhost:8000/api/readPost</pre>
+z wynikiem:
+<pre class="prettyprint">USER ACCESS</pre>
+Zmieńmy:
+<ul>
+ 	<li>"<em>Access Type</em>" - <strong>confidential</strong></li>
+</ul>
+Teraz po wejściu na:
+<pre class="prettyprint">http://localhost:8000/api/readPost</pre>
+otrzymamy informację o braku dostępu z powodu <strong>nie</strong> przesłania tokenu JWT:
+
+<img class="alignnone size-full wp-image-5830" src="https://javaleader.pl/wp-content/uploads/2021/11/Bearer_keycloak.png" alt="" width="515" height="266" />
+
+Wygenerujemy token <strong>JWT</strong> oraz z użyciem <strong>Advanced Rest Client</strong> użyjmy go jako nagłówek przesyłany w żądaniu do API w formie:
+
+authorization : Bearer token
+
+&nbsp;
