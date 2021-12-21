@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>pl.javaleader</groupId>
-	<artifactId>put-map-struct</artifactId>
+	<artifactId>put-map-struct-jacoco</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>put-map-struct</name>
 	<description>Demo project for Spring Boot</description>
