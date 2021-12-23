@@ -1,7 +1,6 @@
 package pl.javaleader.putmapstruct.mappers;
 
 import org.mapstruct.*;
-import org.springframework.beans.factory.annotation.Autowired;
 import pl.javaleader.putmapstruct.dto.Cart;
 import pl.javaleader.putmapstruct.model.CartEntity;
 import pl.javaleader.putmapstruct.model.ItemEntity;
@@ -11,13 +10,15 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 @Mapper(uses = ItemMapper.class, componentModel = "spring")
 public abstract class CartMapper {
 
     @Autowired
     ItemRepository itemRepository;
 
-    @Mapping(source = "itemEntities", target = "items")
+    @Mapping(source = "itemEntities", target = "items",nullValuePropertyMappingStrategy = NullValuePropertyMappingStrategy.IGNORE)
     public abstract Cart cartEntityToDto(CartEntity cartEntity);
 
     @Mapping(source = "items", target = "itemEntities")

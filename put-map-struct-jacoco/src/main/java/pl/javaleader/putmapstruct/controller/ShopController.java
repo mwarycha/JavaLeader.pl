@@ -9,7 +9,6 @@ import pl.javaleader.putmapstruct.model.CartEntity;
 import pl.javaleader.putmapstruct.model.ItemEntity;
 import pl.javaleader.putmapstruct.repositories.CartRepository;
 import pl.javaleader.putmapstruct.service.ShopService;
-
 import java.util.HashSet;
 import java.util.List;
 
@@ -28,7 +27,7 @@ public class ShopController {
     ShopService shopService;
 
     @PostMapping("/createSampleData")
-    public void createSampleData() {
+    public Cart createSampleData() {
 
         CartEntity cartEntity = new CartEntity();
 
@@ -39,6 +38,8 @@ public class ShopController {
         cartEntity.itemEntities = new HashSet<>();
         cartEntity.itemEntities.addAll(List.of(itemEntity1, itemEntity2, itemEntity3));
         cartRepository.save(cartEntity);
+
+        return cartMapper.cartEntityToDto(cartEntity);
 
     }
 

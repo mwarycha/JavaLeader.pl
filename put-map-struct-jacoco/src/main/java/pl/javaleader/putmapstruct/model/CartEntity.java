@@ -1,5 +1,6 @@
 package pl.javaleader.putmapstruct.model;
 
+import java.util.HashSet;
 import java.util.Set;
 import javax.persistence.*;
 
@@ -13,5 +14,5 @@ public class CartEntity {
 
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
     @JoinColumn(name="cart_id", nullable=false)
-    public Set<ItemEntity> itemEntities;
+    public Set<ItemEntity> itemEntities = new HashSet<>();
 }

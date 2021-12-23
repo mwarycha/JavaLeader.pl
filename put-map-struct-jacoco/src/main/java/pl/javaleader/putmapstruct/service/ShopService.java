@@ -1,11 +1,12 @@
 package pl.javaleader.putmapstruct.service;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import pl.javaleader.putmapstruct.dto.Cart;
 import pl.javaleader.putmapstruct.mappers.CartMapper;
 import pl.javaleader.putmapstruct.model.CartEntity;
 import pl.javaleader.putmapstruct.repositories.CartRepository;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 @Component
 public class ShopService {
