@@ -14,11 +14,13 @@ public class Employee {
   private String name;
   private String surname;
   private int salary;
+  private Role role;
 
   public Employee() {
   }
 
-  public Employee(String name, String surname, int salary) {
+  public Employee(Role role, String name, String surname, int salary) {
+    this.role = role;
     this.name    = name;
     this.surname = surname;
     this.salary  = salary;
@@ -27,9 +29,11 @@ public class Employee {
   @Override
   public String toString() {
     return "Employee{" +
-            "name='" + name + '\'' +
+            "id=" + id +
+            ", name='" + name + '\'' +
             ", surname='" + surname + '\'' +
             ", salary=" + salary +
+            ", role=" + role +
             '}';
   }
 }
