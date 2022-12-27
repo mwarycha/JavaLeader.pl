@@ -19,7 +19,8 @@ export class OperatorsComponent implements OnInit {
   orders_array = ["pizza", "ice scream", "pasta", "chicken"];
 
   orderPreparation(order) {
-    const delayTime = Math.floor(Math.random() * 1000) + 1;
+    const delayTime = Math.floor(Math.floor(1 * 10) * 1000);
+    //const delayTime = Math.floor(Math.floor(1 * 10) * 1000); 10s for dish
     this.counter=this.counter+1
     return of(`your order ${order} is ready after ${delayTime}`).pipe(delay(delayTime));
   }
@@ -28,7 +29,7 @@ export class OperatorsComponent implements OnInit {
     this.clicks$ = fromEvent(this.button.nativeElement, 'click');
     this.clicks$.pipe(
       // try to change to concatMap, mergeMap, switchMap, exhaustMap
-      mergeMap(
+      switchMap(
         order => {
           this.resetCounter();
           return this.orderPreparation(this.orders_array[this.counter]);}
